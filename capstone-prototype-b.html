@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Learning App</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fa;
+    }
+    .screen {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      max-width: 414px;
+      margin: auto;
+      background: white;
+      z-index: 2;
+      overflow-y: auto;
+    }
+    .visible { display: block; }
+    .splash {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #3f51b5;
+    }
+    .login {
+      padding: 32px;
+    }
+    .login h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .login input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 12px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .login button {
+      width: 100%;
+      padding: 12px;
+      background-color: #3f51b5;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .app {
+      max-width: 414px;
+      margin: auto;
+      background: white;
+      min-height: 100vh;
+    }
+    .header {
+      background: #3f51b5;
+      color: white;
+      padding: 16px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .content {
+      padding: 16px;
+    }
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 16px;
+      background: #fff;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .card-header {
+      padding: 16px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 16px;
+    }
+    .card-content {
+      padding: 0 16px 16px;
+      display: none;
+      font-size: 14px;
+    }
+    .arrow {
+      transition: transform 0.3s;
+    }
+    .arrow.rotate {
+      transform: rotate(90deg);
+    }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .icon { margin-right: 8px; }
+  </style>
+</head>
+<body>
+
+<!-- Splash Screen -->
+<div id="splash-screen" class="screen splash visible">📚 E-Learning App</div>
+
+<!-- Login Screen -->
+<div id="login-screen" class="screen login">
+  <h2>Login</h2>
+  <input type="text" id="username" placeholder="Username" />
+  <input type="password" id="password" placeholder="Password" />
+  <button onclick="login()">Login</button>
+</div>
+
+<!-- Main App -->
+<div id="main-app" class="app screen">
+  <div class="header">📚 E-Learning Management</div>
+  <div class="content">
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header"><span>🏠 Home Dashboard</span> <span class="arrow">▶</span></div>
+      <div class="card-content">
+        <ul>
+          <li>🚀 Continue Learning Button</li>
+          <li>🎯 Recommended Games / Videos</li>
+          <li>📅 Today's Activity Goals</li>
+          <li>🔔 Notifications Panel</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header"><span>🎮 Play Section</span> <span class="arrow">▶</span></div>
+      <div class="card-content">
+        <ul>
+          <li>🌀 Activity Carousel</li>
+          <li>🎚️ Level Select</li>
+          <li>🧩 Puzzles, ❓ Quizzes, 🎲 Trivia, 🧭 Adventure</li>
+          <li>✅ Instant Feedback</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header"><span>📖 Read Section</span> <span class="arrow">▶</span></div>
+      <div class="card-content">
+        <ul>
+          <li>📚 E-Book Library</li>
+          <li>🔊 Read-Along Narration</li>
+          <li>🧑‍🏫 CMS Uploads (Teachers)</li>
+          <li>🔖 Bookmark & Highlight</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header"><span>📺 Watch Section</span> <span class="arrow">▶</span></div>
+      <div class="card-content">
+        <ul>
+          <li>🎞️ Video Grid View</li>
+          <li>▶️ Resume Watching</li>
+          <li>📂 Teacher Playlists</li>
+          <li>📝 Video Notes & Quizzes</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header"><span>📊 Progress Section</span> <span class="arrow">▶</span></div>
+      <div class="card-content">
+        <ul>
+          <li>📈 Progress Graph</li>
+          <li>🏅 Badges & Achievements</li>
+          <li>🧪 Quiz Scores</li>
+          <li>💬 Teacher Feedback</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header"><span>⚙️ Menu / Settings</span> <span class="arrow">▶</span></div>
+      <div class="card-content">
+        <ul>
+          <li>🧑 Profile Management</li>
+          <li>🌗 Theme Toggle</li>
+          <li>🌐 Language Selector</li>
+          <li>ℹ️ App Info / About</li>
+          <li>🚪 Log Out</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      document.getElementById('splash-screen').classList.remove('visible');
+      document.getElementById('login-screen').classList.add('visible');
+    }, 2000);
+  });
+
+  function login() {
+    const user = document.getElementById('username').value;
+    const pass = document.getElementById('password').value;
+    if (user === "admin" && pass === "1234") {
+      document.getElementById('login-screen').classList.remove('visible');
+      document.getElementById('main-app').classList.add('visible');
+    } else {
+      alert("Invalid credentials. Try admin / 1234.");
+    }
+  }
+
+  function toggleCard(card) {
+    const content = card.querySelector('.card-content');
+    const arrow = card.querySelector('.arrow');
+    const isOpen = content.style.display === 'block';
+    document.querySelectorAll('.card-content').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.arrow').forEach(el => el.classList.remove('rotate'));
+    if (!isOpen) {
+      content.style.display = 'block';
+      arrow.classList.add('rotate');
+    }
+  }
+</script>
+</body>
+</html>

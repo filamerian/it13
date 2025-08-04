@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FCU Athlete Management System</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+    nav {
+      background-color: #003060;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+    }
+    nav button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    nav button:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 20px;
+    }
+    .hidden {
+      display: none;
+    }
+    .card {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-dumbbell"></i> FCU Athlete Management System</h1>
+    <div><i class="fas fa-user-circle"></i> Coach/Admin</div>
+  </header>
+
+  <nav>
+    <button onclick="showSection('dashboard')"><i class="fas fa-home"></i> Dashboard</button>
+    <button onclick="showSection('athletes')"><i class="fas fa-users"></i> Athletes</button>
+    <button onclick="showSection('performance')"><i class="fas fa-chart-line"></i> Performance</button>
+    <button onclick="showSection('schedule')"><i class="fas fa-calendar-alt"></i> Schedule</button>
+    <button onclick="showSection('medical')"><i class="fas fa-notes-medical"></i> Medical</button>
+    <button onclick="showSection('academics')"><i class="fas fa-graduation-cap"></i> Academics</button>
+    <button onclick="showSection('reports')"><i class="fas fa-file-alt"></i> Reports</button>
+    <button onclick="showSection('settings')"><i class="fas fa-cogs"></i> Settings</button>
+  </nav>
+
+  <main>
+    <section id="dashboard" class="card">
+      <h2>Dashboard Overview</h2>
+      <p>Welcome to the FCU Athlete Management System. Use the navigation to access each module.</p>
+    </section>
+
+    <section id="athletes" class="card hidden">
+      <h2>Athlete Profiles</h2>
+      <p>Manage athlete information such as name, contact, sport, and more.</p>
+    </section>
+
+    <section id="performance" class="card hidden">
+      <h2>Performance Tracking</h2>
+      <p>Log achievements, training sessions, and evaluations.</p>
+    </section>
+
+    <section id="schedule" class="card hidden">
+      <h2>Training & Event Schedule</h2>
+      <p>View and manage training and competition calendar.</p>
+    </section>
+
+    <section id="medical" class="card hidden">
+      <h2>Medical Records</h2>
+      <p>View and update medical and injury history for athletes.</p>
+    </section>
+
+    <section id="academics" class="card hidden">
+      <h2>Academic Status</h2>
+      <p>Monitor athlete academic standing and eligibility.</p>
+    </section>
+
+    <section id="reports" class="card hidden">
+      <h2>Reports</h2>
+      <p>Generate reports on athlete performance, health, and academics.</p>
+    </section>
+
+    <section id="settings" class="card hidden">
+      <h2>Settings & User Management</h2>
+      <p>Manage users, roles, and system preferences.</p>
+    </section>
+  </main>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('main section');
+      sections.forEach(sec => sec.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>IT 13 - Capstone Documentation Comments, Suggestions, and Recommndations</title>
+<link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        body {  line-height: 1.6; padding: 20px;  }
+        h1, h2 { color: #2a4d69; }
+        h1 { border-bottom: 2px solid #ccc; padding-bottom: 10px; }
+        ul { margin-top: 0; }
+        li { margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+<h2 align="center"><strong>RFID-BASED SYSTEM FOR MANAGING MEMBERS, SUBSCRIPTIONS, PAYMENTS AND  PRODUCTS AT URBAN FITNESS GYM, ROXAS CITY BRANCH</strong> </h2>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<h3><strong>CHAPTER  I – INTRODUCTION</strong></h3>
+<hr>
+<h3><strong>1.  Overview of the Current State of Technology</strong><br>
+  </h3>
+<p><strong>Comments:</strong><br>
+  Provides a wide-angle view of RFID applications across industries and zooms  into fitness operations. Touches on SBBM, automation, and GymTech trends.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Localize the narrative by referencing RFID adoption in       Philippine fitness centers or small businesses.</li>
+  <li>Strengthen the link between SBBM and RFID integration       with examples from subscription-based fitness apps or studios.</li>
+</ul>
+<p><strong>Recommendations:</strong><br>
+  Consider adding a short comparative summary of traditional gym check-in/payment  workflows vs. RFID-enhanced ones, focusing on speed, accuracy, and member  autonomy.</p>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>2.  Desired State of Technology</strong><br>
+    <strong>Comments:</strong><br>
+  Clearly articulates intended system outcomes: automated tracking, tiered access  control, cashless payments, and analytics.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Group system functions into operational categories:       Membership Validation, Payment Processing, Access Control, Product Sales,       and Analytics.</li>
+  <li>Define which modules will be priority during Phase 1 rollout       (e.g., member access, subscription tracking).</li>
+</ul>
+<p><strong>Recommendations:</strong><br>
+  Include a diagram showing the desired data flow from RFID scan → access  validation → logging → payment → report generation.</p>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>3.  Statement of the Problem</strong><br>
+    <strong>Comments:</strong><br>
+  Five concise problems are listed, ranging from inefficient check-ins to product  inventory gaps. Each aligns with tangible pain points.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Rephrase entries into academic-style problem       statements: begin with &quot;Manual processes result in...&quot; or       &quot;The absence of automation leads to...&quot;</li>
+</ul>
+<p><strong>Recommendations:</strong><br>
+  Expand each item with consequence framing. For example:<br>
+  <em>“Manual access control systems create vulnerabilities that may compromise  member safety and facility integrity, especially during peak hours.”</em></p>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>4.  Objectives of the Study</strong><br>
+    <strong>Comments:</strong><br>
+  The general objective encompasses operational efficiency and experience  enhancement. Specific objectives address tier management, attendance tracking,  and experience improvement.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Add objectives for product inventory management,       cashless transactions, and analytics output.</li>
+  <li>Use consistent action verbs: “Develop,” “Design,”       “Implement,” “Evaluate.”</li>
+</ul>
+<p><strong>Recommendations:</strong> <br>
+    <strong>Updated Specific Objectives:</strong> </p>
+<ol start="1" type="1">
+  <li>Develop a secure RFID-based access system that       validates subscription tiers and manages gym facility entry.</li>
+  <li>Implement real-time attendance tracking and facility       usage logging via RFID-enabled devices.</li>
+  <li>Integrate cashless payment functionality for       subscriptions and product purchases.</li>
+  <li>Design an inventory management module for gym products       linked to RFID transactions.</li>
+  <li>Generate operational analytics reports to inform       scheduling, promotions, and product restocking decisions.</li>
+</ol>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>5.  Theoretical Framework</strong><br>
+    <strong>Comments:</strong><br>
+  Uses Task-Technology Fit (TTF) effectively to align RFID’s capabilities with  gym operational needs. Citations are relevant and application is clear.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Clarify performance indicators used to evaluate “fit”       (e.g., response speed, error rate, staff feedback).</li>
+  <li>Include short examples of “task mismatch” scenarios to       show TTF boundaries.</li>
+</ul>
+<p><strong>Recommendations:</strong><br>
+  Add a table mapping gym tasks to RFID features:</p>
+<table width="759" border="0" cellpadding="0">
+  <tr>
+    <td width="156" bgcolor="#999999"><strong>Gym     Task</strong> </td>
+    <td width="305" bgcolor="#999999"><p align="center"><strong>RFID     Feature</strong></p></td>
+    <td width="176" bgcolor="#999999"><p align="center"><strong>Expected     Outcome</strong></p></td>
+  </tr>
+  <tr>
+    <td><p>Member check-in</p></td>
+    <td><p>Tag scan + subscription validation</p></td>
+    <td><p>Reduced queue time</p></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC"><p>Product purchase</p></td>
+    <td bgcolor="#CCCCCC"><p>RFID-linked cashless transaction</p></td>
+    <td bgcolor="#CCCCCC"><p>Faster payments, secure logging</p></td>
+  </tr>
+  <tr>
+    <td><p>Attendance monitoring</p></td>
+    <td><p>Automated scan logging</p></td>
+    <td><p>Accurate reports, resource    planning</p></td>
+  </tr>
+</table>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>6.  Conceptual Framework</strong><br>
+    <strong>Comments:</strong><br>
+  Outlines key components: Users (Admin, Staff), RFID Authentication, Server, and  Database. Flow explanation is functional and linear.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Describe alternative paths (e.g., expired subscription,       duplicate scan, system error).</li>
+  <li>Introduce system notifications or feedback prompts as       part of UI logic.</li>
+</ul>
+<p><strong>Recommendations:</strong><br>
+  Include a flow diagram that demonstrates:</p>
+<ol start="1" type="1">
+  <li>RFID Scan → Member Validation → Access Granted →       Transaction Logged</li>
+  <li>Admin Login → Dashboard Access → Inventory Update →       Report Export</li>
+</ol>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>7.  Operational Definition of Terms</strong><br>
+    <strong>Comments:</strong><br>
+  Select terms (Admin, Subscription, Database) are defined using academic  sources. Clear and appropriate.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Add definitions for RFID, Access Control, Cashless       Transaction, and Analytics Reporting.</li>
+  <li>Format entries in glossary table for readability.</li>
+</ul>
+<p><strong>Recommendations:</strong> </p>
+<table border="0" cellpadding="0">
+  <tr>
+    <td width="220" bgcolor="#999999"><strong>Term</strong> </td>
+    <td width="551" bgcolor="#999999"><p align="center"><strong>Definition</strong></p></td>
+  </tr>
+  <tr>
+    <td><p>RFID</p></td>
+    <td><p>Radio-frequency identification,    used for tag-based tracking and validation.</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Access Control</p></td>
+    <td><p>A security mechanism that limits    entry based on membership status.</p></td>
+  </tr>
+  <tr>
+    <td><p>Cashless Transaction</p></td>
+    <td><p>A digital payment completed    without physical cash using linked accounts.</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Inventory Management</p></td>
+    <td><p>Systematic tracking and control of    products available for sale.</p></td>
+  </tr>
+</table>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>8.  Scope and Limitations</strong><br>
+    <strong>Comments:</strong><br>
+  Defines target areas (member check-in, product sales, payment tracking), and  acknowledges exclusion of online payment gateways and signal interference  risks.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Separate content into “Scope,” “Limitations,” and       “Assumptions.”</li>
+  <li>Clarify implementation boundaries (e.g., RFID hardware       brand used, facility layout constraints).</li>
+</ul>
+<p><strong>Recommendations:</strong> <br>
+    <strong>Scope:</strong> </p>
+<ul type="disc">
+  <li>Deploy an RFID-based system for access validation,       subscription monitoring, in-gym purchases, and inventory tracking.</li>
+  <li>Users include admins, gym staff, and members at Urban       Fitness Gym – Roxas City Branch.</li>
+</ul>
+<p><strong>Limitations:</strong> </p>
+<ul type="disc">
+  <li>No integration with third-party payment platforms       (e.g., GCash, Maya).</li>
+  <li>Signal interference may affect scan accuracy.</li>
+  <li>Hardware compatibility limited to designated RFID tags       and readers.</li>
+</ul>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>9.  Significance of the Study</strong><br>
+    <strong>Comments:</strong><br>
+  Addresses multiple stakeholders: admins, staff, customers, and researchers.  Benefits range from efficiency to user satisfaction.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Connect significance to industry standards, SDG goals       (e.g., sustainable operations), or customer retention metrics.</li>
+  <li>Highlight business value: increased revenue, reduced       errors, improved scalability.</li>
+</ul>
+<p><strong>Recommendations:</strong> <br>
+    <strong>Stakeholder Matrix:</strong> </p>
+<table width="727" border="0" cellpadding="0">
+  <tr>
+    <td width="240" bgcolor="#999999"><strong>Stakeholder</strong> </td>
+    <td width="342" bgcolor="#999999"><p align="center"><strong>Benefit</strong></p></td>
+  </tr>
+  <tr>
+    <td><p>Gym Administrators</p></td>
+    <td><p>Operational control, data    insights, cost savings</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Gym Staff</p></td>
+    <td><p>Reduced manual workload, real-time    data access</p></td>
+  </tr>
+  <tr>
+    <td><p>Customers</p></td>
+    <td><p>Faster check-ins, secure access,    convenient purchases</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Future Researchers</p></td>
+    <td><p>Reference model for RFID    integration in local SME environments</p></td>
+  </tr>
+</table>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>Statement of the Problem</strong> <strong> (Revised)</strong><br>
+Despite growing demand for operational  efficiency in fitness centers, Urban Fitness Gym Roxas City branch continues to  utilize manual systems for member management, subscription validation, payment  processing, and product sales. This legacy approach presents several critical  challenges:</p>
+<ol>
+  <li>The current check-in and attendance system is       inefficient, often resulting in long queues and delayed verification       during peak hours, which negatively affects the member experience.</li>
+  <li>The lack of a secure, automated access control system       introduces risks of unauthorized entry and inconsistent enforcement of       subscription-based privileges, compromising both operational integrity and       member safety.</li>
+  <li>Manual tracking of payments and subscription renewals       leads to delays, errors, and incomplete records. This creates       administrative burdens and undermines financial accuracy and customer       trust.</li>
+  <li>The absence of a structured inventory system for gym       products - such as apparel, supplements, and accessories - results in stock       inconsistencies, missed sales opportunities, and poor resource management.</li>
+  <li>Without an integrated data management system, the gym       lacks real-time insights into member attendance, facility usage, and       purchasing behavior, restricting its ability to make informed decisions on       scheduling, marketing, and service enhancements.</li>
+</ol>
+<hr>
+<p><strong>General  Objective (Revised)</strong><br>
+To design and implement an  RFID-based management system that enhances operational efficiency, security,  and customer experience at Urban Fitness Gym Roxas City branch by automating  member tracking, subscription validation, payment processing, and product  inventory management.</p>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>Specific Objectives</strong> <strong> (Revised)</strong></p>
+<ol start="1" type="1">
+  <li><strong>To develop an RFID-based check-in and attendance logging       system</strong> that streamlines member       verification during peak hours, reduces queue times, and enhances the       overall customer experience.</li>
+  <li><strong>To implement a secure access control mechanism       integrated with membership tiers</strong>,       ensuring accurate validation of active subscriptions and preventing       unauthorized entry into gym facilities.</li>
+  <li><strong>To design a cashless payment and subscription renewal       module</strong> that automates transaction       recording, minimizes errors, and supports accurate financial tracking for       both members and administrators.</li>
+  <li><strong>To build an inventory management system for in-gym       products</strong>, enabling real-time stock       updates, item categorization, and alerts for low-supply items to support       efficient sales and restocking decisions.</li>
+  <li><strong>To incorporate a centralized data analytics dashboard</strong> that visualizes member attendance trends, facility       usage metrics, and purchasing behavior to inform strategic decisions on       scheduling, marketing campaigns, and service improvements.</li>
+</ol>
+<hr>
+<p>&nbsp;</p>
+</body>
+</html>

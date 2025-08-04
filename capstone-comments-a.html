@@ -1,0 +1,444 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>IT 13 - Capstone Documentation Comments, Suggestions, and Recommndations</title>
+		<link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        body {  line-height: 1.6; padding: 20px;  }
+        h1, h2 { color: #2a4d69; }
+        h1 { border-bottom: 2px solid #ccc; padding-bottom: 10px; }
+        ul { margin-top: 0; }
+        li { margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+<h2><strong> SUBAYBUS: REAL-TIME BUS TRACKING SYSTEM FOR ROXAS CITY, CAPIZ</strong></h2>
+<hr>
+<h3>CHAPTER I – INTRODUCTION</h3>
+<hr>
+<p><strong>I.  Overview of the Current State of Technology</strong><br>
+    <strong>Comments:</strong><br>
+  This section provides a well-informed perspective on the global application of  GPS, IoT, and data analytics in transportation systems. It highlights a  meaningful contrast between urban centers like Metro Manila and the  underutilization of tracking systems in Roxas City.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Add       localized statistics from Roxas City (e.g., average commuter waiting times       or complaints received) to better contextualize the local problem.</li>
+  <li>Briefly       mention the relevance of the Public Utility Vehicle Modernization Program       (PUVMP) in promoting technological upgrades.</li>
+  <li>Improve       the flow between the discussion on national-level developments (e.g., Metro       Manila) and local-level issues (Roxas City) to ensure a more logical       transition.</li>
+</ul>
+<p><strong>Recommendations:</strong><br>
+  Include a table comparing features in Metro Manila transit systems (e.g.,  Buswise, Sakay.ph) with existing Roxas City systems to emphasize modernization  gaps. Reference specific commuter challenges via local government reports or  transport studies. Conclude with a more direct connection between the  identified issues and the proposed system.</p>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>II.  Desired State of Technology</strong><br>
+    <strong>Comments:</strong><br>
+  The proposal clearly describes target features including GPS tracking, mobile  accessibility, route mapping, and user-centric platforms. It effectively  situates the system within the PUVMP framework using Green and Red Bus  color-coded routes.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Describe       which routes or terminals will be prioritized during pilot implementation.</li>
+  <li>Clarify       system expansion plans (e.g., support for jeepneys, multicabs, or other       PUVs in future phases).</li>
+</ul>
+<p><strong>Recommendations:</strong><br>
+  Use a modular outline to define feature clusters:</p>
+<ul type="disc">
+  <li><strong>Tracking       Module:</strong> Real-time bus location and estimated arrival</li>
+  <li><strong>User       Interface Module:</strong> Map visuals, notifications, trip       planning</li>
+  <li><strong>Analytics       Module:</strong> Historical data, performance metrics</li>
+</ul>
+<p>Include  brief visuals or mockups if available.</p>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>III.  Statement of the Problem</strong><br>
+    <strong>Comments:</strong><br>
+  This section identifies core challenges such as commuter dissatisfaction,  inefficient trip planning, and lack of tracking access. Some repetition  (&quot;extended waiting times&quot;) should be condensed.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Reframe       listed issues as formal problem statements with direct consequences (e.g.,       “Low visibility of transit schedules leads to missed work or school       appointments”).</li>
+</ul>
+<p><strong>Recommendations:</strong><br>
+  Present five itemized problems:</p>
+<ol start="1" type="1">
+  <li>Absence       of real-time tracking causes extended waiting times and commute       uncertainty.</li>
+  <li>Commuters       lack tools to efficiently plan travel due to unpredictable bus arrival       intervals.</li>
+  <li>Operators       cannot dynamically manage fleet scheduling during traffic or route       disruptions.</li>
+  <li>Lack       of centralized access to schedule updates limits commuter engagement and feedback.</li>
+  <li>Traditional       methods hinder responsiveness to commuter demand and system optimization.</li>
+</ol>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>IV.  Objectives of the Study</strong><br>
+    <strong>Comments:</strong><br>
+  The general objective and specific goals show direct alignment with the problem  set. However, multiple objectives repeat the goal of reducing waiting time.<br>
+  <strong>Suggestions:</strong><br>
+  Group objectives into functional categories and clarify measurable outcomes  (e.g., “Reduce average waiting time by 30%”).<br>
+  <strong>Recommendations:</strong> <br>
+  <strong>General  Objective:</strong><br>
+  To develop and evaluate a GPS-enabled real-time bus tracking system for Roxas  City that improves commuter experience and operational efficiency.<br>
+  <strong>Specific  Objectives:</strong> </p>
+<ol start="1" type="1">
+  <li>Design       a mobile/web platform to display real-time location and arrival       predictions.</li>
+  <li>Integrate       route advisory and travel time estimates for trip planning.</li>
+  <li>Provide       digital signage at terminals for visibility of active routes and bus ETA.</li>
+  <li>Enable       feedback channels for commuter input and service evaluation.</li>
+  <li>Test       system performance across route types, measuring latency, accuracy, and       user satisfaction.</li>
+</ol>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>V.  Theoretical Framework</strong><br>
+    <strong>Comments:</strong><br>
+  The use of Rogers’ Diffusion of Innovations, Systems Theory, Task-Technology  Fit, Stakeholder Theory, and HCI is highly appropriate for a transit-focused  ICT initiative.<br>
+  <strong>Suggestions:</strong><br>
+  Avoid overlap between Systems Theory and TTF discussions. Explicitly tie each  theory to a specific system element or stakeholder behavior. Explain why each  theory was selected and how it contributes specifically to the proposed system.<br>
+  <strong>Recommendations:</strong> </p>
+<table border="0" cellpadding="0">
+  <tr>
+    <td width="212" bgcolor="#999999"><strong>Theory</strong> </td>
+    <td width="455" bgcolor="#999999"><p align="center"><strong>Application to     SubayBus</strong></p></td>
+  </tr>
+  <tr>
+    <td><p>Diffusion    of Innovations</p></td>
+    <td><p>Guides    adoption strategy among commuters and transport staff</p></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC"><p>Systems    Theory</p></td>
+    <td bgcolor="#CCCCCC"><p>Explains    interaction of hardware, software, and user feedback</p></td>
+  </tr>
+  <tr>
+    <td><p>Task-Technology    Fit</p></td>
+    <td><p>Ensures    platform suits commuter tasks like planning and tracking</p></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC"><p>Stakeholder    Theory</p></td>
+    <td bgcolor="#CCCCCC"><p>Aligns    system functions with priorities of commuters, LGUs, and operators</p></td>
+  </tr>
+  <tr>
+    <td><p>HCI    Theory</p></td>
+    <td><p>Informs    interface design, accessibility, and user flow</p></td>
+  </tr>
+</table>
+<p>Use  annotated diagrams to depict these theoretical connections.</p>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>VI.  Conceptual Framework</strong><br>
+    <strong>Comments:</strong><br>
+  The conceptual explanation divides the system into hardware, software, and  users, supported by real-time maps and notification tools.<br>
+  <strong>Suggestions:</strong><br>
+  Explain what happens from user action to data flow: e.g., “User opens app →  backend pulls GPS data → ETA calculated →  display map.” <br>
+  <strong>Recommendations:</strong><br>
+  Structure the framework like this:</p>
+<ul type="disc">
+  <li><strong>Input:</strong> GPS data, route configuration, bus ID</li>
+  <li><strong>Process:</strong> Data aggregation, ETA calculation, alert generation</li>
+  <li><strong>Output:</strong> Mobile app visualization, signage updates, operator dashboard</li>
+</ul>
+<p>Include  contingency flows (e.g., GPS signal loss or internet downtime).</p>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>VII.  Operational Definition of Terms</strong><br>
+    <strong>Comments:</strong><br>
+  Key terms are defined appropriately, including real-time tracking, mobile  application, server, and user feedback.<br>
+  <strong>Suggestions:</strong><br>
+  Provide citations or standards for tech terms. Clarify terms with overlapping  meanings, such as Notification and User Feedback.<br>
+  <strong>Recommendations:</strong><br>
+  Format  all definitions consistently and alphabetically to improve readability.</p>
+<table border="0" cellpadding="0">
+  <tr>
+    <td bgcolor="#999999"><strong>Term</strong> </td>
+    <td bgcolor="#999999"><p align="center"><strong>Definition</strong></p></td>
+  </tr>
+  <tr>
+    <td><p>Real-Time    Tracking</p></td>
+    <td><p>Continuous    data transmission and visibility of bus location using GPS</p></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC"><p>Mobile    Application</p></td>
+    <td bgcolor="#CCCCCC"><p>Interface    accessible via smartphones offering route and ETA information</p></td>
+  </tr>
+  <tr>
+    <td><p>Digital    Signage</p></td>
+    <td><p>Electronic    terminal displays showing real-time transit data</p></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC"><p>Central    Server</p></td>
+    <td bgcolor="#CCCCCC"><p>Data    hub managing GPS signals, route logic, and visual updates</p></td>
+  </tr>
+  <tr>
+    <td><p>System    Interface</p></td>
+    <td><p>Platform    features enabling user-system interaction</p></td>
+  </tr>
+</table>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>VIII.  Scope and Limitations</strong><br>
+    <strong>Comments:</strong><br>
+  This section defines the system’s city-wide focus, involved stakeholders, and technical  boundaries. Internet dependency and non-inclusion of other transport types are  noted.<br>
+  <strong>Suggestions:</strong><br>
+  List constraints in bullet points. Add assumptions like GPS coverage and user  adoption rates.<br>
+  <strong>Recommendations:</strong> <br>
+  <strong>Scope:</strong> </p>
+<ul type="disc">
+  <li>System       targets modernized PUVs in Roxas City (Green and Red buses).</li>
+  <li>Features       include mobile app tracking, ETA display, and digital signage integration.</li>
+  <li>Stakeholders       include commuters, bus operators, LGUs.</li>
+</ul>
+<p><strong>Limitations:</strong> </p>
+<ul type="disc">
+  <li>Requires       GPS-equipped buses and stable data connection.</li>
+  <li>Excludes       non-bus transport types (jeepneys, tricycles, taxis).</li>
+  <li>Hardware       maintenance post-deployment not included.</li>
+  <li>Data       privacy and advanced analytics limited during pilot phase.</li>
+</ul>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>IX.  Significance of the Study</strong><br>
+    <strong>Comments:</strong><br>
+  Strong articulation of benefits across commuter, operator, and government  levels. Also addresses academic contribution.<br>
+  <strong>Suggestions:</strong><br>
+  Avoid  generic statements such as “will benefit commuters” without describing how.<br>
+  Quantify  expected impact where possible (e.g., “potential 20-40% reduction in average wait  time”).<br>
+  <strong>Recommendations:</strong> </p>
+<table border="0" cellpadding="0">
+  <tr>
+    <td width="171" bgcolor="#999999"><strong>Stakeholder</strong> </td>
+    <td width="517" bgcolor="#999999"><p align="center"><strong>Expected Benefit</strong></p></td>
+  </tr>
+  <tr>
+    <td><p>Commuters</p></td>
+    <td><p>Improved    trip planning, reduced wait times, increased service reliability</p></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC"><p>Bus    Operators</p></td>
+    <td bgcolor="#CCCCCC"><p>Fleet    optimization, cost savings through route management, reduced idle time</p></td>
+  </tr>
+  <tr>
+    <td><p>Government    Agencies</p></td>
+    <td><p>Data-driven    regulation, policy support for urban mobility goals</p></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC"><p>Researchers</p></td>
+    <td bgcolor="#CCCCCC"><p>Model    for tech-driven public transport systems in secondary cities</p></td>
+  </tr>
+</table>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>Summary  of Recommendations for Chapter 1 </strong></p>
+<table border="0" cellpadding="0">
+  <tr>
+    <td width="179" bgcolor="#999999"><strong>Section</strong> </td>
+    <td width="412" bgcolor="#999999"><p align="center"><strong>Key Enhancements</strong></p></td>
+  </tr>
+  <tr>
+    <td><p>Overview</p></td>
+    <td><p>Add    localized data and national comparisons</p></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC"><p>Desired    State</p></td>
+    <td bgcolor="#CCCCCC"><p>Organize    feature modules, show implementation flow</p></td>
+  </tr>
+  <tr>
+    <td><p>Problem    Statement</p></td>
+    <td><p>Frame    as formal impact-driven issues</p></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC"><p>Objectives</p></td>
+    <td bgcolor="#CCCCCC"><p>Consolidate    repeated goals; define performance indicators</p></td>
+  </tr>
+  <tr>
+    <td><p>Theoretical    Framework</p></td>
+    <td><p>Map    each theory to design features; avoid overlap</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Conceptual    Framework</p></td>
+    <td><p>Detail    input-process-output structure and fallback procedures</p></td>
+  </tr>
+  <tr>
+    <td><p>Definitions</p></td>
+    <td><p>Format    glossary; clarify overlapping terms</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Scope    &amp; Limitations</p></td>
+    <td><p>Structure    as bullet lists; state assumptions</p></td>
+  </tr>
+  <tr>
+    <td><p>Significance</p></td>
+    <td><p>Quantify    benefits and align with urban policy or SDG indicators</p></td>
+  </tr>
+</table>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<h3>CHAPTER II – REVIEW OF RELATED  LITERATURE AND STUDIES</h3>
+<p><strong>1. Organization and Structure</strong><br>
+  Comments:<br>
+- The literature review includes  multiple relevant studies.</p>
+<p>Suggestions:<br>
+  - Use subheadings to group studies by  theme (e.g., commuter-facing apps, fleet management, GPS hardware).</p>
+<p>Recommendations:<br>
+  - Add a short introduction and conclusion  to this chapter to guide the reader.</p>
+<p><strong>2. Content Quality and Relevance</strong><br>
+  Comments:<br>
+- Most studies are recent and relevant  to the project's goals.</p>
+<p>Suggestions:<br>
+  - Limit security-oriented systems  unless directly applicable to public transport.</p>
+<p>Recommendations:<br>
+  - Add more Philippine-based or regional  studies for contextual relevance.</p>
+<p><strong>3. Synthesis Section</strong><br>
+  Comments:<br>
+- The synthesis captures broad trends  and links them to the current study.</p>
+<p>Suggestions:<br>
+  - Explicitly state the gaps not  addressed by existing systems that your study will address.</p>
+<p>Recommendations:<br>
+  - Use comparative statements like  &quot;unlike previous systems, this study...&quot; to highlight novelty.</p>
+<p><strong>4. Use of Figures and Diagrams</strong><br>
+  Comments:<br>
+- Several figures are included but not  always integrated into the narrative.</p>
+<p>Suggestions:<br>
+  - Caption all figures and refer to them  within the paragraphs.</p>
+<p>Recommendations:<br>
+  - Ensure visual consistency (same  style, layout, labels) across all diagrams.</p>
+<p><strong>5. Citation and Academic Integrity</strong><br>
+  Comments:<br>
+- Multiple sources are cited, though  some inconsistencies exist.</p>
+<p>Suggestions:<br>
+  - Use APA (American Psychological  Association) citation format</p>
+<table border="0" cellpadding="0">
+  <tr>
+    <td width="139" bgcolor="#999999"><strong>Element</strong> </td>
+    <td width="470" bgcolor="#999999"><p align="center"><strong>APA Format (7th Ed.) Example</strong></p></td>
+  </tr>
+  <tr>
+    <td><p>In-text    citation</p></td>
+    <td><p>(Lopez,    2022)</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Book    citation</p></td>
+    <td><p>Lopez,    M. A. (2022). <em>Smart transport systems</em>. Metro Pub.</p></td>
+  </tr>
+  <tr>
+    <td><p>Journal    citation</p></td>
+    <td><p>Reyes,    F. D. (2021). <em>Journal of Mobility</em>, 12(2), 23–34.</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Website    citation</p></td>
+    <td><p>DOTr.    (2023). <em>Transport updates</em>. https://www.dotr.gov.ph</p></td>
+  </tr>
+</table>
+<p>Recommendations:<br>
+  - Ensure all in-text citations are  matched in the reference list and vice versa.</p>
+<hr>
+<h3>CHAPTER III – METHODOLOGY</h3>
+<p><strong>1. Development Methodology</strong><br>
+  Comments:<br>
+- Agile methodology is suitable and  clearly outlined.</p>
+<p>Suggestions:<br>
+  - Include a rationale for rejecting  other SDLC models like Waterfall.</p>
+<p>Recommendations:<br>
+  - Ensure every sprint or iteration is  aligned with system milestones.</p>
+<p><strong>2. Research Design and Data Collection</strong><br>
+  Comments:<br>
+- Uses a combination of qualitative and  quantitative methods effectively.</p>
+<p>Suggestions:<br>
+  - Provide more detail on sample size  and selection criteria.<br>
+  Recommendations:<br>
+  - Add a table or Gantt chart to  illustrate the timeline of activities.</p>
+<p><strong>3. Requirement Gathering and  Prioritization</strong><br>
+  Comments:<br>
+- The stakeholder involvement is well  described.</p>
+<p>Suggestions:<br>
+  - Show examples of prioritization  techniques (e.g., MoSCoW or feature ranking).</p>
+<p>Recommendations:<br>
+  - Include specific outcomes from  meetings or workshops.</p>
+<p><strong>4. System Development Process</strong><br>
+  Comments:<br>
+- Phases are well explained.</p>
+<p>Suggestions:<br>
+  - Include architectural diagrams to  visualize system components.</p>
+<p>Recommendations:<br>
+  - Clearly describe how testing and  deployment will be carried out in the real world.</p>
+<p><strong>5. Evaluation Tools and Metrics</strong><br>
+  Comments:<br>
+- Logical metrics are chosen for  evaluating success.</p>
+<p>Suggestions:<br>
+  - Describe how data will be collected  for each metric.</p>
+<p>Recommendations:<br>
+  - Define thresholds or benchmarks that  indicate success.</p>
+<p><strong>6. Tools and Technologies</strong><br>
+  Comments:<br>
+- Choices are appropriate for the  project scope.</p>
+<p>Suggestions:<br>
+  - Justify tool selections based on  project needs and constraints.</p>
+<p>Recommendations:<br>
+  - Consider future scalability and  support when selecting platforms.</p>
+<p><strong>7. Clarity and Flow</strong><br>
+  Suggestions:<br>
+  - Use section numbering for easier  navigation.<br>
+- Keep verb tenses consistent: past for  completed tasks, future for planned ones.</p>
+<p>Recommendations:<br>
+  - Break longer sections into shorter,  digestible parts.</p>
+<hr>
+<h2>GUIDE QUESTIONS</h2>
+<h3>1. <strong>System Functionality and Technical Depth</strong></h3>
+<ul>
+  <li>How does the system handle multiple buses moving simultaneously on overlapping routes?</li>
+  <li>What technologies will be used for real-time GPS integration, and how will data latency be minimized?</li>
+  <li>How is the Estimated Time of Arrival (ETA) calculated? Are traffic conditions considered?</li>
+  <li>What fallback system is in place if GPS devices go offline?</li>
+  <li>How will the mobile app sync with the server during low connectivity?</li>
+</ul>
+<hr />
+<h3>2. <strong>User Interface and Experience</strong></h3>
+<ul>
+  <li>Can you walk us through the commuter flow—how does a passenger search, get updates, and board?</li>
+  <li>How is accessibility considered (e.g., multilingual support, visually impaired users)?</li>
+  <li>What are the top 3 usability features that make SubayBus better than existing transit apps?</li>
+</ul>
+<hr />
+<h3>3. <strong>Data and Analytics</strong></h3>
+<ul>
+  <li>What specific data points will be collected from users, buses, and terminals?</li>
+  <li>How will you ensure data privacy, especially for user location and activity?</li>
+  <li>What real-time analytics will be accessible to administrators or LGUs?</li>
+</ul>
+<hr />
+<h3>4. <strong>Deployment and Hardware Integration</strong></h3>
+<ul>
+  <li>Which models of PUVs (public utility vehicles) will be included in the initial deployment?</li>
+  <li>What’s the strategy for hardware installation, maintenance, and calibration of GPS devices?</li>
+  <li>How will the system adapt to traditional jeepneys or future EV transport models?</li>
+</ul>
+<hr />
+<h3>5. <strong>Scalability and Modular Design</strong></h3>
+<ul>
+  <li>How is the system architected for expansion into other cities?</li>
+  <li>Can modules like notifications, route advisory, or terminal signage be reused independently?</li>
+  <li>What happens if a new transport regulation requires integration with LGU databases or RFID tap cards?</li>
+</ul>
+<hr />
+<h3>6. <strong>Stakeholder Engagement and Feedback</strong></h3>
+<ul>
+  <li>What feedback mechanisms are built in for passengers and operators?</li>
+  <li>How were Roxas City commuters involved during ideation?</li>
+  <li>What incentives are there for transport operators to adopt the system?</li>
+</ul>
+<hr />
+<h3>7. <strong>Project Management and Development Strategy</strong></h3>
+<ul>
+  <li>What development methodology was used - Agile, Waterfall, or a hybrid?</li>
+  <li>What’s your most critical dependency before SubayBus becomes operational?</li>
+  <li>How did your team validate the problem statement with real-world data?</li>
+</ul>
+<hr />
+<h2><a href="capstone-prototype-a.html">SAMPLE PROTOTYPE </a></h2>
+<p>&nbsp; </p>	
+</body>
+</html>

@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>IT 13 - Capstone Documentation Comments, Suggestions, and Recommndations</title>
+<link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        body {  line-height: 1.6; padding: 20px;  }
+        h1, h2 { color: #2a4d69; }
+        h1 { border-bottom: 2px solid #ccc; padding-bottom: 10px; }
+        ul { margin-top: 0; }
+        li { margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+<h2>IOT-BASED RAIN RECYCLED WATERING  SYSTEM</h2>
+<hr>
+<h3><strong>CHAPTER I - INTRODUC</strong><strong>TION</strong></h3>
+<p><strong>I.  Overview of the Current State of Technology</strong><br>
+    <strong>Comments:</strong><br>
+  The section contextualizes the proposal within the agricultural economy of  Roxas City and highlights the inefficiencies of traditional rainwater systems.  It effectively introduces El Niño as a recurring threat to water security.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Include recent statistics from Capiz or DA reports on       crop failure due to drought.</li>
+  <li>Briefly contrast traditional gravity-fed systems with       modern IoT applications to emphasize the technological leap.</li>
+  <li>Reference known local projects, if any, for better       regional relevance.</li>
+</ul>
+<p><strong>Recommendations:</strong><br>
+  Add a comparative table listing limitations of manual systems (e.g., fixed  scheduling, manual logging) vs. potential benefits of IoT integration (e.g.,  precision irrigation, automated triggers, real-time monitoring).</p>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>II.  Desired State of Technology</strong><br>
+    <strong>Comments:</strong><br>
+  This section articulates the proposed features with clarity, including sensor  integration, remote access, and El Niño responsiveness. The ambition toward  automation and sustainability is evident.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Break down the system into modules: hardware, software,       sensor logic, and user interface.</li>
+  <li>Clarify whether it is scalable to multi-plot farms or       greenhouse networks.</li>
+  <li>Mention any fallback systems (e.g., manual override or       battery backup) in case of connectivity failure.</li>
+</ul>
+<p><strong>Recommendations:</strong><br>
+  Visualize the desired system using a simplified architecture block diagram  showing component flow from sensor → microcontroller → app → pump.</p>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>III.  Statement of the Problem</strong><br>
+    <strong>Comments:</strong><br>
+  The problem is clearly articulated with five itemized challenges, offering  strong alignment with El Niño mitigation and resource waste.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Strengthen each problem statement by linking it to       consequences such as labor inefficiency, plant stress, and economic       losses.</li>
+  <li>Consider referencing local climate studies to ground       the vulnerability to El Niño.</li>
+</ul>
+<p><strong>Recommendations:</strong><br>
+  Frame each point as follows:</p>
+<ol start="1" type="1">
+  <li>Manual intervention leads to time-intensive labor and       inconsistent watering practices.</li>
+  <li>Fixed watering schedules fail to adapt to actual soil       needs, causing water misuse and crop stress.</li>
+  <li>Traditional systems lack adaptability during El Niño       droughts, compromising crop survival.</li>
+  <li>Absence of remote monitoring prevents timely decision-making       and proactive intervention.</li>
+  <li>Ineffective conservation practices result in       unnecessary water loss, straining already scarce resources.</li>
+</ol>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>IV.  Objectives of the Study</strong><br>
+    <strong>Comments:</strong><br>
+  The general and specific objectives are logically aligned with the stated  problems. They incorporate sensor-driven automation and sustainability.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Reformulate specific objectives using action verbs and       measurable outcomes.</li>
+  <li>Categorize into functional, technical, and strategic       goals.</li>
+</ul>
+<p><strong>Recommendations:</strong> <br>
+    <strong>General Objective:</strong><br>
+  To design and implement an automated IoT-based rainwater harvesting system  tailored for agricultural use in Roxas City, enhancing irrigation efficiency  and resilience during drought conditions.<br>
+  <strong>Specific Objectives:</strong> </p>
+<ol start="1" type="1">
+  <li>Develop a sensor-actuated irrigation system using Esp32       microcontroller for data-driven water distribution.</li>
+  <li>Integrate real-time soil moisture monitoring to       dynamically regulate water flow.</li>
+  <li>Enable mobile/web remote access with live system       feedback, error alerts, and irrigation logs.</li>
+  <li>Implement drought-resilient protocols to maximize       rainwater capture and minimize water loss.</li>
+  <li>Promote sustainable agricultural practices through       resource-efficient irrigation and digital oversight.</li>
+</ol>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>V.  Theoretical Framework</strong><br>
+    <strong>Comments:</strong><br>
+  The system’s design is grounded in automation, sensor technology, and  sustainability principles, using IoT and microcontroller theory as its  backbone.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Cite foundational works on IoT architecture and water       management in climate-stressed regions.</li>
+  <li>Relate theories explicitly to system components (e.g.,       Sensor Theory → Soil Moisture Module).</li>
+</ul>
+<p><strong>Recommendations:</strong> </p>
+<table width="691" border="0" cellpadding="0">
+  <tr>
+    <td width="233" bgcolor="#999999"><strong>Theoretical     Component</strong> </td>
+    <td width="354" bgcolor="#999999"><p align="center"><strong>Application     to System</strong></p></td>
+  </tr>
+  <tr>
+    <td><p>IoT Microcontroller Theory</p></td>
+    <td><p>Controls sensor data acquisition    and actuator response</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Sensor Technology Theory</p></td>
+    <td><p>Enables precise detection of    moisture levels</p></td>
+  </tr>
+  <tr>
+    <td><p>Automation Theory</p></td>
+    <td><p>Minimizes manual labor and    standardizes irrigation cycles</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Water Conservation Theory</p></td>
+    <td><p>Optimizes water use based on    real-time soil status</p></td>
+  </tr>
+  <tr>
+    <td><p>Web Integration Theory</p></td>
+    <td><p>Facilitates remote monitoring and    user control</p></td>
+  </tr>
+</table>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>VI.  Conceptual Framework</strong><br>
+    <strong>Comments:</strong><br>
+  The proposal presents two diagrams showcasing system interaction:  hardware-focused and input-process-output logic. Both are valuable but need  clearer explanation.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Describe how data flows from sensor to app and then to       the decision mechanism.</li>
+  <li>Address real-time feedback loops and fail-safe triggers       (e.g., sensor anomalies, low water volume).</li>
+</ul>
+<p><strong>Recommendations:</strong><br>
+  Refine the conceptual framework with a modular explanation:</p>
+<ul type="disc">
+  <li><strong>Input:</strong> User command, soil data, device status</li>
+  <li><strong>Process:</strong> Microcontroller logic processing and threshold evaluation</li>
+  <li><strong>Output:</strong> Pump activation, data log update, user notification</li>
+</ul>
+<p>Include a system flowchart annotated  with real-time triggers, override options, and error handling.</p>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>VII.  Operational Definition of Terms</strong><br>
+    <strong>Comments:</strong><br>
+  The glossary includes technical terms like Esp32 and Soil Moisture Sensor, with  helpful layperson explanations.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Include sources or standards for definitions (e.g.,       IEEE, technical datasheets).</li>
+  <li>Distinguish between hardware, system concepts, and       environmental terms.</li>
+</ul>
+<p><strong>Recommendations:</strong> </p>
+<table width="755" border="0" cellpadding="0">
+  <tr>
+    <td width="185" bgcolor="#999999"><strong>Term</strong> </td>
+    <td width="483" bgcolor="#999999"><p align="center"><strong>Definition</strong></p></td>
+  </tr>
+  <tr>
+    <td><p>Esp32</p></td>
+    <td><p>A dual-core microcontroller with    wireless capabilities used for sensor control</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Soil Moisture Sensor</p></td>
+    <td><p>Device detecting soil wetness to    inform irrigation decisions</p></td>
+  </tr>
+  <tr>
+    <td><p>Automation</p></td>
+    <td><p>Technology enabling task execution    without human intervention</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Remote Monitoring</p></td>
+    <td><p>Real-time system management via    app/web interface</p></td>
+  </tr>
+  <tr>
+    <td><p>El Niño</p></td>
+    <td><p>Recurring climate phenomenon    causing drought, impacting water availability</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Sustainability</p></td>
+    <td><p>Resource usage that supports    long-term ecological balance</p></td>
+  </tr>
+</table>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>VIII.  Scope and Limitations</strong><br>
+    <strong>Comments:</strong><br>
+  Focuses on small-scale farms and Department of Agriculture pilot use. Technical  and adoption barriers are acknowledged.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Separate clearly into scope, limitations, and       assumptions.</li>
+  <li>Mention software/hardware dependencies and minimum       device specs.</li>
+</ul>
+<p><strong>Recommendations:</strong> <br>
+    <strong>Scope:</strong> </p>
+<ul type="disc">
+  <li>Target Beneficiaries: Small greenhouse farmers       supported by the Department of Agriculture</li>
+  <li>Functional Modules: Soil sensor, Esp32 microcontroller,       pump control, remote access</li>
+  <li>Use Case: Irrigation support during dry spells and El       Niño periods</li>
+</ul>
+<p><strong>Limitations:</strong> </p>
+<ul type="disc">
+  <li>System is limited to small plots; not optimized for       multi-field deployment</li>
+  <li>Reliant on Wi-Fi/internet connectivity for remote       features</li>
+  <li>Accuracy depends on sensor calibration and soil       composition</li>
+  <li>Budget constraints may affect hardware quality and       scalability</li>
+</ul>
+<p><strong>Assumptions:</strong> </p>
+<ul type="disc">
+  <li>Farmers will be trained in basic tech usage</li>
+  <li>Initial setup will be supported by DA personnel</li>
+</ul>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>IX.  Significance of the Study</strong><br>
+    <strong>Comments:</strong><br>
+  Explains benefits across multiple levels: farmers, community, economy, DA, and  future researchers. Links agriculture with tech transformation and  socio-economic impact.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Highlight how system contributes to SDG goals (e.g.,       Climate Action, Clean Water).</li>
+  <li>Show link to national food security strategies and DA       modernization efforts.</li>
+</ul>
+<p><strong>Recommendations:</strong> </p>
+<table border="0" cellpadding="0">
+  <tr>
+    <td width="214" bgcolor="#999999"><strong>Stakeholder</strong> </td>
+    <td width="452" bgcolor="#999999"><p align="center"><strong>Benefit</strong></p></td>
+  </tr>
+  <tr>
+    <td><p>Farmers</p></td>
+    <td><p>Reduced labor, improved yields,    less crop failure</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Industry</p></td>
+    <td><p>Tech adoption drives    competitiveness and modernization</p></td>
+  </tr>
+  <tr>
+    <td><p>Community</p></td>
+    <td><p>Increased food availability, lower    market prices</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Economy</p></td>
+    <td><p>Strengthened agricultural output    and market stability</p></td>
+  </tr>
+  <tr>
+    <td><p>Department of Agriculture</p></td>
+    <td><p>Policy implementation and digital    transformation support</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Researchers</p></td>
+    <td><p>Foundation for further smart    farming and irrigation innovation</p></td>
+  </tr>
+  <tr>
+    <td><p>Developers</p></td>
+    <td><p>Technical model for building    scalable, IoT-enabled agricultural solutions</p></td>
+  </tr>
+</table>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>Summary  of Recommendations</strong></p>
+<table border="0" cellpadding="0">
+  <tr>
+    <td width="196" bgcolor="#999999"><strong>Section</strong> </td>
+    <td width="577" bgcolor="#999999"><p align="center"><strong>Recommended     Enhancements</strong></p></td>
+  </tr>
+  <tr>
+    <td><p>Overview</p></td>
+    <td><p>Add regional climate data; include    comparative efficiency table</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Desired State</p></td>
+    <td><p>Break into modules; show    architectural interaction</p></td>
+  </tr>
+  <tr>
+    <td><p>Statement of Problem</p></td>
+    <td><p>Expand consequences; phrase as    formal problem statements</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Objectives</p></td>
+    <td><p>Add quantifiable goals; group into    design categories</p></td>
+  </tr>
+  <tr>
+    <td><p>Theoretical Framework</p></td>
+    <td><p>Map theories to specific    components; cite foundational references</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Conceptual Framework</p></td>
+    <td><p>Refine flow and logic path;    include system contingency handling</p></td>
+  </tr>
+  <tr>
+    <td><p>Operational Definitions</p></td>
+    <td><p>Format as a categorized glossary    with credible sources</p></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC"><p>Scope and Limitations</p></td>
+    <td bgcolor="#CCCCCC"><p>Use structured format; add    assumptions and minimum hardware/software specs</p></td>
+  </tr>
+  <tr>
+    <td><p>Significance</p></td>
+    <td><p>Link to global goals, national    policy, and long-term sector transformation</p></td>
+  </tr>
+</table>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+
+<h2><a href="capstone-prototype-g/index.html">SAMPLE PROTOTYPE (MOBILE) </a></h2>
+</body>
+</html>

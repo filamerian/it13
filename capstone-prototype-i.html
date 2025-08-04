@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FireSense | Emergency Portal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #1c1c1c;
+      color: #fff;
+    }
+    header {
+      background: linear-gradient(to right, #d00000, #ff6b6b);
+      padding: 1em;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #fff;
+    }
+    nav {
+      background: #2d2d2d;
+      padding: 0.5em;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      font-size: 0.95em;
+    }
+    nav a {
+      color: #ffcccb;
+      text-decoration: none;
+      padding: 0.5em;
+    }
+    main {
+      padding: 1em;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 1em;
+    }
+    .module {
+      background: #333;
+      padding: 1em;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 0 8px rgba(255, 0, 0, 0.3);
+      transition: transform 0.2s;
+    }
+    .module:hover {
+      transform: scale(1.05);
+    }
+    .module-icon {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+    button {
+      margin-top: 0.5em;
+      padding: 0.5em 1em;
+      background: #d00000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8em;
+      padding: 1em;
+      background: #2d2d2d;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🔥 FireSense CACAG Emergency Portal</h1>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">GPS</a>
+  <a href="#">Report</a>
+  <a href="#">Evidence</a>
+  <a href="#">Alerts</a>
+  <a href="#">Logs</a>
+  <a href="#">Settings</a>
+</nav>
+
+<main>
+  <h2>🚨 Emergency Tools</h2>
+  <div class="grid">
+    <div class="module">
+      <div class="module-icon">📍</div>
+      <strong>GPS Locator</strong>
+      <p>Track real-time location of incident.</p>
+      <button onclick="alert('GPS Activated')">Locate</button>
+    </div>
+    <div class="module">
+      <div class="module-icon">📸</div>
+      <strong>Upload Evidence</strong>
+      <p>Submit photos/videos of fire incident.</p>
+      <button onclick="alert('Upload Portal Opened')">Upload</button>
+    </div>
+    <div class="module">
+      <div class="module-icon">👤</div>
+      <strong>User Verification</strong>
+      <p>Verify ID, phone, and age (18+ only).</p>
+      <button onclick="alert('Verification Process Started')">Verify</button>
+    </div>
+    <div class="module">
+      <div class="module-icon">📢</div>
+      <strong>Stakeholder Alerts</strong>
+      <p>Notify responders and community.</p>
+      <button onclick="alert('Alerts Sent')">Notify</button>
+    </div>
+    <div class="module">
+      <div class="module-icon">🕵️</div>
+      <strong>False Alarm Control</strong>
+      <p>Monitor user reputation and flag abuse.</p>
+      <button onclick="alert('Anti-Abuse Triggered')">Scan</button>
+    </div>
+    <div class="module">
+      <div class="module-icon">🧯</div>
+      <strong>One-Tap Reporting</strong>
+      <p>Send instant verified fire report.</p>
+      <button onclick="alert('Report Sent')">Fire Alert</button>
+    </div>
+    <div class="module">
+      <div class="module-icon">📊</div>
+      <strong>Status Dashboard</strong>
+      <p>View all active and past alerts.</p>
+      <button onclick="alert('Opening Dashboard')">View</button>
+    </div>
+    <div class="module">
+      <div class="module-icon">📚</div>
+      <strong>History Logs</strong>
+      <p>See past reports, timestamps, and media.</p>
+      <button onclick="alert('Logs Loaded')">Open</button>
+    </div>
+    <div class="module">
+      <div class="module-icon">⚙️</div>
+      <strong>Settings & Accessibility</strong>
+      <p>Customize language and UI preferences.</p>
+      <button onclick="alert('Settings Menu')">Settings</button>
+    </div>
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 FireSense CACAG. Designed for emergency readiness. 🚨
+</footer>
+
+<script>
+  // Custom logic could be added here later for real-time updates or Firebase calls
+</script>
+
+</body>
+</html>

@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>IT 13 - Capstone Documentation Comments, Suggestions, and Recommndations</title>
+<link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        body {  line-height: 1.6; padding: 20px;  }
+        h1, h2 { color: #2a4d69; }
+        h1 { border-bottom: 2px solid #ccc; padding-bottom: 10px; }
+        ul { margin-top: 0; }
+        li { margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+<h2>FIRESENSE: A REAL-TIME FIRE AND  LOCATION NOTIFICATION SYSTEM FOR CACAG</h2>
+<hr>
+<h3><strong>CHAPTER I - INTRODUCTION</strong></h3>
+<hr>
+<p><strong>I.  Overview of the Current State of Technology</strong><br>
+    <strong>Comments:</strong><br>
+  The section presents a strong foundation, highlighting global advances in  mobile disaster response and the limitations faced by CACAG, a volunteer fire  group. The local context is clear and relevant, based on interview data.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Include quantitative data (e.g., frequency of false       alarms or average response delays in Roxas City).</li>
+  <li>Broaden references beyond CACAG - consider other Philippine       barangay-based emergency units to position CACAG within a wider system.</li>
+  <li>Clarify the technical gap between CACAG's current tools       and available technologies.</li>
+</ul>
+<p><strong>Recommendations:</strong><br>
+  Insert a comparative table illustrating how FireSense improves specific response  metrics versus traditional methods. Consider adding metrics like:</p>
+<ul type="disc">
+  <li>Average report-to-response time</li>
+  <li>Verified vs. false alarm ratio</li>
+  <li>Number of responders dispatched per confirmed incident</li>
+</ul>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>II.  Desired State of Technology</strong><br>
+    <strong>Comments:</strong><br>
+  The proposal presents an ambitious system integrating GPS, secure media  uploads, cloud storage, push notifications, and user verification. It outlines  both user experience goals and system architecture details.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Group related features under system modules (e.g.,       Authentication, Alert Dispatch, Incident Visualization).</li>
+  <li>Clarify interoperability with existing emergency       infrastructure (e.g., SMS alerts during connectivity loss).</li>
+  <li>Ensure terminology consistency: Secure One-Tap Alert       Mechanism and Verified Alert Distribution may overlap.</li>
+</ul>
+<p><strong>Recommendations:</strong><br>
+  Use a modular architecture diagram showing the flow from user input -&gt;  verification -&gt; location mapping -&gt; responder alert -&gt; feedback loop.</p>
+<p> Add a  performance matrix outlining expected reliability, latency, and data security.</p>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>III.  Statement of the Problem</strong><br>
+    <strong>Comments:</strong><br>
+  The section identifies five multi-layered challenges faced by CACAG. It  highlights gaps in security, location precision, evidence reporting, and  stakeholder coordination.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Ensure all items are phrased as formal statements, not       inferred questions.</li>
+  <li>Link each problem to direct consequences (e.g.,       'Delayed reporting increases fire spread risk').</li>
+  <li>Consider listing community-level implications, such as       risk exposure and resource strain.</li>
+</ul>
+<p><strong>Recommendations:</strong><br>
+  Refine the structure as follows:</p>
+<ol start="1" type="1">
+  <li><strong>Security vulnerabilities and lack of verification       protocols</strong> expose CACAG's system to false       alarms and unaccountable reporting.</li>
+  <li><strong>Manual and delayed communication channels</strong> prolong emergency response times and complicate       incident validation.</li>
+  <li><strong>Limited location and evidence documentation</strong> lead to misdirection and inefficient deployment of       fire responders.</li>
+  <li><strong>Inadequate coordination systems</strong> prevent real-time updates and shared situational       awareness among responders.</li>
+  <li><strong>Absence of access control and secure data management</strong> compromises user privacy, app reliability, and       long-term sustainability.</li>
+</ol>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>IV.  Objectives of the Study</strong><br>
+    <strong>Comments:</strong><br>
+  The general and specific objectives are well scoped and emphasize technical  robustness. However, some entries blend system actions with implementation  goals, resulting in overlap.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Use action verbs consistently (e.g., 'Create,'       'Design,' 'Evaluate,' 'Implement').</li>
+  <li>Link each specific objective to one of the identified       problem statements.</li>
+  <li>Introduce measurable targets for evaluation (e.g.,       'Achieve 95% GPS accuracy,' 'Reduce average incident reporting time to       under 60 seconds').</li>
+</ul>
+<p><strong>Recommendations:</strong> <br>
+    <strong>General Objective:</strong><br>
+  To design and deploy a secure mobile-based emergency reporting system for CACAG  that enables real-time fire alerts, location tracking, and authenticated user  submissions, thereby improving response speed, data accuracy, and community  safety.<br>
+  <strong>Specific Objectives:</strong> </p>
+<ol start="1" type="1">
+  <li>Develop and validate age-restricted registration with       government ID and phone verification.</li>
+  <li>Integrate GPS and timestamp-based media capture to       establish verifiable incident logs.</li>
+  <li>Implement automated notification protocols for       responders and community stakeholders.</li>
+  <li>Design anti-abuse logic (rate limits, user scoring,       device tracking) to reduce false reporting.</li>
+  <li>Build and evaluate a one-tap alert mechanism with       real-time validation and cloud-based media storage.</li>
+  <li>Assess system performance based on accuracy, latency,       security compliance, and user satisfaction.</li>
+</ol>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>V.  Theoretical Framework</strong><br>
+    <strong>Comments:</strong><br>
+  The proposal aptly references Diffusion of Innovations, Systems Theory, and  Emergency Management Theory, establishing a multi-disciplinary foundation.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Clarify how each theory contributes to feature       prioritization, user design, or adoption strategy.</li>
+  <li>Diffusion Theory should be linked to community rollout       plans (early adopters, trial groups).</li>
+  <li>Systems Theory can be connected to modular data flow       and fail-safe interdependence.</li>
+</ul>
+<p><strong>Recommendations:</strong> </p>
+<table border="0" cellpadding="0">
+  <tr>
+    <td width="263" bgcolor="#999999"><strong>Theory</strong></td>
+    <td width="559" bgcolor="#999999"><p align="center"><strong>Application     to FireSense System</strong></p></td>
+  </tr>
+  <tr>
+    <td><p>Diffusion of Innovations</p></td>
+    <td><p>Guides strategy for app    introduction, pilot testing, and scaling</p></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC"><p>Systems Theory</p></td>
+    <td bgcolor="#CCCCCC"><p>Supports integration of reporting,    GPS, notification, and evidence modules</p></td>
+  </tr>
+  <tr>
+    <td><p>Emergency Management Theory</p></td>
+    <td><p>Frames app functions within    preparedness-response-recovery phases</p></td>
+  </tr>
+</table>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>VI.  Conceptual Framework</strong><br>
+    <strong>Comments:</strong><br>
+  The framework describes key system operations - input (user data), process  (transmission and alerts), and output (response and coordination). However, the  diagram is not fully explained.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Expand the narrative: describe how data moves through       system modules and decision points.</li>
+  <li>Show which inputs are required, optional, and       automated.</li>
+</ul>
+<p><strong>Recommendations:</strong><br>
+  Present the conceptual flow as:</p>
+<ol start="1" type="1">
+  <li><strong>Input:</strong> </li>
+  <ul type="circle">
+    <li>Verified user ID and contact</li>
+    <li>Location coordinates</li>
+    <li>Timestamped photo/video evidence</li>
+  </ul>
+  <li><strong>Process:</strong> </li>
+  <ul type="circle">
+    <li>Data authentication</li>
+    <li>GPS mapping and alert routing</li>
+    <li>Notification dispatch with report logs</li>
+  </ul>
+  <li><strong>Output:</strong> </li>
+  <ul type="circle">
+    <li>Alert delivered to CACAG responder dashboard</li>
+    <li>Map-based visualization of incident</li>
+    <li>Logged response status and timeline</li>
+  </ul>
+</ol>
+<p>Include contingency handling: e.g.,  what happens when photo uploads fail or GPS signal is weak.</p>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>VII.  Operational Definition of Terms</strong><br>
+    <strong>Comments:</strong><br>
+  Definitions are clear and relevant, focusing on key system components. Several  terms are well framed for lay audiences.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Standardize phrasing and categorize terms (e.g.,       Organization, System Features, Technical Protocols).</li>
+  <li>Add source references for technical terms, such as GPS,       scalability, disaster management.</li>
+</ul>
+<p><strong>Recommendations:</strong> <br>
+    <strong>Glossary Format:</strong> </p>
+<table border="0" cellpadding="0">
+  <tr>
+    <td width="201" bgcolor="#999999"><strong>Term</strong></td>
+    <td width="485" bgcolor="#999999"><p align="center"><strong>Definition</strong></p></td>
+    <td width="194" bgcolor="#999999"><p align="center"><strong>Source</strong></p></td>
+  </tr>
+  <tr>
+    <td><p>CACAG</p></td>
+    <td><p>Volunteer fire response unit in    Capiz province</p></td>
+    <td><p>Project Interview</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>GPS</p></td>
+    <td><p>Global satellite system for    capturing precise coordinates</p></td>
+    <td><p>Techterms.com</p></td>
+  </tr>
+  <tr>
+    <td><p>One-Tap Notification</p></td>
+    <td><p>Instant report function via app    interface</p></td>
+    <td><p>FireSense Feature Spec</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Age Verification</p></td>
+    <td><p>System module enforcing 18+ user    access through government ID</p></td>
+    <td><p>Ong, 2019</p></td>
+  </tr>
+  <tr>
+    <td><p>Chain of Custody Tracking</p></td>
+    <td><p>Protocol ensuring integrity and    timeline of evidence files</p></td>
+    <td><p>IERA, 2024</p></td>
+  </tr>
+</table>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>VIII.  Scope and Limitations</strong><br>
+    <strong>Comments:</strong><br>
+  The scope outlines functionality such as age control, GPS tracking, anti-abuse,  and image upload. Limitations are realistic and technically justified.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Use bullet points for clarity.</li>
+  <li>Distinguish between platform limitations (connectivity,       device specs) and operational constraints (geographic restriction,       incident type).</li>
+</ul>
+<p><strong>Recommendations:</strong> <br>
+    <strong>Scope:</strong> </p>
+<ul type="disc">
+  <li>Users: CACAG responders and registered citizens (18+).</li>
+  <li>Features: GPS location mapping, secure media uploads,       push/SMS notifications, anti-abuse systems.</li>
+  <li>Technologies: React Native (cross-platform), Firebase,       Google Maps API.</li>
+</ul>
+<p><strong>Limitations:</strong> </p>
+<ul type="disc">
+  <li>Requires stable internet for full functionality.</li>
+  <li>Geographically limited to Roxas City, Capiz.</li>
+  <li>Only supports fire-related emergencies.</li>
+  <li>Limited performance on low-storage devices.</li>
+  <li>Media upload requires mid-to-high spec smartphones.</li>
+</ul>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>IX.  Significance of the Study</strong><br>
+    <strong>Comments:</strong><br>
+  This section addresses community safety, responder efficiency, and the system's  potential to improve documentation and accountability.<br>
+  <strong>Suggestions:</strong> </p>
+<ul type="disc">
+  <li>Frame the significance in terms of SDG goals (e.g.,       sustainable cities, resilience).</li>
+  <li>Highlight long-term benefits for research and policy       development.</li>
+</ul>
+<p><strong>Recommendations:</strong><br>
+  Add a stakeholder-impact matrix:</p>
+<table border="0" cellpadding="0">
+  <tr>
+    <td width="229" bgcolor="#999999"><strong>Stakeholder</strong></td>
+    <td width="448" bgcolor="#999999"><p align="center"><strong>Impact</strong></p></td>
+  </tr>
+  <tr>
+    <td><p>CACAG Responders</p></td>
+    <td><p>Faster, verified alerts; efficient    deployment</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Local Authorities</p></td>
+    <td><p>Improved documentation; policy    alignment with CHED/Disaster Mgmt</p></td>
+  </tr>
+  <tr>
+    <td><p>Community Members</p></td>
+    <td><p>Accessible fire reporting; safer    response coverage</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Developers &amp; Researchers</p></td>
+    <td><p>Case study in verified emergency systems;    mobile deployment strategy</p></td>
+  </tr>
+</table>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+<p><strong>Final  Summary Table ' Recommendations by Section</strong></p>
+<table border="0" cellpadding="0">
+  <tr>
+    <td width="210" bgcolor="#999999"><strong>Section</strong> </td>
+    <td width="465" bgcolor="#999999"><p align="center"><strong>Key     Improvements</strong></p></td>
+  </tr>
+  <tr>
+    <td><p>Current Technology</p></td>
+    <td><p>Add local stats and technical    gaps; use comparison visuals</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Desired State</p></td>
+    <td><p>Modular architecture; clarify    system logic and feature groupings</p></td>
+  </tr>
+  <tr>
+    <td><p>Statement of the Problem</p></td>
+    <td><p>Itemize and align problems to    consequences and community risk</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Objectives</p></td>
+    <td><p>Refine structure, align with    problems, and add measurable targets</p></td>
+  </tr>
+  <tr>
+    <td><p>Theoretical Framework</p></td>
+    <td><p>Map theories to system goals and    stakeholder adoption</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Conceptual Framework</p></td>
+    <td><p>Expand diagram explanation; show    module interconnections</p></td>
+  </tr>
+  <tr>
+    <td><p>Definitions</p></td>
+    <td><p>Format as glossary; cite credible    technical sources</p></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td><p>Scope and Limitations</p></td>
+    <td><p>Clarify exclusions, technical    assumptions, and platform constraints</p></td>
+  </tr>
+  <tr>
+    <td><p>Significance</p></td>
+    <td><p>Formalize stakeholder benefits;    connect to SDG/academic relevance</p></td>
+  </tr>
+</table>
+<div align="center">
+  <hr size="2" width="100%" align="center">
+</div>
+
+<h2><a href="capstone-prototype-i.html">SAMPLE PROTOTYPE (MOBILE) </a></h2>
+</body>
+</html>

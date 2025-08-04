@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bus Tracking App</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f2f5;
+    }
+
+    .screen {
+      display: none;
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .splash {
+      background-color: #0a66c2;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      display: flex;
+    }
+
+    .login {
+      background-color: #fff;
+      display: flex;
+    }
+
+    .login input {
+      padding: 10px;
+      margin: 10px;
+      width: 80%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login button {
+      padding: 10px 20px;
+      background-color: #0a66c2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .app-container {
+      display: none;
+      max-width: 414px;
+      margin: 0 auto;
+      background-color: #fff;
+      min-height: 100vh;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .app-header {
+      padding: 16px;
+      background-color: #0a66c2;
+      color: #fff;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .app-content {
+      padding: 16px;
+      overflow-y: auto;
+      flex-grow: 1;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .card-header {
+      padding: 16px;
+      font-size: 16px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-header:hover {
+      background-color: #f3f3f3;
+    }
+
+    .card-content {
+      padding: 0 16px 16px 16px;
+      display: none;
+      font-size: 14px;
+    }
+
+    .card-content ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .card-content ul li {
+      margin-bottom: 6px;
+    }
+
+    .arrow {
+      transition: transform 0.3s ease;
+    }
+
+    .arrow.rotate {
+      transform: rotate(90deg);
+    }
+  </style>
+</head>
+<body>
+
+<!-- 🔆 Splash Screen -->
+<div id="splash" class="screen splash">
+  🚌 Bus Tracking<br/>
+  <small style="margin-top: 8px;">Navigate Smarter. Ride Safer.</small>
+</div>
+
+<!-- 🔐 Login Screen -->
+<div id="login" class="screen login">
+  <h2>Login</h2>
+  <input type="text" id="username" placeholder="Username" />
+  <input type="password" id="password" placeholder="Password" />
+  <button onclick="handleLogin()">Login</button>
+</div>
+
+<!-- 🏠 Dashboard: All Modules Included -->
+<div class="app-container" id="dashboard">
+  <div class="app-header">🚌 Bus Tracking</div>
+  <div class="app-content">
+  <div style="margin-bottom: 16px;">
+
+    <h3>🗺️ Live Bus Map</h3>
+    <div id="google-map" style="width: 100%; height: 300px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+	  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15706.729070311257!2d121.5406!3d16.2510!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1650916607203!5m2!1sen!2sph"
+    width="100%" height="300" style="border:0; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.1);" 
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+
+	
+	</div>
+  </div>
+
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">🏠 Dashboard / Home <span class="arrow">▶</span></div>
+      <div class="card-content">
+        <ul>
+          <li>Quick Search (Route # / Stop / Destination)</li>
+          <li>Live Bus Map View</li>
+          <li>Favorite Routes / Stops</li>
+          <li>Recent Searches</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">🚌 Real-Time Bus Tracker <span class="arrow">▶</span></div>
+      <div class="card-content">
+        <ul>
+          <li>Live Bus Map (moving icons)</li>
+          <li>Select Route / Bus Number</li>
+          <li>ETA (Estimated Time of Arrival)</li>
+          <li>Bus Details (ID, Next Stop)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">📍 Nearby Bus Stops <span class="arrow">▶</span></div>
+      <div class="card-content">
+        <ul>
+          <li>Map with User Location</li>
+          <li>Stop Details & Arrivals</li>
+          <li>Accessibility Info</li>
+          <li>Save as Favorite</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">🧭 Route Planner <span class="arrow">▶</span></div>
+      <div class="card-content">
+        <ul>
+          <li>From / To Input</li>
+          <li>Suggested & Alternative Routes</li>
+          <li>Stops, Timings, Transfers</li>
+          <li>Save & Get Directions</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">🔔 Alerts & Notifications <span class="arrow">▶</span></div>
+      <div class="card-content">
+        <ul>
+          <li>Delays & Diversions</li>
+          <li>Push Notification Settings</li>
+          <li>Maintenance Notices</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">♿ Accessibility Features <span class="arrow">▶</span></div>
+      <div class="card-content">
+        <ul>
+          <li>Bus & Stop Accessibility Info</li>
+          <li>Filter Accessible Routes</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">⚙️ Settings & Preferences <span class="arrow">▶</span></div>
+      <div class="card-content">
+        <ul>
+          <li>Language & Localization</li>
+          <li>Units (Time, Distance)</li>
+          <li>Manage Favorites</li>
+          <li>Help / FAQ</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  // Splash → Login → Dashboard flow
+  setTimeout(() => {
+    document.getElementById('splash').style.display = 'none';
+    document.getElementById('login').style.display = 'flex';
+  }, 2000);
+
+  function handleLogin() {
+    const user = document.getElementById('username').value;
+    const pass = document.getElementById('password').value;
+
+    if (user && pass) {
+      document.getElementById('login').style.display = 'none';
+      document.getElementById('dashboard').style.display = 'flex';
+    } else {
+      alert('Please enter username and password.');
+    }
+  }
+
+  function toggleCard(cardElement) {
+    const content = cardElement.querySelector('.card-content');
+    const arrow = cardElement.querySelector('.arrow');
+    const isOpen = content.style.display === 'block';
+
+    document.querySelectorAll('.card-content').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.arrow').forEach(el => el.classList.remove('rotate'));
+
+    if (!isOpen) {
+      content.style.display = 'block';
+      arrow.classList.add('rotate');
+    }
+  }
+</script>
+
+</body>
+</html>
