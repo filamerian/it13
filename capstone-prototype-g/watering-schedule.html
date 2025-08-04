@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Watering Schedule</title>
+  <style>
+    body { font-family: Arial; background: #f9fafc; padding: 1em; }
+    header { background: #2c7a7b; color: white; padding: 1em; text-align: center; }
+    .schedule { margin-top: 1em; background: white; padding: 1em; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    label, input { display: block; margin-top: 0.5em; }
+    input[type="time"] { width: 100%; padding: 0.5em; font-size: 1em; }
+    button { margin-top: 1em; padding: 0.7em; border: none; border-radius: 6px; background: #2c7a7b; color: white; font-size: 1em; cursor: pointer; }
+    #output { margin-top: 1em; font-style: italic; color: #2c3e50; }
+  </style>
+</head>
+<body>
+  <header><h2>Watering Schedule</h2></header>
+  <div class="schedule">
+    <label for="scheduleTime">Set Time:</label>
+    <input type="time" id="scheduleTime" />
+    <button onclick="setSchedule()">Save Schedule</button>
+    <p id="output">No schedule set.</p>
+  </div>
+
+  <script>
+    function setSchedule() {
+      let time = document.getElementById("scheduleTime").value;
+      document.getElementById("output").innerText = `Watering scheduled at ${time}`;
+    }
+  </script>
+</body>
+</html>

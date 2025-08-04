@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgriRain System</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+    }
+    header {
+      background: #2c7a7b;
+      color: white;
+      padding: 1em;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown-content a {
+      color: #2c7a7b;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 1em;
+      padding: 1em;
+    }
+    .module {
+      background: white;
+      padding: 1em;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .module:hover {
+      transform: scale(1.05);
+    }
+    .module i {
+      font-size: 2em;
+      color: #2c7a7b;
+    }
+    .module h4 {
+      margin-top: 0.5em;
+      color: #2c3e50;
+    }
+    .module p {
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div><strong>AgriRain</strong></div>
+    <div class="dropdown">
+      <button style="background:none;border:none;color:white;font-size:1em;cursor:pointer;">Menu ▾</button>
+      <div class="dropdown-content">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="#">Soil Monitoring</a>
+        <a href="#">Water Logs</a>
+        <a href="pump-control.html">Pump Control</a>
+        <a href="watering-schedule.html">Watering Schedule</a>
+        <a href="#">Settings</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="grid">
+
+    <a href="dashboard.html" class="module">
+      <i>📊</i>
+      <h4>Dashboard Summary</h4>
+      <p>Live readings & activity logs</p>
+    </a>
+
+    <div class="module">
+      <i>🌦️</i>
+      <h4>Rainwater Tank</h4>
+      <p>View tank levels and rainfall status</p>
+    </div>
+
+    <div class="module">
+      <i>📈</i>
+      <h4>Soil Moisture</h4>
+      <p>Real-time moisture sensor data</p>
+    </div>
+
+    <a href="pump-control.html" class="module">
+      <i>🕹️</i>
+      <h4>Pump Control</h4>
+      <p>Manually start/stop irrigation</p>
+    </a>
+
+    <a href="watering-schedule.html" class="module">
+      <i>📅</i>
+      <h4>Watering Schedule</h4>
+      <p>View & edit automated schedules</p>
+    </a>
+
+    <div class="module">
+      <i>🛠️</i>
+      <h4>System Status</h4>
+      <p>Health check & diagnostics</p>
+    </div>
+
+    <div class="module">
+      <i>🧾</i>
+      <h4>Activity Logs</h4>
+      <p>Review irrigation history</p>
+    </div>
+
+  </section>
+</main>
+
+<script>
+  console.log("AgriRain index page loaded successfully.");
+</script>
+
+</body>
+</html>

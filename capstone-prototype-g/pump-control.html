@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pump Control</title>
+  <style>
+    body { font-family: Arial; background: #eef4f2; padding: 1em; }
+    header { background: #2c7a7b; color: white; padding: 1em; text-align: center; }
+    .card { background: white; border-radius: 8px; padding: 1em; margin-top: 1em; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    button { padding: 0.7em 1.5em; margin: 1em 0; border: none; border-radius: 6px; font-size: 1em; background: #2c7a7b; color: white; cursor: pointer; }
+    button:disabled { background: #aaa; }
+    #status { font-weight: bold; color: #2c3e50; }
+  </style>
+</head>
+<body>
+  <header><h2>Pump Control</h2></header>
+  <div class="card">
+    <p>💧 Current Status: <span id="status">Waiting...</span></p>
+    <button onclick="startPump()">Start Pump</button>
+    <button onclick="stopPump()">Stop Pump</button>
+  </div>
+
+  <script>
+    function startPump() {
+      document.getElementById("status").innerText = "Pump is ON";
+    }
+    function stopPump() {
+      document.getElementById("status").innerText = "Pump is OFF";
+    }
+  </script>
+</body>
+</html>

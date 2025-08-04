@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Summary</title>
+  <style>
+    body { font-family: 'Segoe UI'; background: #f0f4f1; padding: 1em; }
+    header { background: #2c7a7b; color: white; text-align: center; padding: 1em; }
+    section { margin-top: 1em; }
+    .card { background: white; border-radius: 8px; padding: 1em; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin-bottom: 1em; }
+    h3 { color: #2c3e50; margin-bottom: 0.5em; }
+    .reading { font-size: 1.2em; color: #2c7a7b; margin: 0.5em 0; }
+    table { width: 100%; border-collapse: collapse; margin-top: 0.5em; }
+    th, td { border: 1px solid #ccc; padding: 0.6em; text-align: left; font-size: 0.9em; }
+    th { background: #e2e8f0; }
+    footer { margin-top: 2em; text-align: center; font-size: 0.85em; color: #6c757d; }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>📊 Dashboard Overview</h2>
+    <p>Real-time data + past logs</p>
+  </header>
+
+  <section class="card">
+    <h3>🌡️ Live Sensor Readings</h3>
+    <p class="reading">Soil Moisture: <span id="moisture">--%</span></p>
+    <p class="reading">Temperature: <span id="temp">--°C</span></p>
+    <p class="reading">Humidity: <span id="humidity">--%</span></p>
+  </section>
+
+  <section class="card">
+    <h3>📝 Log History</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Timestamp</th>
+          <th>Event</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody id="logTable">
+        <tr><td>2025-08-04 00:32</td><td>Pump Activated</td><td>Manual Start via Dashboard</td></tr>
+        <tr><td>2025-08-03 18:45</td><td>Watering Scheduled</td><td>Set for 06:00 AM</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    AgriRain © 2025 · Summary updated every 15 mins
+  </footer>
+
+  <script>
+    function fetchLiveData() {
+      document.getElementById("moisture").innerText = "48%";
+      document.getElementById("temp").innerText = "29°C";
+      document.getElementById("humidity").innerText = "72%";
+    }
+    setInterval(fetchLiveData, 15000); // Refresh every 15s
+    window.onload = fetchLiveData;
+  </script>
+</body>
+</html>
