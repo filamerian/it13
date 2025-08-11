@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>IT 13 - Capstone Documentation Comments, Suggestions, and Recommndations</title>
+<title>IT 13 - Capstone Documentation Comments, Suggestions, and Recommendations</title>
 <link rel="stylesheet" href="assets/css/main.css" />
     <style>
         body {  line-height: 1.6; padding: 20px;  }
@@ -15,20 +15,146 @@
 </head>
 <body>
 <strong>
-<h1>Virtual Resort Experience and Online Booking System for Jacah Randa Beach Cabanas</h1>
+<h1>Integrated Service Request and Booking System for Jacah Randa Beach Cabanas</h1>
 </strong>
-<p>A web-based and VR-compatible platform that lets potential guests explore the resort in immersive 360° views before booking.</p>
-<p><strong>Key Features:</strong></p>
+
+<h3>I. Introduction</h3>
+<p><img src="images/jacah_randa_logo.png" width="200" height="200" align="right">Jacah Randa Beach Resort currently relies on manual processes for handling guest service requests, bookings, and inventory tracking. Guests must physically approach the front desk or call staff to request services or make reservations, which often leads to delays, miscommunication, and dissatisfaction. Staff also face challenges in organizing requests, managing resources, and coordinating tasks efficiently especially during peak seasons.</p>
+<p>This project proposes the development of an integrated mobile-based system that enables guests to submit service requests and book resort amenities digitally, while allowing staff to manage these requests, bookings, and inventory in real-time. The system will also implement role-based access control to ensure secure and efficient task delegation across departments.</p>
+<hr />
+<h3> II. Statement of the Problem</h3>
+<p><strong>General Problem:</strong><br />
+  Jacah Randa Beach Resort lacks a centralized digital system for managing service requests, bookings, and inventory, resulting in operational inefficiencies and diminished guest satisfaction.</p>
+<p><strong>Specific Problems:</strong></p>
+<ol>
+  <li><strong>Manual Service Requests:</strong> Guests must physically approach the front desk or call staff to request services, causing inconvenience and delays.</li>
+  <li><strong>Uncoordinated Staff Response:</strong> Staff struggle to track, prioritize, and fulfill multiple service requests, especially during peak hours.</li>
+  <li><strong>Fragmented Booking Process:</strong> Bookings for rooms and amenities are handled separately from service requests, leading to disorganized workflows and increased administrative burden.</li>
+  <li><strong>Inefficient Inventory Management:</strong> Inventory is manually tracked, resulting in shortages, overstock, and poor resource allocation.</li>
+  <li><strong>Lack of Role-Based Access Control:</strong> All staff have equal access to system functions, which compromises data security and task segregation.</li>
+</ol>
+<hr />
+<h3> III. Project Objectives</h3>
+<p><strong>General Objective:</strong><br />
+  To design and develop a mobile-based system that integrates service requests, booking management, inventory tracking, and role-based access control for Jacah Randa Beach Resort.</p>
+<p><strong>Specific Objectives:</strong></p>
+<ol>
+  <li>
+    <p><strong>To develop a mobile application that allows guests to digitally request services from their rooms</strong>, eliminating the need for physical visits or phone calls.    </p>
+  </li>
+  <li>
+    <p><strong>To create a staff dashboard that enables real-time tracking, prioritization, and management of service requests</strong>, improving response time and coordination.    </p>
+  </li>
+  <li>
+    <p><strong>To implement a unified booking system within the app for rooms and amenities</strong>, streamlining reservation processes and reducing administrative overhead.    </p>
+  </li>
+  <li>
+    <p><strong>To integrate an inventory management module that monitors item availability and usage</strong>, ensuring efficient resource allocation and preventing shortages.    </p>
+  </li>
+  <li>
+    <p><strong>To apply role-based access control (RBAC) to segregate staff responsibilities and secure system operations</strong>, enhancing data protection and workflow clarity.    </p>
+  </li>
+</ol>
+<hr />
+<h3> IV. Scope and Limitations</h3>
+<p><strong>Scope:</strong></p>
 <ul>
-  <li>VR walkthrough of cabanas, beach, facilities</li>
-  <li>Dynamic booking system within simulation</li>
-  <li>Real-time room availability overlay</li>
-  <li>Guest reviews integrated into VR tour points</li>
+  <li>Mobile application for guests </li>
+  <li>Web dashboard for staff with role-based access</li>
+  <li>Booking module for rooms, amenities, and services</li>
+  <li>Inventory tracking for consumables and equipment</li>
+  <li>Real-time notifications and status updates</li>
+  <li>Role-based access for admin, housekeeping, kitchen, and maintenance</li>
 </ul>
-<p><strong>Value:</strong></p>
+<p><strong>Limitations:</strong></p>
 <ul>
-  <li>Appeals to digital-savvy travelers</li>
-  <li>Reduces booking hesitation through immersive previews</li>
+  <li>Payment processing will not be included</li>
+  <li>System will be deployed only within Jacah Randa Beach Resort</li>
+  <li>Requires internet connectivity for full functionality</li>
 </ul>
+<hr />
+<h3>V. Methodology</h3>
+<p>The project will follow the <strong>Agile Software Development Life Cycle (SDLC)</strong> with iterative sprints and stakeholder feedback.</p>
+<p><strong>Phases:</strong></p>
+<ol>
+  <li><strong>Requirements Gathering</strong> – Interviews with staff and management</li>
+  <li><strong>System Design</strong> – Wireframes, ERD, use case diagrams</li>
+  <li><strong>Development</strong> – Mobile app (Flutter), dashboard (React/PHP), backend (Node.js/MySQL)</li>
+  <li><strong>Testing</strong> – Unit, integration, and user acceptance testing</li>
+  <li><strong>Deployment</strong> – Pilot launch at the resort</li>
+  <li><strong>Evaluation</strong> – Performance metrics and user feedback</li>
+</ol>
+<hr />
+<h3> VI. Expected Outcomes</h3>
+<ul>
+  <li>A fully functional mobile app for guest service requests and bookings</li>
+  <li>A secure, role-based dashboard for staff task and inventory management</li>
+  <li>Improved coordination and reduced service delays</li>
+  <li>Enhanced guest satisfaction and operational transparency</li>
+  <li>Streamlined booking and inventory workflows</li>
+</ul>
+<hr />
+<h3> VII. Key Features</h3>
+<table>
+  <thead>
+    <tr>
+      <th bgcolor="#B0D8FF">Module</th>
+      <th bgcolor="#B0D8FF">Feature</th>
+      <th bgcolor="#B0D8FF">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Guest App</td>
+      <td>Service Request</td>
+      <td>Submit requests with optional photo upload</td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <td>Guest App</td>
+      <td>Booking</td>
+      <td>Reserve rooms, amenities, or services</td>
+    </tr>
+    <tr>
+      <td>Staff Dashboard</td>
+      <td>Request Management</td>
+      <td>View, accept, and complete requests</td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <td>Staff Dashboard</td>
+      <td>Booking Management</td>
+      <td>Approve, modify, or cancel bookings</td>
+    </tr>
+    <tr>
+      <td>Inventory</td>
+      <td>Stock Tracking</td>
+      <td>Monitor item availability and usage</td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <td>Access Control</td>
+      <td>RBAC</td>
+      <td>Assign roles: Admin, Housekeeping, Kitchen, Maintenance</td>
+    </tr>
+    <tr>
+      <td>Notifications</td>
+      <td>Real-Time Alerts</td>
+      <td>Push updates to guests and staff</td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <td>Status Tracking</td>
+      <td>Request Lifecycle</td>
+      <td>Pending → In Progress → Completed</td>
+    </tr>
+  </tbody>
+</table>
+<p>&nbsp;</p>
+<h1>TO DO:</h1>
+<ol>
+  <li>Conduct detailed research on the end-users and their process.</li>
+  <li>Modify above problems, objectives and content as necessary.</li>
+  <li>Research related systems and studies.</li>
+  <li>Submit draft of your Chapters 1-3 using this <a href="format.html">format</a>. </li>
+  <li>Present a working prototype for review. </li>
+</ol>
+<p>&nbsp;</p>
 </body>
 </html>
