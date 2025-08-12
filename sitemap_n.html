@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>E-GUIDANCE CONNECT – Horizontal Sitemap</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f4f4f4;
+    }
+    svg {
+        width: 100%;
+        height: 100vh;
+        background: white;
+    }
+    .node rect {
+        stroke: #333;
+        stroke-width: 1.5px;
+        rx: 10;
+        ry: 10;
+    }
+    .node text {
+        fill: white;
+        font-size: 12px;
+        pointer-events: none;
+    }
+    .link {
+        fill: none;
+        stroke: #999;
+        stroke-width: 2px;
+        marker-end: url(#arrow);
+    }
+</style>
+</head>
+<body>
+<svg></svg>
+
+<script>
+const data = {
+  name: "Home",
+  color: "#607D8B",
+  children: [
+    { name: "About" },
+    { name: "Resources" },
+    { name: "Contact / Crisis Support" },
+    { name: "Anonymous Report Form" },
+    { name: "Report Status Tracker" },
+    {
+      name: "Login",
+      children: [
+        {
+          name: "Student Dashboard",
+          color: "#4CAF50",
+          children: [
+            { name: "Profile Management" },
+            { name: "Submit Report" },
+            { name: "View Report Status" },
+            { name: "Guidance Resources" }
+          ]
+        },
+        {
+          name: "Teacher Dashboard",
+          color: "#2196F3",
+          children: [
+            { name: "Student Reports Overview" },
+            { name: "Submit Incident Report" },
+            { name: "Communication Tools" }
+          ]
+        },
+        {
+          name: "Counselor Dashboard",
+          color: "#9C27B0",
+          children: [
+            { name: "Assigned Cases" },
+            { name: "Case Notes" },
+            { name: "Student History" },
+            { name: "Resource Library" }
+          ]
+        },
+        {
+          name: "System Admin Dashboard",
+          color: "#F44336",
+          children: [
+            { name: "User Management" },
+            { name: "Report Analytics" },
+            { name: "System Settings" },
+            { name: "Manage All Users" },
+            { name: "System Logs" },
+            { name: "Backup & Restore" }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+const svg = d3.select("svg"),
+      width = window.innerWidth,
+      height = window.innerHeight;
+
+svg.append("defs").append("marker")
+    .attr("id", "arrow")
+    .attr("viewBox", "0 -5 10 10")
+    .attr("refX", 55)
+    .attr("refY", 0)
+    .attr("markerWidth", 5)
+    .attr("markerHeight", 5)
+    .attr("orient", "auto")
+    .append("path")
+    .attr("d", "M0,-5L10,0L0,5")
+    .attr("fill", "#999");
+
+// Precompute wrapped lines for height calculation
+function wrapText(text, maxChars) {
+    const words = text.split(" ");
+    const lines = [];
+    let line = [];
+    words.forEach(word => {
+        const testLine = [...line, word].join(" ");
+        if (testLine.length > maxChars) {
+            lines.push(line.join(" "));
+            line = [word];
+        } else {
+            line.push(word);
+        }
+    });
+    lines.push(line.join(" "));
+    return lines;
+}
+
+const root = d3.hierarchy(data);
+root.each(d => {
+    d.data.lines = wrapText(d.data.name, 20);
+    d.data.rectHeight = d.data.lines.length * 14 + 20; // 14px per line + padding
+});
+
+const treeLayout = d3.tree()
+    .size([height - 100, width - 300])
+    .separation((a, b) => {
+        // Space based on tallest of the two
+        const maxHeight = Math.max(a.data.rectHeight, b.data.rectHeight);
+        return (maxHeight / 20); // adjust scaling factor if needed
+    });
+
+treeLayout(root);
+
+// Draw curved links
+svg.selectAll(".link")
+    .data(root.links())
+    .join("path")
+    .attr("class", "link")
+    .attr("d", d3.linkHorizontal()
+        .x(d => d.y + 100)
+        .y(d => d.x + 50));
+
+// Draw nodes
+const node = svg.selectAll(".node")
+    .data(root.descendants())
+    .join("g")
+    .attr("class", "node")
+    .attr("transform", d => `translate(${d.y + 100},${d.x + 50})`);
+
+const rectWidth = 180;
+
+node.append("rect")
+    .attr("width", rectWidth)
+    .attr("height", d => d.data.rectHeight)
+    .attr("x", -rectWidth / 2)
+    .attr("y", d => -d.data.rectHeight / 2)
+    .attr("fill", d => {
+        if (d.data.color) return d.data.color;
+        let parent = d.parent;
+        while (parent) {
+            if (parent.data.color) return parent.data.color;
+            parent = parent.parent;
+        }
+        return "#607D8B";
+    });
+
+// Add wrapped text
+node.append("text")
+    .attr("text-anchor", "middle")
+    .selectAll("tspan")
+    .data(d => d.data.lines)
+    .join("tspan")
+    .attr("x", 0)
+    .attr("dy", (d, i) => i === 0 ? "-0.3em" : "1.2em")
+    .text(d => d);
+</script>
+</body>
+</html>
