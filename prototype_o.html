@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Barangay Household Management System</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+    }
+    .sidebar {
+      width: 220px;
+      background-color: #34495e;
+      color: white;
+      height: 100vh;
+      padding-top: 20px;
+    }
+    .sidebar h3 {
+      padding-left: 20px;
+    }
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      background-color: #3d566e;
+    }
+    .main {
+      flex: 1;
+      padding: 20px;
+    }
+    .card {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+    }
+    .map-placeholder {
+      height: 300px;
+      background-color: #e0e0e0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: #555;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Barangay Household Management System</h1>
+  </header>
+
+  <div class="container">
+    <div class="sidebar">
+      <h3>Navigation</h3>
+      <a href="#" onClick="showSection('dashboard')">Dashboard</a>
+      <a href="#" onClick="showSection('households')">Household Records</a>
+      <a href="#" onClick="showSection('map')">Mapping Interface</a>
+      <a href="#" onClick="showSection('reports')">Reports</a>
+      <a href="#" onClick="showSection('settings')">System Settings</a>
+    </div>
+
+    <div class="main">
+      <div id="dashboard" class="card">
+        <h2>Welcome, Barangay Staff</h2>
+        <p>Select a module from the sidebar to begin.</p>
+      </div>
+
+      <div id="households" class="card" style="display:none;">
+        <h2>Household Records</h2>
+        <table>
+          <tr><th>Household ID</th><th>Head of Household</th><th>Purok</th><th>Actions</th></tr>
+          <tr><td>HH001</td><td>Juan Dela Cruz</td><td>Purok 1</td><td><button>Edit</button></td></tr>
+          <tr><td>HH002</td><td>Maria Santos</td><td>Purok 2</td><td><button>Edit</button></td></tr>
+        </table>
+      </div>
+
+      <div id="map" class="card" style="display:none;">
+        <h2>Mapping Interface</h2>
+        <div class="map-placeholder">[ Barangay Map Placeholder ]</div>
+      </div>
+
+      <div id="reports" class="card" style="display:none;">
+        <h2>Reports</h2>
+        <p>Generate demographic summaries, household lists, and emergency response plans.</p>
+        <button>Export to PDF</button>
+        <button>Export to Excel</button>
+      </div>
+
+      <div id="settings" class="card" style="display:none;">
+        <h2>System Settings</h2>
+        <p>Manage purok definitions, user roles, and backup options.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showSection(id) {
+      const sections = ['dashboard', 'households', 'map', 'reports', 'settings'];
+      sections.forEach(section => {
+        document.getElementById(section).style.display = section === id ? 'block' : 'none';
+      });
+    }
+  </script>
+
+</body>
+</html>

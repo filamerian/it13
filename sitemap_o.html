@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Capstone Project Role-Based Sitemap</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .tree {
+      list-style-type: none;
+      padding-left: 20px;
+      line-height: 1.6em;
+    }
+    .tree li {
+      cursor: pointer;
+      position: relative;
+      padding-left: 20px;
+    }
+    .tree li::before {
+      content: "▶";
+      position: absolute;
+      left: 0;
+      transition: transform 0.2s;
+    }
+    .tree li.expanded::before {
+      transform: rotate(90deg);
+    }
+    .role {
+      font-weight: bold;
+      color: #4b0082;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Household Mapping & Management System Sitemap</h2>
+
+  <ul class="tree">
+    <li class="expanded" onclick="toggleNode(this)">Login Module
+      <ul>
+        <li>User Authentication</li>
+        <li class="expanded" onclick="toggleNode(this)"><span class="role">Admin Dashboard</span>
+          <ul>
+            <li class="expanded" onclick="toggleNode(this)">Household Management
+              <ul>
+                <li>Add Household</li>
+                <li>Edit Household</li>
+                <li>Delete Household</li>
+                <li>View Household Profile</li>
+              </ul>
+            </li>
+            <li class="expanded" onclick="toggleNode(this)">Resident Management
+              <ul>
+                <li>Add Resident</li>
+                <li>Edit Resident</li>
+                <li>Delete Resident</li>
+                <li>View Resident Profile</li>
+              </ul>
+            </li>
+            <li class="expanded" onclick="toggleNode(this)">Interactive Map
+              <ul>
+                <li>View All Puroks</li>
+                <li>Clickable Household Pins</li>
+                <li>Filter by Purok / Age Group / Status</li>
+              </ul>
+            </li>
+            <li class="expanded" onclick="toggleNode(this)">Reports & Analytics
+              <ul>
+                <li>Barangay-Level Reports</li>
+                <li>Export to PDF/Excel</li>
+                <li>Charts & Graphs</li>
+              </ul>
+            </li>
+            <li class="expanded" onclick="toggleNode(this)">User Management
+              <ul>
+                <li>Add/Edit/Delete Users</li>
+                <li>Assign Roles</li>
+                <li>Audit Trail / Activity Log</li>
+              </ul>
+            </li>
+            <li class="expanded" onclick="toggleNode(this)">System Settings
+              <ul>
+                <li>Backup & Restore</li>
+                <li>Barangay Info Setup</li>
+                <li>Map Boundaries & Legends</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="expanded" onclick="toggleNode(this)"><span class="role">Purok Leader / Staff Dashboard</span>
+          <ul>
+            <li>Purok Overview (Statistics for Assigned Purok)</li>
+            <li>Add Household (Within Assigned Purok)</li>
+            <li>Add Resident (Within Assigned Purok)</li>
+            <li>Purok Map (Households & Landmarks)</li>
+            <li>Search & Filter (Within Purok Only)</li>
+            <li>Purok-Level Reports (Export to PDF/Excel)</li>
+          </ul>
+        </li>
+
+        <li class="expanded" onclick="toggleNode(this)">Common Features
+          <ul>
+            <li>Search Bar</li>
+            <li>Notification Center</li>
+            <li>User Profile Settings</li>
+            <li>Help & Support</li>
+            <li>Log Out</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <script>
+    function toggleNode(element) {
+      let childUl = element.querySelector("ul");
+      if (childUl) {
+        childUl.classList.toggle("hidden");
+        element.classList.toggle("expanded");
+      }
+      event.stopPropagation();
+    }
+  </script>
+
+</body>
+</html>
