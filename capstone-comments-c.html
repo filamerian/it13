@@ -11,7 +11,6 @@
         h1 { border-bottom: 2px solid #ccc; padding-bottom: 10px; }
         ul { margin-top: 0; }
         li { margin-bottom: 5px; }
-.style8 {font-weight: bold}
     </style>
 </head>
 <body>
@@ -19,219 +18,157 @@
 <div align="center">
   <hr size="2" width="100%" align="center">
 </div>
-<p>&nbsp;</p>
-<h2><strong>Compliance Table</strong></h2>
-<table>
-  <thead>
-    <tr>
-      <th bgcolor="#A6D2FF"><strong>Section</strong></th>
-      <th bgcolor="#A6D2FF"><strong>Compliance Status</strong></th>
-      <th bgcolor="#A6D2FF"><strong>Comments</strong></th>
-      <th bgcolor="#A6D2FF"><strong>Required Actions</strong></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Overview of the Current State of Technology</strong></td>
-      <td>✅ Complied</td>
-      <td>Clear definition of AR vs VR; covers global Industry 4.0 context and local examples (Museo de Intramuros, DepEd Digital Rise). Addresses both benefits and challenges.</td>
-      <td>Maintain scholarly tone throughout; add more local academic sources (DepEd/DICT/CHED reports) to strengthen credibility.</td>
-    </tr>
-    <tr bgcolor="#CCCCCC">
-      <td><strong>Desired State of Technology</strong></td>
-      <td>⚠️ Partially Complied</td>
-      <td>Describes features (scanning zones, POIs, 3D arrows), but “scanning zones” and “POI indicators” are not explained technically (QR codes, geo-markers, visual SLAM).</td>
-      <td>Define scanning tech; clarify implementation method; possibly move infrastructure/training discussion to Chapter 3.</td>
-    </tr>
-    <tr>
-      <td><strong>Statement of the Problem</strong></td>
-      <td>⚠️ Partially Complied</td>
-      <td>Lists 5 clear issues but not framed as formal research questions.</td>
-      <td>Reframe each point as a research question; add a transition paragraph linking problems to need for AR-based intervention.</td>
-    </tr>
-    <tr bgcolor="#CCCCCC">
-      <td><strong>Objectives of the Study</strong></td>
-      <td>⚠️ Partially Complied</td>
-      <td>General objective clear; specific objectives are measurable but not grouped by theme.</td>
-      <td>Group by theme (design, accessibility, evaluation, engagement); link each to measurable outcomes.</td>
-    </tr>
-    <tr>
-      <td><strong>Theoretical Framework</strong></td>
-      <td>✅ Complied</td>
-      <td>Includes TTF, TAM, and UTAUT; links them to system features.</td>
-      <td>Separate theory discussion from application; add citations for all models; clearly map each theory to system module.</td>
-    </tr>
-    <tr>
-      <td bgcolor="#CCCCCC"><strong>Conceptual Framework</strong></td>
-      <td bgcolor="#CCCCCC">⚠️ Partially Complied</td>
-      <td bgcolor="#CCCCCC">Lists modules and functions, but narrative linkages are minimal; no process flow diagram.</td>
-      <td bgcolor="#CCCCCC">Expand narrative on module interactions; add flowchart/swimlane diagram from login → scanning → navigation → POI.</td>
-    </tr>
-    <tr>
-      <td><strong>Operational Definition of Terms</strong></td>
-      <td>⚠️ Partially Complied</td>
-      <td>Includes AR, scanning zone, POI; some terms awkward (“application-based application”).</td>
-      <td>Simplify terminology; add authoritative sources (IEEE, ACM); include “digital twin,” “AR marker” to match frameworks.</td>
-    </tr>
-    <tr bgcolor="#CCCCCC">
-      <td><strong>Scope and Limitations</strong></td>
-      <td>⚠️ Partially Complied</td>
-      <td>Clearly defined, but mismatch between platform scope (Android/iOS) and AR experience (Android only) could cause confusion.</td>
-      <td>Clarify platform support; structure as bullet list/table; add time scope (pilot duration) and hardware assumptions.</td>
-    </tr>
-    <tr>
-      <td><strong>Significance of the Study</strong></td>
-      <td>✅ Complied</td>
-      <td>Covers multiple stakeholders; formal tone mostly maintained.</td>
-      <td>Expand future research potential; link to institutional goals (smart campus initiatives).</td>
-    </tr>
-    <tr bgcolor="#CCCCCC">
-      <td><strong>Chapter 2 – Literature Review</strong></td>
-      <td>⚠️ Partially Complied</td>
-      <td>Well-structured thematic review; cites relevant systems; includes synthesis and gap identification. However, some sources are dated (pre-2018); limited critique of methodology in past studies.</td>
-      <td>Add newer references (post-2020); deepen critique; include a comparison table of local vs foreign studies; highlight unique gap addressed.</td>
-    </tr>
-    <tr>
-      <td><strong>Chapter 3 – Research Methodology</strong></td>
-      <td>⚠️ Partially Complied</td>
-      <td>Agile method described; phases outlined; stakeholder involvement implied but not fully detailed; lacks visual lifecycle diagram; testing section detailed but no test case examples.</td>
-      <td>Add process flow/Gantt chart; specify sprint cycle length and stakeholder roles; include sample test cases; link methodology explicitly to theories in Chapter 1.</td>
-    </tr>
-    <tr bgcolor="#CCCCCC">
-      <td><strong>Requirements Gathering</strong></td>
-      <td>✅ Complied</td>
-      <td>Covers interviews, surveys, technical assessment, and constraints.</td>
-      <td>Include sample questions for surveys/interviews; explain prioritization method (e.g., MoSCoW).</td>
-    </tr>
-    <tr>
-      <td><strong>System Design</strong></td>
-      <td>✅ Complied</td>
-      <td>Addresses UI/UX, mapping, architecture, prototyping, scalability.</td>
-      <td>Provide architecture diagram (layers/modules); justify tech stack choices (Unity3D, ARCore) with citations.</td>
-    </tr>
-    <tr bgcolor="#CCCCCC">
-      <td><strong>Implementation &amp; Deployment</strong></td>
-      <td>✅ Complied</td>
-      <td>Explains scanning triggers, soft launch, training, feedback.</td>
-      <td>Include deployment timeline; specify device requirements and internet needs.</td>
-    </tr>
-    <tr>
-      <td><strong>Integration &amp; Testing</strong></td>
-      <td>⚠️ Partially Complied</td>
-      <td>Details integration, functional, performance, compatibility, usability testing; no mention of accessibility testing.</td>
-      <td>Add accessibility testing (for disabilities); provide table of test cases and expected results.</td>
-    </tr>
-    <tr bgcolor="#CCCCCC">
-      <td><strong>Development</strong></td>
-      <td>✅ Complied</td>
-      <td>Explains coding, database linking, AR environment integration.</td>
-      <td>Add brief pseudocode or module diagram for clarity.</td>
-    </tr>
-    <tr>
-      <td><strong>Maintenance</strong></td>
-      <td>✅ Complied</td>
-      <td>Describes ongoing updates, security, feedback loop.</td>
-      <td>Add schedule/frequency of maintenance; describe version control approach.</td>
-    </tr>
-    <tr bgcolor="#CCCCCC">
-      <td><strong>References</strong></td>
-      <td>⚠️ Partially Complied</td>
-      <td>Mix of complete and incomplete citations; inconsistent style.</td>
-      <td>Use consistent format (APA/IEEE); ensure all in-text citations match references; add access dates for web sources.</td>
-    </tr>
-  </tbody>
-</table>
-<hr>
-<h2><strong>Key Actions to Take</strong></h2>
-<ol>
-  <li>
-    <p><strong>Research Questions</strong> – Convert problem statements into formal research questions; add a linking paragraph from problem to solution.</p>
-  </li>
-  <li>
-    <p><strong>Technical Clarity</strong> – Define “scanning zone” and “POI indicator” in technical terms (e.g., QR code, AR marker, visual SLAM).</p>
-  </li>
-  <li>
-    <p><strong>Thematic Objective Grouping</strong> – Group specific objectives into design, accessibility, evaluation, and engagement categories; link to measurable outcomes.</p>
-  </li>
-  <li>
-    <p><strong>Diagram Enhancements</strong> – Add:</p>
-    <ul>
-      <li>
-        <p>Process flow diagram for conceptual framework.</p>
-      </li>
-      <li>
-        <p>System architecture diagram (layers/modules).</p>
-      </li>
-      <li>
-        <p>Agile lifecycle with sprint details and stakeholder roles.</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p><strong>Literature Update &amp; Critique</strong> – Include post-2020 studies on AR navigation in education; deepen critique of methodologies; provide comparison of local vs foreign systems.</p>
-  </li>
-  <li>
-    <p><strong>Testing Expansion</strong> – Include accessibility testing; provide table of test cases with expected outputs.</p>
-  </li>
-  <li>
-    <p><strong>Scope Clarification</strong> – Reconcile Android-only AR experience with stated Android/iOS compatibility; add time frame and hardware assumptions.</p>
-  </li>
-  <li>
-    <p><strong>Terminology &amp; Sources</strong> – Simplify awkward terms; add authoritative references for definitions.</p>
-  </li>
-  <li>
-    <p><strong>Citation Consistency</strong> – Standardize to one citation format; ensure all in-text citations match references; include access dates for URLs.</p>
-  </li>
-  <li>
-    <p><strong>Institutional Alignment</strong> – In Significance section, explicitly tie project benefits to smart campus or digital innovation goals.</p>
-  </li>
-</ol>
-<hr>
-
-<h2><strong>REVISED  Statement of the Problem</strong></h2>
-<p>	Efficient navigation within a university campus is essential for creating a positive experience for students, visitors, and staff. At Filamer Christian University, existing navigation methods such as printed maps, static signage, and verbal directions often result in delays, confusion, and reliance on human assistance. The absence of a modern, technology-driven solution limits the university’s ability to provide fast, accurate, and accessible wayfinding. An Augmented Reality (AR)-based navigation system has the potential to address these gaps by offering interactive, real-time guidance and location-specific information. However, no such system is currently in place, and its impact on navigation efficiency, accessibility, and user experience has yet to be determined.</p>
-<ol>
-  <li>
-    <p>Visitors have difficulty locating specific facilities or offices due to the absence of a real-time, Augmented Reality (AR)-assisted navigation system that provides step-by-step guidance.</p>
-  </li>
-  <li>
-    <p>Students with disabilities or special needs face challenges in navigating the campus efficiently and independently because no AR-based navigation tool is currently available to address accessibility requirements.</p>
-  </li>
-  <li>
-    <p>Campus staff are frequently burdened with providing manual directions, as there is no digital navigation solution to enable visitors to find their destinations without assistance.</p>
-  </li>
-  <li>
-    <p>The university lacks a modern and interactive navigation system, resulting in a less engaging campus experience compared to what AR technology can provide.</p>
-  </li>
-  <li>
-    <p>Users often encounter difficulty obtaining accurate and detailed information about the functions and services of specific offices or facilities, as existing resources do not deliver dynamic, location-aware content.</p>
-  </li>
-</ol>
-<p>&nbsp;</p>
-<hr>
-
-<h2><strong>REVISED Objectives of the Study</strong></h2>
-<h3 data-start="140" data-end="167"><strong data-start="144" data-end="165">General Objective</strong></h3>
-<p data-start="168" data-end="449">To design and develop an Augmented Reality (AR)-based navigation system for Filamer Christian University that provides real-time, interactive wayfinding and contextual facility information to enhance navigation efficiency, accessibility, and user experience on campus.</p>
-<hr data-start="451" data-end="454">
-<h3 data-start="456" data-end="485"><strong data-start="460" data-end="483">Specific Objectives</strong></h3>
-<ol class="style8" data-start="487" data-end="1517">
-  <li data-start="487" data-end="699">
-    <p data-start="490" data-end="699">To develop an AR-assisted navigation system capable of providing step-by-step, real-time directional guidance to help visitors locate specific facilities or offices within the campus.</p>
-  </li>
-  <li data-start="701" data-end="938">
-    <p data-start="704" data-end="938">To incorporate accessibility-focused features into the AR navigation system to support students and visitors with disabilities or special needs, ensuring ease of use and independence in navigating the campus.</p>
-  </li>
-  <li data-start="940" data-end="1131">
-    <p data-start="943" data-end="1131">To reduce the reliance on campus staff for manual direction-giving by implementing a self-service AR navigation tool that enables users to navigate independently.</p>
-  </li>
-  <li data-start="1133" data-end="1299">
-    <p data-start="1136" data-end="1299">To enhance the overall campus experience by introducing a modern, interactive navigation system that engages users through AR technology.</p>
-  </li>
-  <li data-start="1301" data-end="1517">
-    <p data-start="1304" data-end="1517">To integrate location-aware Points of Interest (POI) within the AR system to provide accurate and detailed information about the functions and services of specific offices and facilities.</p>
-  </li>
-</ol>
+<h2>CHAPTER I: INTRODUCTION</h2>
+<p><strong>Strengths:</strong></p>
+<ul>
+  <li>Clear articulation of AR’s global and local relevance.</li>
+  <li>Strong contextualization within Philippine education and campus modernization.</li>
+</ul>
+<p><strong>Recommendations:</strong></p>
+<ul>
+  <li>Add a brief rationale for choosing AR over other navigation technologies (e.g., GPS-only, BLE beacons).</li>
+  <li>Include a short paragraph on FCU’s current digital infrastructure to show readiness for AR integration.</li>
+  <li>Consider citing specific pain points from stakeholder interviews to personalize the problem.</li>
+</ul>
+<hr />
+<h2>Desired State of Technology</h2>
+<p><strong>Strengths:</strong></p>
+<ul>
+  <li>Markerless AR and POI integration are well explained.</li>
+  <li>Use of QR codes for onboarding is practical and user-friendly.</li>
+</ul>
+<p><strong>Recommendations:</strong></p>
+<ul>
+  <li>Clarify whether the system uses ARCore, Unity, or another SDK—this affects device compatibility and development scope.</li>
+  <li>Include a visual mockup or flow diagram of the user journey (scan → select → navigate → POI).</li>
+  <li>Consider accessibility features beyond visual overlays—e.g., voice guidance or haptic feedback.</li>
+</ul>
+<hr />
+<h2>Statement of the Problem</h2>
+<p><strong>Strengths:</strong></p>
+<ul>
+  <li>Multi-stakeholder pain points are clearly identified.</li>
+  <li>Accessibility and user experience are foregrounded.</li>
+</ul>
+<p><strong>Recommendations:</strong></p>
+<ul>
+  <li>Quantify the problem: e.g., average time lost due to poor navigation, number of visitors affected.</li>
+  <li>Reframe some statements into measurable research questions (e.g., “How does AR navigation affect time-to-destination?”).</li>
+</ul>
+<hr />
+<h2>Objectives of the Study</h2>
+<p><strong>Strengths:</strong></p>
+<ul>
+  <li>Specific objectives align well with system features.</li>
+</ul>
+<p><strong>Recommendations:</strong></p>
+<ul>
+  <li>Add an objective focused on system performance metrics (e.g., accuracy, latency, user satisfaction).</li>
+  <li>Include a goal related to long-term scalability or integration with other campus systems (e.g., events, emergency routing).</li>
+</ul>
+<hr />
+<h2>Theoretical and Conceptual Frameworks</h2>
+<p><strong>Strengths:</strong></p>
+<ul>
+  <li>Use of TTF, TAM, and UTAUT shows strong theoretical grounding.</li>
+  <li>Conceptual framework is clearly structured.</li>
+</ul>
+<p><strong>Recommendations:</strong></p>
+<ul>
+  <li>Include a diagram showing how theories map to system modules (e.g., TAM → UI design, TTF → feature alignment).</li>
+  <li>Clarify how feedback loops will be used to refine the system post-deployment.</li>
+</ul>
+<hr />
+<h2>Operational Definition of Terms</h2>
+<p><strong>Strengths:</strong></p>
+<ul>
+  <li>Terms are clearly defined and relevant.</li>
+</ul>
+<p><strong>Recommendations:</strong></p>
+<ul>
+  <li>Consider adding definitions for “markerless AR,” “visual SLAM,” and “accessibility-first design.”</li>
+  <li>Include citations for technical definitions (e.g., IEEE, ACM) to reinforce academic rigor.</li>
+</ul>
+<hr />
+<h2>Scope and Limitations</h2>
+<p><strong>Strengths:</strong></p>
+<ul>
+  <li>Scope is realistic and well-bounded.</li>
+</ul>
+<p><strong>Recommendations:</strong></p>
+<ul>
+  <li>Clarify whether the system supports indoor navigation (e.g., building interiors) or only outdoor paths.</li>
+  <li>Expand on limitations related to device compatibility and AR performance on low-end phones.</li>
+</ul>
+<hr />
+<h2>Significance of the Study</h2>
+<p><strong>Strengths:</strong></p>
+<ul>
+  <li>Strong alignment with FCU’s smart campus goals.</li>
+  <li>Multi-stakeholder benefits are well articulated.</li>
+</ul>
+<p><strong>Recommendations:</strong></p>
+<ul>
+  <li>Add a paragraph on how this study contributes to academic literature or future research.</li>
+  <li>Consider including a stakeholder impact matrix to visually summarize benefits.</li>
+</ul>
+<hr />
+<h2>CHAPTER II: REVIEW OF RELATED LITERATURE</h2>
+<p><strong>Strengths:</strong></p>
+<ul>
+  <li>Thematic organization is excellent.</li>
+  <li>Local and international comparisons are well synthesized.</li>
+</ul>
+<p><strong>Recommendations:</strong></p>
+<ul>
+  <li>Add a short critique of each system’s limitations and how FCU’s proposal addresses them.</li>
+  <li>Include a table mapping reviewed systems to proposed modules (e.g., POI, scanning zones, accessibility).</li>
+</ul>
+<hr />
+<h2>CHAPTER III: METHODOLOGY</h2>
+<p><strong>Strengths:</strong></p>
+<ul>
+  <li>Agile methodology is well justified.</li>
+  <li>Development lifecycle is clearly explained.</li>
+</ul>
+<p><strong>Recommendations:</strong></p>
+<ul>
+  <li>Include a Gantt chart or sprint timeline to visualize development phases.</li>
+  <li>Add testing metrics (e.g., navigation accuracy, user satisfaction) and thresholds for success.</li>
+  <li>Clarify how feedback from pilot users will be collected and used iteratively.</li>
+</ul>
+<hr />
+<h2>System Design and Development</h2>
+<p><strong>Strengths:</strong></p>
+<ul>
+  <li>Strong emphasis on UI/UX and mobile compatibility.</li>
+  <li>Integration of scanning zones and POI overlays is well thought out.</li>
+</ul>
+<p><strong>Recommendations:</strong></p>
+<ul>
+  <li>Include wireframes or UI mockups to support design claims.</li>
+  <li>Clarify how the system handles localization (e.g., GPS fallback, SLAM calibration).</li>
+  <li>Consider adding a module for admin-side content updates (e.g., POI info changes).</li>
+</ul>
+<hr />
+<h2>Maintenance and Review</h2>
+<p><strong>Strengths:</strong></p>
+<ul>
+  <li>Acknowledges the need for ongoing support and updates.</li>
+</ul>
+<p><strong>Recommendations:</strong></p>
+<ul>
+  <li>Include a plan for version control and update deployment.</li>
+  <li>Suggest periodic usability audits or stakeholder feedback sessions.</li>
+</ul>
+<hr />
+<h2>Final Notes</h2>
+<p>This proposal is well-positioned for capstone success. To strengthen it further:</p>
+<ul>
+  <li>Add visual scaffolding (e.g., diagrams, mockups, flowcharts).</li>
+  <li>Prepare a short pitch deck for panel presentation.</li>
+  <li>Include a brief ethical reflection on data privacy and accessibility.</li>
+</ul>
 <h3>&nbsp;</h3>
 </body>
 </html>
