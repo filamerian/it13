@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>IT 13 - Capstone Documentation Comments, Suggestions, and Recommndations</title>
+<title>IT 13 - Capstone Documentation Comments, Suggestions, and Recommendations</title>
 <link rel="stylesheet" href="assets/css/main.css" />
     <style>
         body {  line-height: 1.6; padding: 20px;  }
@@ -16,294 +16,220 @@
 <body>
 <h2>ONLINE COUNSELING AND SUPPORT SYSTEM  FOR FCU HIGH SCHOOL STUDENTS</h2>
 <hr>
-<h2><strong>Compliance Table –  Chapter I</strong></h2>
-<table>
-  <thead>
-    <tr>
-      <th bgcolor="#999999"><strong>Section</strong></th>
-      <th bgcolor="#999999"><strong>Recommendation from Review</strong></th>
-      <th bgcolor="#999999"><strong>Status in Current Draft</strong></th>
-      <th bgcolor="#999999"><strong>Compliance Level</strong></th>
-      <th bgcolor="#999999"><strong>Remarks / Next Action</strong></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Overview of the Current State of Technology</strong></td>
-      <td>Add local statistics on mental health among Filipino students</td>
-      <td>✅ Included DOH (2022) data: 17% of 13–17-year-olds experience depression/anxiety symptoms</td>
-      <td><strong>Full</strong></td>
-      <td>Could add DepEd or academic study citations for stronger local relevance</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td bgcolor="#CCCCCC">Discuss challenges in digital counseling adoption in schools</td>
-      <td bgcolor="#CCCCCC">⚠ Briefly mentioned stigma and lack of training</td>
-      <td bgcolor="#CCCCCC"><strong>Partial</strong></td>
-      <td bgcolor="#CCCCCC">Expand with school-specific adoption barriers (training gaps, policy issues)</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>Clarify how GSSR data relates to system improvement</td>
-      <td>⚠ GSSR mentioned but no direct link to digital system planning</td>
-      <td><strong>Partial</strong></td>
-      <td>Explain integration into platform analytics to inform counseling goals</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td bgcolor="#CCCCCC">Add table comparing traditional vs digital counseling</td>
-      <td bgcolor="#CCCCCC">✅ Table included with 6 comparison points</td>
-      <td bgcolor="#CCCCCC"><strong>Full</strong></td>
-      <td bgcolor="#CCCCCC">None</td>
-    </tr>
-    <tr>
-      <td><strong>Desired State of Technology</strong></td>
-      <td>Organize features under functional modules</td>
-      <td>✅ Listed under “Proposed Functional Modules”</td>
-      <td><strong>Full</strong></td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td bgcolor="#CCCCCC">Specify platform/technology to be used</td>
-      <td bgcolor="#CCCCCC">✅ Stated: Firebase, WebRTC, Node.js, MySQL/Firestore, SSL</td>
-      <td bgcolor="#CCCCCC"><strong>Full</strong></td>
-      <td bgcolor="#CCCCCC">None</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>Clarify authentication strategy for anonymity &amp; data protection</td>
-      <td>⚠ Privacy &amp; Security listed but no specific method balancing anonymity/accountability</td>
-      <td><strong>Partial</strong></td>
-      <td>Describe dual-layer authentication &amp; anonymized session IDs</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td bgcolor="#CCCCCC">Include visual user flow diagram</td>
-      <td bgcolor="#CCCCCC">❌ None included</td>
-      <td bgcolor="#CCCCCC"><strong>None</strong></td>
-      <td bgcolor="#CCCCCC">Create a diagram showing login → service selection → interaction → feedback</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>Mention accessibility compliance &amp; device compatibility</td>
-      <td>⚠ WCAG compliance noted but no device/browser metrics</td>
-      <td><strong>Partial</strong></td>
-      <td>Add min. specs &amp; cross-browser compatibility notes</td>
-    </tr>
-    <tr bgcolor="#CCCCCC">
-      <td><strong>Statement of the Problem</strong></td>
-      <td>Convert to formal itemized statements</td>
-      <td>✅ 5 itemized problem statements included</td>
-      <td><strong>Full</strong></td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>Reference psychological concepts</td>
-      <td>❌ None cited</td>
-      <td><strong>None</strong></td>
-      <td>Add terms such as “social avoidance” or “self-concealment”</td>
-    </tr>
-    <tr bgcolor="#CCCCCC">
-      <td><strong>Objectives of the Study</strong></td>
-      <td>Group objectives thematically (Technical, Operational, Strategic)</td>
-      <td>❌ Not grouped</td>
-      <td><strong>None</strong></td>
-      <td>Reorganize objectives by theme</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>Add measurable KPIs</td>
-      <td>❌ None provided</td>
-      <td><strong>None</strong></td>
-      <td>Include expected % increases in engagement, appointment completion, etc.</td>
-    </tr>
-    <tr bgcolor="#CCCCCC">
-      <td><strong>Theoretical Framework</strong></td>
-      <td>Map theory to features using matrix</td>
-      <td>✅ Table linking support types to platform features included</td>
-      <td><strong>Full</strong></td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>Reference primary theorists &amp; cite sources</td>
-      <td>⚠ Mentioned Cohen &amp; Wills (1985) but no full citation details</td>
-      <td><strong>Partial</strong></td>
-      <td>Add APA/MLA formatted references</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td bgcolor="#CCCCCC">Include figure for theoretical model</td>
-      <td bgcolor="#CCCCCC">❌ No diagram shown</td>
-      <td bgcolor="#CCCCCC"><strong>None</strong></td>
-      <td bgcolor="#CCCCCC">Insert visual model linking theory → platform features</td>
-    </tr>
-    <tr>
-      <td><strong>Conceptual Framework</strong></td>
-      <td>Detail interaction between modules &amp; process cycle</td>
-      <td>✅ Process cycle listed with input → process → output → feedback</td>
-      <td><strong>Full</strong></td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td bgcolor="#CCCCCC">Include diagram and explain it</td>
-      <td bgcolor="#CCCCCC">⚠ “Figure 2” mentioned but no actual diagram</td>
-      <td bgcolor="#CCCCCC"><strong>Partial</strong></td>
-      <td bgcolor="#CCCCCC">Add and explain “Commuhelp” diagram</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>Distinguish real-time vs asynchronous flows</td>
-      <td>❌ Not distinguished</td>
-      <td><strong>None</strong></td>
-      <td>Show parallel flows in diagram</td>
-    </tr>
-    <tr bgcolor="#CCCCCC">
-      <td><strong>Operational Definition of Terms</strong></td>
-      <td>Use formal glossary format with citations</td>
-      <td>⚠ List provided but without citations</td>
-      <td><strong>Partial</strong></td>
-      <td>Format in a table with sources (e.g., NIST, Data Privacy Act)</td>
-    </tr>
-    <tr>
-      <td><strong>Scope and Limitations</strong></td>
-      <td>Separate scope &amp; limitations</td>
-      <td>✅ Already separated</td>
-      <td><strong>Full</strong></td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td bgcolor="#CCCCCC">Include assumptions</td>
-      <td bgcolor="#CCCCCC">❌ None listed</td>
-      <td bgcolor="#CCCCCC"><strong>None</strong></td>
-      <td bgcolor="#CCCCCC">Add assumptions such as “users have basic digital literacy”</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>Expand limitations (maintenance, offline access)</td>
-      <td>⚠ Internet/device limits noted, but no mention of maintenance</td>
-      <td><strong>Partial</strong></td>
-      <td>Add maintenance schedule, update policies</td>
-    </tr>
-    <tr bgcolor="#CCCCCC">
-      <td><strong>Significance of the Study</strong></td>
-      <td>Show benefits for each stakeholder</td>
-      <td>✅ Table with benefits for Students, Advisers, Counselors, Psychologists</td>
-      <td><strong>Full</strong></td>
-      <td>Fix spelling of “Psychologists”</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>Add measurable outcomes</td>
-      <td>❌ None quantified</td>
-      <td><strong>None</strong></td>
-      <td>Include metrics (e.g., reduced missed appointments by X%)</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td bgcolor="#CCCCCC">Link to educational policy/SDGs</td>
-      <td bgcolor="#CCCCCC">✅ Linked to DepEd initiatives and SDG 3 &amp; 4</td>
-      <td bgcolor="#CCCCCC"><strong>Full</strong></td>
-      <td bgcolor="#CCCCCC">None</td>
-    </tr>
-  </tbody>
-</table>
-<hr>
-<h2><strong>Chapter II – Review of Related Literature and Systems</strong></h2>
-<table>
-  <thead>
-    <tr>
-      <th bgcolor="#999999">Section</th>
-      <th bgcolor="#999999">Comments</th>
-      <th bgcolor="#999999">Recommendations</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>1. Related Literature (Foreign &amp; Local)</strong></td>
-      <td>The literature review includes several foreign studies on online counseling, teletherapy platforms, and mental health applications, but the local literature is sparse. The transition from global to local context is abrupt. Some cited works are from blogs or non-academic sources.</td>
-      <td>Add at least <strong>5 local studies</strong> from peer-reviewed journals, CHED repositories, or DOST/DepEd research archives to strengthen Philippine context. Arrange literature in <strong>thematic order</strong> (e.g., privacy in counseling systems, AI/chatbot use, user adoption in schools). Avoid blog-based citations unless backed by primary sources. Include synthesis tables summarizing each study’s scope, methods, findings, and relation to the current project.</td>
-    </tr>
-    <tr>
-      <td bgcolor="#CCCCCC"><strong>2. Related Systems</strong></td>
-      <td bgcolor="#CCCCCC">Several foreign and local systems are described (e.g., BetterHelp, e-Konsulta, university portals), but the analysis is descriptive rather than comparative. The unique features and shortcomings compared to the proposed system are not deeply analyzed.</td>
-      <td bgcolor="#CCCCCC">For each related system, add a <strong>feature-by-feature comparison matrix</strong> highlighting gaps that your system will address (e.g., real-time video sessions, crisis response protocol, offline access). Clearly explain how your system is an <strong>improvement</strong> or <strong>adaptation</strong>. Include <strong>screenshots</strong> of publicly available platforms with proper citation for visual reference.</td>
-    </tr>
-    <tr>
-      <td><strong>3. Synthesis</strong></td>
-      <td>The synthesis currently reads as a simple summary of the literature and systems. It does not clearly show the gap that justifies the project.</td>
-      <td>Develop a <strong>visual gap analysis chart</strong> showing: (a) what existing studies/systems cover, (b) what they lack, and (c) where your system fits. Explicitly connect the gap to your project’s objectives and problem statement. Use citations to back up the gap claims.</td>
-    </tr>
-  </tbody>
-</table>
-<hr>
-<h2><strong>Chapter III – Methodology</strong></h2>
-<table>
-  <thead>
-    <tr>
-      <th bgcolor="#999999">Section</th>
-      <th bgcolor="#999999">Comments</th>
-      <th bgcolor="#999999">Recommendations</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>1. Research Design</strong></td>
-      <td>Stated as “Developmental” but without specifying the <strong>software development methodology</strong> (e.g., Agile, Rapid Application Development). The justification for choosing the approach is missing.</td>
-      <td>Explicitly state the SDLC or Agile methodology to be used (e.g., Agile Scrum) and justify it based on the project’s nature (e.g., iterative feedback from guidance counselors and students). Provide a brief overview of each phase and its deliverables.</td>
-    </tr>
-    <tr bgcolor="#CCCCCC">
-      <td><strong>2. Development Tools</strong></td>
-      <td>Tools are listed (e.g., programming language, database) but without versions, hosting plan, or justification for their selection.</td>
-      <td>Create a <strong>Development Tools Table</strong> with: Tool name, version, purpose, reason for selection, and possible alternatives. Mention hosting/server details (on-premises vs. cloud).</td>
-    </tr>
-    <tr>
-      <td><strong>3. Requirements Specification</strong></td>
-      <td>Functional and non-functional requirements are not clearly separated. Accessibility and security requirements are not fully covered.</td>
-      <td>Separate <strong>Functional</strong> and <strong>Non-Functional Requirements</strong> into tables. Include privacy compliance requirements (Data Privacy Act of 2012, RA 11036 Mental Health Act). Specify accessibility requirements (WCAG 2.1).</td>
-    </tr>
-    <tr bgcolor="#CCCCCC">
-      <td><strong>4. Architectural Design</strong></td>
-      <td>A general block diagram is mentioned but not shown. Data flow between modules is not detailed.</td>
-      <td>Include: (1) <strong>System Architecture Diagram</strong> (client–server/cloud setup), (2) <strong>Data Flow Diagram (DFD) Level 0 and 1</strong>, and (3) <strong>ERD</strong> for the database. Clearly identify role-based access and how each module interacts.</td>
-    </tr>
-    <tr>
-      <td><strong>5. Development Plan / Timeline</strong></td>
-      <td>Gantt chart included but lacks milestones for testing phases and user training.</td>
-      <td>Update the Gantt chart to include <strong>unit testing, integration testing, UAT, security audit, and deployment</strong>. Assign responsible persons for each task.</td>
-    </tr>
-    <tr bgcolor="#CCCCCC">
-      <td><strong>6. Testing Plan</strong></td>
-      <td>Testing methods are briefly mentioned (e.g., functionality testing) but no metrics or tools are specified.</td>
-      <td>Detail the testing plan: test cases, success criteria, tools (e.g., Selenium for UI testing), and performance benchmarks. Include <strong>usability testing</strong> with guidance counselors and students as part of UAT.</td>
-    </tr>
-    <tr>
-      <td><strong>7. Implementation &amp; Maintenance Plan</strong></td>
-      <td>Implementation is mentioned briefly; no details on maintenance.</td>
-      <td>Add <strong>Deployment Plan</strong> (pilot test, full rollout, training) and <strong>Maintenance Plan</strong> (bug fixes, updates, backups). Indicate responsible team members and timeline for post-deployment support.</td>
-    </tr>
-    <tr bgcolor="#CCCCCC">
-      <td><strong>8. Ethical Considerations</strong></td>
-      <td>Data privacy and consent are mentioned but not detailed.</td>
-      <td>Include <strong>informed consent procedures</strong> for all participants, storage encryption methods, data retention policy, and compliance with <strong>RA 10173</strong> and <strong>RA 11036</strong>. Describe how minors’ consent will be handled (parental consent forms).</td>
-    </tr>
-  </tbody>
-</table>
-<hr>
-<p><strong>Overall Observations:</strong></p>
-<ul>
-  <li>
-    <p><strong>Chapter II</strong> needs <strong>more scholarly and local sources</strong>, better <strong>comparative analysis</strong>, and <strong>gap justification</strong>.</p>
+<h2 data-start="272" data-end="312">Recommendations</h2>
+<h3 data-start="314" data-end="346"><strong data-start="318" data-end="346">Chapter I – Introduction</strong></h3>
+<p data-start="347" data-end="361"><strong data-start="347" data-end="361">Strengths:</strong></p>
+<ul data-start="362" data-end="598">
+  <li data-start="362" data-end="460">
+    <p data-start="364" data-end="460">Clearly identifies the problem: lack of accessible counseling services for high school students.</p>
   </li>
-  <li>
-    <p><strong>Chapter III</strong> needs <strong>clearer methodology structure</strong>, <strong>visual diagrams</strong>, <strong>testing details</strong>, and <strong>ethical compliance documentation</strong>.</p>
+  <li data-start="461" data-end="524">
+    <p data-start="463" data-end="524">Justifies importance (mental health, accessibility, support).</p>
+  </li>
+  <li data-start="525" data-end="598">
+    <p data-start="527" data-end="598">States objectives (developing an online counseling and support system).</p>
   </li>
 </ul>
-<hr>
-<p>&nbsp;</p>
+<p data-start="600" data-end="620"><strong data-start="600" data-end="620">Recommendations:</strong></p>
+<ol data-start="621" data-end="1245">
+  <li data-start="621" data-end="861">
+    <p data-start="624" data-end="670">Strengthen <strong data-start="635" data-end="656">Problem Statement</strong> by including:</p>
+    <ul data-start="674" data-end="861">
+      <li data-start="674" data-end="748">
+        <p data-start="676" data-end="748">Local statistics on student stress/mental health (from DOH, DepEd, WHO).</p>
+      </li>
+      <li data-start="752" data-end="861">
+        <p data-start="754" data-end="861">Specific counseling challenges in your school (e.g., limited number of counselors, confidentiality issues).</p>
+      </li>
+    </ul>
+  </li>
+  <li data-start="862" data-end="1004">
+    <p data-start="865" data-end="902">Revise <strong data-start="872" data-end="901">Significance of the Study</strong>:</p>
+    <ul data-start="906" data-end="1004">
+      <li data-start="906" data-end="1004">
+        <p data-start="908" data-end="1004">Expand beyond students—include parents, teachers, school administrators, and future researchers.</p>
+      </li>
+    </ul>
+  </li>
+  <li data-start="1005" data-end="1245">
+    <p data-start="1008" data-end="1043">Clarify <strong data-start="1016" data-end="1042">Scope and Delimitation</strong>:</p>
+    <ul data-start="1047" data-end="1245">
+      <li data-start="1047" data-end="1154">
+        <p data-start="1049" data-end="1154">Define whether the system will provide <em data-start="1088" data-end="1153">real-time chat, appointment booking, or mental health resources</em>.</p>
+      </li>
+      <li data-start="1158" data-end="1245">
+        <p data-start="1160" data-end="1245">State limitations: system is <strong data-start="1189" data-end="1244">not a replacement for professional psychiatric help</strong>.</p>
+      </li>
+    </ul>
+  </li>
+</ol>
+<hr data-start="1247" data-end="1250">
+<h3 data-start="1252" data-end="1301"><strong data-start="1256" data-end="1301">Chapter II – Review of Related Literature</strong></h3>
+<p data-start="1302" data-end="1316"><strong data-start="1302" data-end="1316">Strengths:</strong></p>
+<ul data-start="1317" data-end="1449">
+  <li data-start="1317" data-end="1357">
+    <p data-start="1319" data-end="1357">Good mix of local and foreign studies.</p>
+  </li>
+  <li data-start="1358" data-end="1449">
+    <p data-start="1360" data-end="1449">Mentions online counseling systems, digital mental health apps, and accessibility issues.</p>
+  </li>
+</ul>
+<p data-start="1451" data-end="1471"><strong data-start="1451" data-end="1471">Recommendations:</strong></p>
+<ol data-start="1472" data-end="2040">
+  <li data-start="1472" data-end="1730">
+    <p data-start="1475" data-end="1490">Reorganize RRL:</p>
+    <ul data-start="1494" data-end="1730">
+      <li data-start="1494" data-end="1553">
+        <p data-start="1496" data-end="1553">Start with <strong data-start="1507" data-end="1525">global studies</strong> (WHO, UNICEF, APA studies).</p>
+      </li>
+      <li data-start="1557" data-end="1646">
+        <p data-start="1559" data-end="1646">Narrow down to <strong data-start="1574" data-end="1596">Philippine context</strong> (DepEd initiatives, CHED mental health policies).</p>
+      </li>
+      <li data-start="1650" data-end="1730">
+        <p data-start="1652" data-end="1730">End with <strong data-start="1661" data-end="1683">similar IT systems</strong> (case studies on online counseling platforms).</p>
+      </li>
+    </ul>
+  </li>
+  <li data-start="1731" data-end="1897">
+    <p data-start="1734" data-end="1767">Add a <strong data-start="1740" data-end="1766">Synthesis Matrix/Table</strong>:</p>
+    <ul data-start="1771" data-end="1897">
+      <li data-start="1771" data-end="1844">
+        <p data-start="1773" data-end="1844">Columns: Author/Year | System/Study | Features/Findings | Research Gap.</p>
+      </li>
+      <li data-start="1848" data-end="1897">
+        <p data-start="1850" data-end="1897">This makes it clear how your study fills a gap.</p>
+      </li>
+    </ul>
+  </li>
+  <li data-start="1898" data-end="2040">
+    <p data-start="1901" data-end="2040">Highlight the <strong data-start="1915" data-end="1922">gap</strong>: Most systems focus on college/university level, but few target <em data-start="1987" data-end="2039">high school students in provincial/private schools</em>.</p>
+  </li>
+</ol>
+<hr data-start="2042" data-end="2045">
+<h3 data-start="2047" data-end="2080"><strong data-start="2051" data-end="2080">Chapter III – Methodology</strong></h3>
+<p data-start="2081" data-end="2095"><strong data-start="2081" data-end="2095">Strengths:</strong></p>
+<ul data-start="2096" data-end="2170">
+  <li data-start="2096" data-end="2136">
+    <p data-start="2098" data-end="2136">Identifies the system to be developed.</p>
+  </li>
+  <li data-start="2137" data-end="2170">
+    <p data-start="2139" data-end="2170">Mentions phases of development.</p>
+  </li>
+</ul>
+<p data-start="2172" data-end="2192"><strong data-start="2172" data-end="2192">Recommendations:</strong></p>
+<ol data-start="2193" data-end="3454">
+  <li data-start="2193" data-end="2436">
+    <p data-start="2196" data-end="2231"><strong data-start="2196" data-end="2230">System Development Methodology</strong>:</p>
+    <ul data-start="2235" data-end="2436">
+      <li data-start="2235" data-end="2336">
+        <p data-start="2237" data-end="2336">Use <strong data-start="2241" data-end="2258">Agile (Scrum)</strong> or <strong data-start="2262" data-end="2284">Modified Waterfall</strong>, as both are CHED-approved approaches for capstone.</p>
+      </li>
+      <li data-start="2340" data-end="2436">
+        <p data-start="2342" data-end="2436">Show development phases: Planning → Design → Development → Testing → Deployment → Maintenance.</p>
+      </li>
+    </ul>
+  </li>
+  <li data-start="2437" data-end="2630">
+    <p data-start="2440" data-end="2464"><strong data-start="2440" data-end="2463">System Architecture</strong>:</p>
+    <ul data-start="2468" data-end="2630">
+      <li data-start="2468" data-end="2547">
+        <p data-start="2470" data-end="2547">Provide diagrams: Context Diagram, Data Flow Diagram (DFD), Use Case Diagram.</p>
+      </li>
+      <li data-start="2551" data-end="2630">
+        <p data-start="2553" data-end="2630">Include a proposed <strong data-start="2572" data-end="2609">ERD (Entity Relationship Diagram)</strong> for database design.</p>
+      </li>
+    </ul>
+  </li>
+  <li data-start="2631" data-end="2874">
+    <p data-start="2634" data-end="2659"><strong data-start="2634" data-end="2658">Tools &amp; Technologies</strong>:</p>
+    <ul data-start="2663" data-end="2874">
+      <li data-start="2663" data-end="2736">
+        <p data-start="2665" data-end="2736">List programming languages (e.g., PHP/Laravel, Python/Django, Node.js).</p>
+      </li>
+      <li data-start="2740" data-end="2778">
+        <p data-start="2742" data-end="2778">Indicate database (MySQL, Firebase).</p>
+      </li>
+      <li data-start="2782" data-end="2831">
+        <p data-start="2784" data-end="2831">Frameworks for front-end (React, Angular, Vue).</p>
+      </li>
+      <li data-start="2835" data-end="2874">
+        <p data-start="2837" data-end="2874">Hosting platform (cloud vs. on-prem).</p>
+      </li>
+    </ul>
+  </li>
+  <li data-start="2875" data-end="3226">
+    <p data-start="2878" data-end="2903"><strong data-start="2878" data-end="2902">Testing &amp; Evaluation</strong>:</p>
+    <ul data-start="2907" data-end="3226">
+      <li data-start="2907" data-end="3152">
+        <p data-start="2909" data-end="2936">Define evaluation criteria:</p>
+        <ul data-start="2942" data-end="3152">
+          <li data-start="2942" data-end="2990">
+            <p data-start="2944" data-end="2990"><strong data-start="2944" data-end="2961">Functionality</strong> (does it work as intended?).</p>
+          </li>
+          <li data-start="2996" data-end="3054">
+            <p data-start="2998" data-end="3054"><strong data-start="2998" data-end="3011">Usability</strong> (is it easy for students and counselors?).</p>
+          </li>
+          <li data-start="3060" data-end="3094">
+            <p data-start="3062" data-end="3094"><strong data-start="3062" data-end="3077">Reliability</strong> (system uptime).</p>
+          </li>
+          <li data-start="3100" data-end="3152">
+            <p data-start="3102" data-end="3152"><strong data-start="3102" data-end="3114">Security</strong> (confidentiality of student records).</p>
+          </li>
+        </ul>
+      </li>
+      <li data-start="3156" data-end="3226">
+        <p data-start="3158" data-end="3226">Recommend using <strong data-start="3174" data-end="3210">ISO 25010 Software Quality Model</strong> for evaluation.</p>
+      </li>
+    </ul>
+  </li>
+  <li data-start="3227" data-end="3454">
+    <p data-start="3230" data-end="3257"><strong data-start="3230" data-end="3256">Ethical Considerations</strong>:</p>
+    <ul data-start="3261" data-end="3454">
+      <li data-start="3261" data-end="3359">
+        <p data-start="3263" data-end="3359">Add a section on <strong data-start="3280" data-end="3321">confidentiality, privacy, and consent</strong> (Data Privacy Act of 2012, RA 10173).</p>
+      </li>
+      <li data-start="3363" data-end="3454">
+        <p data-start="3365" data-end="3454">Explain that student data will be encrypted and only accessible to authorized counselors.</p>
+      </li>
+    </ul>
+  </li>
+</ol>
+<hr data-start="3456" data-end="3459">
+<h3 data-start="3461" data-end="3491"><strong data-start="3465" data-end="3491">Other Areas to Improve</strong></h3>
+<ul data-start="3492" data-end="4016">
+  <li data-start="3492" data-end="3694">
+    <p data-start="3494" data-end="3694"><strong data-start="3494" data-end="3514">Title refinement</strong>: “Online Counseling and Support System for FCU High School Students” could be rephrased for impact:<br data-start="3614" data-end="3617">
+       “A Web-Based Counseling and Support System for FCU High School Students”</p>
+  </li>
+  <li data-start="3695" data-end="3921">
+    <p data-start="3697" data-end="3795"><strong data-start="3697" data-end="3711">Objectives</strong>: Make them SMART (Specific, Measurable, Achievable, Relevant, Time-bound). Example:</p>
+    <ul data-start="3798" data-end="3921">
+      <li data-start="3798" data-end="3921">
+        <p data-start="3800" data-end="3921"><em data-start="3800" data-end="3921">To design a secure online counseling system accessible to at least 80% of FCU high school students within one semester.</em></p>
+      </li>
+    </ul>
+  </li>
+  <li data-start="3922" data-end="4016">
+    <p data-start="3924" data-end="4016"><strong data-start="3924" data-end="3938">References</strong>: Ensure APA 7th edition consistency (italicize journal names, add DOIs/URLs).</p>
+  </li>
+</ul>
+<hr data-start="4018" data-end="4021">
+<h2 data-start="4023" data-end="4044"> Overall Verdict</h2>
+<p data-start="4045" data-end="4097">The proposal is <strong data-start="4061" data-end="4096">acceptable but needs refinement</strong>:</p>
+<ul data-start="4098" data-end="4313">
+  <li data-start="4098" data-end="4152">
+    <p data-start="4100" data-end="4152">Strengthen the <strong data-start="4115" data-end="4151">problem context and significance</strong>.</p>
+  </li>
+  <li data-start="4153" data-end="4219">
+    <p data-start="4155" data-end="4219">Add <strong data-start="4159" data-end="4178">technical depth</strong> (architecture, methodology, evaluation).</p>
+  </li>
+  <li data-start="4220" data-end="4261">
+    <p data-start="4222" data-end="4261">Address <strong data-start="4230" data-end="4260">ethical and privacy issues</strong>.</p>
+  </li>
+  <li data-start="4262" data-end="4313">
+    <p data-start="4264" data-end="4313">Improve the <strong data-start="4276" data-end="4312">literature review with synthesis</strong>.</p>
+  </li>
+</ul>
+<h2>&nbsp;</h2>
 </body>
 </html>
