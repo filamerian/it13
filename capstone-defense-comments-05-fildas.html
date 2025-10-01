@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<title>Capstone Proposal Evaluation - FilDAS</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+  <style>
+    body {  margin: 20px; color: #111;  }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+    th, td { border: 1px solid #ccc; padding: 8px; vertical-align: top; }
+    th { background: #f5f5f5; }
+    .checklist { background: #fafafa; border: 1px solid #ddd; padding: 10px; margin: 12px 0; }
+    .grade { font-weight: bold; }
+    footer { margin-top: 20px; font-size: 0.9em; color: #555; }
+  </style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+      <h1>THESIS Proposal Evaluation for BSCS Defense<br>
+    </h1>
+      <div class="meta">
+        <div><strong> Title:</strong> FilDAS - A Digital Document Archiving and Management System for the Quality Assurance Office </div>
+        <div><strong>Date:</strong> <span id="today"></span><span id="today"></span>02 October 2025</div>
+        <div><strong>Proponents:</strong>
+          <table cellspacing="0" cellpadding="0">
+  <td height="75" width="245">AQUINO, LOR FREDERICK JAMES<br>
+    BANAY, JOSEPH MARIE<br>
+    DOLFO, REI ASHLEY <br>
+    EBACUADO, STEFAN JOHN</td>
+          </table>
+        </div>
+        <div><strong>Panel:</strong>
+          <table cellspacing="0" cellpadding="0">
+  <td height="75" width="133">CABANUS<br>
+    EGIDA</td>
+          </table>
+        </div>
+        <div><strong>Chapters Covered:</strong> 1 to 3 and Prototype</div>
+        <div><strong>School/Unit:</strong> FCU-CCS </div>
+      </div>
+  </div></header>
+<h2>Summary</h2>
+<p>
+<img src="images/capstone-defense-05.png" width="200" height="200" align="right">The FilDAS project proposes a digital archiving and management system to solve inefficiencies in the QA office's document handling. The proposal is strong in identifying the problem and offering a system tailored to QA operations. The objectives, however, are written mostly as modules and should be rewritten to show outcomes and improvements. The methodology is appropriate, using Agile, but lacks details such as sprint length, evaluation standards, and database design. The review of literature is comprehensive but needs better synthesis and connection to the project's unique contributions.</p>
+
+<h2>Evaluation by Section</h2>
+
+<h3>Chapter I - Introduction</h3>
+<table>
+  <tr><th>Item</th><th>Evaluation</th></tr>
+  <tr>
+    <td>Cover Sheet and Chapters 1-3 </td>
+    <td>Follow the format of the provided <a href="https://filamerian.github.io/it13/#downloads" target="_blank">templates</a> (font, indentions, etc.) </td>
+  </tr>
+  <tr>
+    <td><p><em>Overview  of the Current State of Technology</em> <strong></strong></p></td>
+    <td><p data-start="485" data-end="537"> Areas where it can be improved:</p>
+      <ol data-start="538" data-end="1193">
+        <li data-start="538" data-end="645">
+          <p data-start="541" data-end="645">The section is a bit long. You can simplify some sentences so readers can grasp the key points faster.</p>
+        </li>
+        <li data-start="646" data-end="935">
+          <p data-start="649" data-end="935">Try to connect the discussion more directly to your project. For example, after explaining the weaknesses of cloud storage, add a sentence such as: <em data-start="797" data-end="933">&ldquo;These challenges are also present in the QA office of Filamer Christian University, which makes the development of FilDAS necessary.&rdquo;</em></p>
+        </li>
+        <li data-start="936" data-end="1052">
+          <p data-start="939" data-end="1052">Consider summarizing the advantages and disadvantages of existing tools in a short table for easier comparison.</p>
+        </li>
+        <li data-start="1053" data-end="1193">
+          <p data-start="1056" data-end="1193">Make sure to cite sources for claims about DMS features and cloud storage limitations, so the section looks more academic and credible.</p>
+        </li>
+    </ol></td>
+  </tr>
+  <tr>
+    <td><em>Desired State of Technology</em></td>
+    <td><p data-start="91" data-end="341">Your section on the Desired State of Technology is clear and well-structured, but it needs to be expanded. Right now, it lists important features of a DMS, but it does not fully explain <strong>why</strong> each feature matters to the QA office.</p>
+      <p data-start="401" data-end="437">To improve, consider these points:</p>
+      <ol data-start="438" data-end="1241">
+        <li data-start="438" data-end="657">
+          <p data-start="441" data-end="657">The paragraph lists good features, but it would be better if they were organized into categories (e.g., <em data-start="545" data-end="605">automation features, security features, usability features</em>). This will make it easier for readers to follow.</p>
+        </li>
+        <li data-start="658" data-end="764">
+          <p data-start="661" data-end="764">Some sentences are long and may be simplified. Shorter sentences will make the section more readable.</p>
+        </li>
+        <li data-start="765" data-end="1005">
+          <p data-start="768" data-end="1005">Try to link this desired state directly to your objectives. For example: <em data-start="841" data-end="1003">&ldquo;This desired state aligns with the objectives of FilDAS, which aims to automate uploading, provide secure sharing, enable notifications, and add audit trails.&rdquo;</em></p>
+        </li>
+        <li data-start="1006" data-end="1241">
+          <p data-start="1009" data-end="1241">Adding a short comparison to the current state (e.g., &ldquo;Unlike cloud storage platforms, this desired system will include audit trails and advanced access controls&rdquo;) will strengthen the transition between current and desired states.</p>
+        </li>
+    </ol>      
+    <p data-start="91" data-end="341">&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td>Problem Statement</td>
+    <td><p>The problem is clear and realistic. Staff struggle with manual file uploads, no alerts, poor sharing, and no audit trails.<strong><br>
+      Suggestion:</strong> Restate into one general problem and 3-5 specific problems for clarity.    <br>
+      <strong>Simplified Sample:</strong><br>
+    </p>
+      <h3 data-start="159" data-end="180">General Problem</h3>
+      <p data-start="181" data-end="407">The Quality Assurance (QA) Office of Filamer Christian University faces inefficiencies in handling and managing documents due to reliance on manual processes, resulting in delays, disorganization, and lack of accountability.</p>
+      <p data-start="352" data-end="423">These issues can be broken down into the following specific problems:</p>
+      <ol data-start="433" data-end="976">
+        <li data-start="433" data-end="540">
+          <p data-start="436" data-end="540">Documents are uploaded and organized manually, making it difficult to ensure accuracy and consistency.</p>
+        </li>
+        <li data-start="541" data-end="656">
+          <p data-start="544" data-end="656">Staff are not immediately informed when new documents are uploaded or updated, causing delays in coordination.</p>
+        </li>
+        <li data-start="657" data-end="757">
+          <p data-start="660" data-end="757">Document sharing lacks access control, risking unauthorized access to sensitive QA information.</p>
+        </li>
+        <li data-start="758" data-end="856">
+          <p data-start="761" data-end="856">Retrieving files is time-consuming because there is no efficient search and retrieval system.</p>
+        </li>
+        <li data-start="857" data-end="976">
+          <p data-start="860" data-end="976">The QA office has no audit trail to monitor document-related activities, reducing accountability and transparency.</p>
+        </li>
+      </ol></td>
+  </tr>
+  <tr>
+    <td>Objectives</td>
+    <td><p>Objectives are written as modules. 
+        <strong><br>
+    Revision Needed:</strong> Emphasize results and improvements instead of just system parts. <br>
+    <em>Example:</em></p>
+      <table>
+        <tr>
+          <th>Original Objective</th>
+          <th>Revised Objective</th>
+        </tr>
+        <tr>
+          <td>To create a Document Management Module</td>
+          <td>To automate uploading, organizing, and verifying of documents, reducing manual work and improving accuracy.</td>
+        </tr>
+        <tr>
+          <td>To create a Notification Module</td>
+          <td>To ensure staff are promptly alerted of new and updated documents, improving coordination across departments.</td>
+        </tr>
+        <tr>
+          <td>To create a Document Sharing and Access Control Module</td>
+          <td>To provide secure document sharing with role-based access controls, protecting sensitive information while supporting collaboration.</td>
+        </tr>
+        <tr>
+          <td>To create a Document Retrieval and Search Module</td>
+          <td>To enable fast document searching and retrieval using categories and metadata, saving time for QA staff.</td>
+        </tr>
+        <tr>
+          <td>To create an Audit and Activity Logging Module</td>
+          <td>To track all document actions with audit trails, supporting accountability and compliance monitoring.</td>
+        </tr>
+      </table>      <p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td>Theoretical & Conceptual Framework</td>
+    <td><p data-start="135" data-end="349">Your framework is a good start, but it would be stronger if you add at least two more relevant theories or models to support your study. Right now, you are only relying on one, which makes the discussion limited.</p>
+      <p data-start="351" data-end="368"><strong data-start="351" data-end="366">What to do:</strong></p>
+      <ol data-start="369" data-end="1116">
+        <li data-start="369" data-end="442">
+          <p data-start="372" data-end="442">Keep the theory you already used (for example, Task-Technology Fit).</p>
+        </li>
+        <li data-start="443" data-end="1002">
+          <p data-start="446" data-end="562">Add two or more theories that directly relate to information systems or technology adoption. Examples you may use:</p>
+          <ul data-start="566" data-end="1002">
+            <li data-start="566" data-end="704">
+              <p data-start="568" data-end="704"><strong data-start="568" data-end="606">DeLone and McLean IS Success Model</strong> &ndash; helps you measure success through system quality, information quality, and user satisfaction.</p>
+            </li>
+            <li data-start="708" data-end="852">
+              <p data-start="710" data-end="852"><strong data-start="710" data-end="747">Technology Acceptance Model (TAM)</strong> &ndash; explains how users&rsquo; perceived ease of use and usefulness affect their willingness to use the system.</p>
+            </li>
+            <li data-start="856" data-end="1002">
+              <p data-start="858" data-end="1002"><strong data-start="858" data-end="940">Information Security Theory/Confidentiality-Integrity-Availability (CIA) Triad</strong> &ndash; supports your discussion on securing sensitive documents.</p>
+            </li>
+          </ul>
+        </li>
+        <li data-start="1003" data-end="1116">
+          <p data-start="1006" data-end="1116">For each added theory, write 2&ndash;3 sentences explaining how it connects to your system features or evaluation.</p>
+        </li>
+      </ol>
+    <p data-start="1118" data-end="1259">This will give your framework a stronger foundation and show that your system is not only practical but also grounded in academic research.</p></td>
+  </tr>
+  <tr>
+    <td>Operational Definition of Terms</td>
+    <td>Follow the format provided (paragraph, indented, alphabetical) </td>
+  </tr>
+  <tr>
+    <td>Scope & Limitations</td>
+    <td><p data-start="159" data-end="444">The scope you presented is clear because it explains who the users are (e.g., QA staff, administrators) and what the system will do (archiving, notifications, access control, search, and audit logs). It shows the boundaries of your project and helps the reader know what is included.</p>
+      <p data-start="446" data-end="492">However, this section can still be improved:</p>
+      <ol data-start="494" data-end="1453">
+        <li data-start="494" data-end="738">
+          <p data-start="497" data-end="738"><strong data-start="497" data-end="531">Be more specific in the scope.</strong> List exactly which documents, users, and functions are covered in the system. For example, &ldquo;The system will handle QA compliance documents and reports but will not cover student records or payroll files.&rdquo;</p>
+        </li>
+        <li data-start="739" data-end="967">
+          <p data-start="742" data-end="967"><strong data-start="742" data-end="778">State the limitations in detail.</strong> Limitations should include things like required internet connection, hardware/software constraints, user training needs, or the fact that the project is only tested within the QA office.</p>
+        </li>
+        <li data-start="968" data-end="1161">
+          <p data-start="971" data-end="1161"><strong data-start="971" data-end="1014">Separate scope and limitations clearly.</strong> Some parts mix the two. Write scope as what the system <em data-start="1070" data-end="1079">will do</em> and limitations as what the system <em data-start="1115" data-end="1126">cannot do</em> or the challenges it might face.</p>
+        </li>
+        <li data-start="1162" data-end="1321">
+          <p data-start="1165" data-end="1321"><strong data-start="1165" data-end="1208">Add boundaries on security and storage.</strong> For example, clarify if the system will include backup and recovery features or if that is outside your scope.</p>
+        </li>
+        <li data-start="1322" data-end="1453">
+          <p data-start="1325" data-end="1453"><strong data-start="1325" data-end="1347">Keep it realistic.</strong> Avoid over-promising features. Show what can really be done within your project timeline and resources.</p>
+        </li>
+        <li>          <strong data-start="701" data-end="736">Mention ISO 21001 in the Scope.</strong> State that your system is designed to support document management practices in line with ISO 21001:2025 requirements, particularly in areas like transparency, accessibility of records, and continuous improvement.</li>
+        <blockquote>
+          <p data-start="957" data-end="1210"><em data-start="957" data-end="982">Example Scope sentence:</em><br data-start="982" data-end="985">
+              <em data-start="988" data-end="1208">&ldquo;The system will be developed to align with ISO 21001:2025 by providing transparent, accessible, and reliable document management processes that support the QA office in ensuring compliance and continuous improvement.</em></p>
+        </blockquote>
+        <li><strong data-start="1218" data-end="1267">Clarify limitations regarding ISO compliance.</strong> Full ISO 21001 certification is not realistic within a capstone, since it requires institutional audits and long-term adoption. You should acknowledge that your project only demonstrates system features that can help the university in moving toward ISO compliance.
+          <blockquote>
+            <p data-start="1540" data-end="1754"><em data-start="1540" data-end="1570">Example Limitation sentence:</em><br data-start="1570" data-end="1573">
+              <em data-start="1576" data-end="1752">&ldquo;Although the system is designed following ISO 21001:2025 guidelines, full certification and implementation at the institutional level are outside the scope of this project.&quot;</em></p>
+          </blockquote>
+        </li>
+      </ol>
+    </td>
+  </tr>
+  <tr>
+    <td>Significance</td>
+    <td><p data-start="139" data-end="383">Your section on the significance of the study is clear because it explains who will benefit (such as QA staff, administrators, and the university as a whole). It also shows that the system can improve efficiency, accuracy, and accountability.</p>
+      <p data-start="385" data-end="423">To make this part stronger, you can:</p>
+      <ol data-start="425" data-end="1210">
+        <li data-start="425" data-end="671">
+          <p data-start="428" data-end="671"><strong data-start="428" data-end="468">Be more specific about the benefits.</strong> Instead of general statements, describe exactly how each group benefits. For example, &ldquo;QA staff will save time in retrieving files,&rdquo; or &ldquo;administrators will gain quicker access to compliance reports.&rdquo;</p>
+        </li>
+        <li data-start="672" data-end="848">
+          <p data-start="675" data-end="848"><strong data-start="675" data-end="701">Add measurable impact.</strong> Mention possible improvements like reduced document retrieval time, fewer errors in archiving, or faster preparation of accreditation documents.</p>
+        </li>
+        <li data-start="849" data-end="1034">
+          <p data-start="852" data-end="1034"><strong data-start="852" data-end="883">Include long-term benefits.</strong> Connect the system&rsquo;s impact to institutional goals, such as supporting ISO 21001:2025 compliance, accreditation, and continuous quality improvement.</p>
+        </li>
+        <li data-start="1035" data-end="1210">
+          <p data-start="1038" data-end="1210"><strong data-start="1038" data-end="1065">Use practical examples.</strong> For instance, explain how the system will help during audits or when preparing accreditation reports, making the benefits easier to visualize.</p>
+        </li>
+    </ol></td>
+  </tr>
+</table>
+
+<h3>Chapter II - Review of Related Literature</h3>
+<table>
+  <tr><th>Item</th><th>Evaluation</th></tr>
+  <tr>
+    <td>Coverage</td>
+    <td><p>Many local and international studies are cited, including DMS for schools and government offices. Good balance of sources.</p>
+      <p>Screenshots of related systems should be presented as <strong data-start="91" data-end="102">figures</strong>, with captions placed below the image, numbered sequentially (e.g., Figure 1, Figure 2), and written with a brief but specific description of what the screenshot shows (e.g., dashboard, login page, or reporting module). Each caption must also include the source, following the required citation style such as APA, and the full reference should appear in the reference list. Always refer to the figure in the text and never present screenshots as your own work without proper acknowledgment.</p>  
+    </td>
+  </tr>
+  <tr>
+    <td>Synthesis</td>
+    <td><p>Synthesis is present but too general.</p>
+    <p><strong>Revision Needed:</strong> Explain how gaps in other systems (e.g., limited to one department, no notifications) connect directly to FilDAS.</p>
+    <p>Create a synthesis table.</p></td>
+  </tr>
+  <tr>
+    <td>References</td>
+    <td>Mostly updated. Ensure all links are working and consistent APA format is applied. Follow the format on the templates. </td>
+  </tr>
+</table>
+
+<h3>Chapter III - Methodology</h3>
+<table>
+  <tr><th>Item</th><th>Evaluation</th></tr>
+  <tr>
+    <td>Development Method</td>
+    <td>You explained well why you chose Agile, which is good. To make it clearer, you should also show how long each sprint will last (for example, 2 weeks) and list what you plan to finish in each sprint, like a module prototype, testing, or documentation. This will make your development plan easier to follow and more realistic.</td>
+  </tr>
+  <tr>
+    <td>System Design</td>
+    <td>You have already identified your chosen technologies for the frontend (React), backend (Laravel), and database (MySQL), which is good. To make your methodology stronger, you should also include an ERD and database schema to show how data will be organized, and explain the security measures you plan to use, such as role-based access control and backup procedures. This will make your design more complete and reliable.</td>
+  </tr>
+  <tr>
+    <td>Data Collection</td>
+    <td>Using interviews and observations is a good choice, especially for small groups. To strengthen your data gathering, you can also add a short user survey. This will give you numerical results that can support your findings and make your evaluation more balanced.</td>
+  </tr>
+  <tr>
+    <td>Evaluation</td>
+    <td>You mentioned that the system will be evaluated based on usability and reliability, which is good. To make this part stronger, connect your evaluation to recognized standards like ISO 25010 or usability guidelines, and set clear targets for success. For example, you can say the system should get at least an average rating of 4 out of 5 in user surveys.</td>
+  </tr>
+</table>
+
+<h2>Revision Checklist</h2>
+<div class="checklist">
+  <h6>&nbsp;</h6>
+  <div>
+    <div tabindex="-1">
+      <div>
+        <div data-message-author-role="assistant" data-message-id="1d3fd190-fbc0-4b71-99a4-4e05d91dd2d8" dir="auto" data-message-model-slug="gpt-5">
+          <div>
+            <div>
+              
+              <ol data-start="277" data-end="2746">
+                <li data-start="277" data-end="411">Follow the correct document formatting based on the templates provided. </li>
+                <li>
+                  <p data-start="280" data-end="303"><strong data-start="280" data-end="301">Problem Statement</strong></p>
+                  <ul data-start="307" data-end="411">
+                    <li data-start="307" data-end="411">
+                      <p data-start="309" data-end="411">Rewrite as one General Problem with 3-5 Specific Problems for clarity and alignment with objectives.</p>
+                    </li>
+                  </ul>
+                </li>
+                <li data-start="413" data-end="597">
+                  <p data-start="416" data-end="432"><strong data-start="416" data-end="430">Objectives</strong></p>
+                  <ul data-start="436" data-end="597">
+                    <li data-start="436" data-end="526">
+                      <p data-start="438" data-end="526">Revise objectives so they focus on outcomes and improvements, not just system modules.</p>
+                    </li>
+                    <li data-start="530" data-end="597">
+                      <p data-start="532" data-end="597">Make sure each objective directly addresses a specific problem.</p>
+                    </li>
+                  </ul>
+                </li>
+                <li data-start="599" data-end="972">
+                  <p data-start="602" data-end="642"><strong data-start="602" data-end="640">Theoretical &amp; Conceptual Framework</strong></p>
+                  <ul data-start="646" data-end="972">
+                    <li data-start="646" data-end="797">
+                      <p data-start="648" data-end="797">Add at least two more supporting theories or models (e.g., DeLone &amp; McLean IS Success Model, Technology Acceptance Model, or ISO 21001 principles).</p>
+                    </li>
+                    <li data-start="801" data-end="876">
+                      <p data-start="803" data-end="876">Clearly explain how each theory connects to your system and evaluation.</p>
+                    </li>
+                    <li data-start="880" data-end="972">
+                      <p data-start="882" data-end="972">Improve the conceptual framework diagram to show inputs, processes, outputs, and actors.</p>
+                    </li>
+                  </ul>
+                </li>
+                <li data-start="974" data-end="1307">
+                  <p data-start="977" data-end="1004"><strong data-start="977" data-end="1002">Scope and Limitations</strong></p>
+                  <ul data-start="1008" data-end="1307">
+                    <li data-start="1008" data-end="1072">
+                      <p data-start="1010" data-end="1072">Specify exactly what is included and excluded in the system.</p>
+                    </li>
+                    <li data-start="1076" data-end="1190">
+                      <p data-start="1078" data-end="1190">Add compliance note on <strong data-start="1101" data-end="1119">ISO 21001:2025</strong>, especially on transparency, accessibility, and quality improvement.</p>
+                    </li>
+                    <li data-start="1194" data-end="1307">
+                      <p data-start="1196" data-end="1307">State practical limitations (e.g., internet requirement, hardware constraints, testing limited to QA office).</p>
+                    </li>
+                  </ul>
+                </li>
+                <li data-start="1309" data-end="1653">
+                  <p data-start="1312" data-end="1352"><strong data-start="1312" data-end="1350">Review of Related Literature (RRL)</strong></p>
+                  <ul data-start="1356" data-end="1653">
+                    <li data-start="1356" data-end="1455">
+                      <p data-start="1358" data-end="1455">Strengthen synthesis by explaining gaps in existing systems and how your system addresses them.</p>
+                    </li>
+                    <li data-start="1459" data-end="1577">
+                      <p data-start="1461" data-end="1577">Caption screenshots properly (e.g., <em data-start="1497" data-end="1549">Figure 1. Dashboard of Google Drive [Google, 2024]</em>) and cite sources in APA.</p>
+                    </li>
+                    <li data-start="1581" data-end="1653">
+                      <p data-start="1583" data-end="1653">Add at least one local or peer-reviewed source to support relevance.</p>
+                    </li>
+                  </ul>
+                </li>
+                <li data-start="1655" data-end="2212">
+                  <p data-start="1658" data-end="1675"><strong data-start="1658" data-end="1673">Methodology</strong></p>
+                  <ul data-start="1679" data-end="2212">
+                    <li data-start="1679" data-end="1808">
+                      <p data-start="1681" data-end="1808"><strong data-start="1681" data-end="1696">Agile Plan:</strong> Indicate sprint length (e.g., 2 weeks) and deliverables per sprint (e.g., membership module, testing report).</p>
+                    </li>
+                    <li data-start="1812" data-end="1936">
+                      <p data-start="1814" data-end="1936"><strong data-start="1814" data-end="1832">System Design:</strong> Include ERD and database schema; describe security measures (role-based access, backups, encryption).</p>
+                    </li>
+                    <li data-start="1940" data-end="2046">
+                      <p data-start="1942" data-end="2046"><strong data-start="1942" data-end="1961">Data Gathering:</strong> Add a short user survey to support interviews/observations with quantitative data.</p>
+                    </li>
+                    <li data-start="2050" data-end="2212">
+                      <p data-start="2052" data-end="2212"><strong data-start="2052" data-end="2067">Evaluation:</strong> Connect evaluation to ISO 25010 or usability standards and set clear acceptance targets (e.g., usability score of 4/5, 95% uptime in testing).</p>
+                    </li>
+                  </ul>
+                </li>
+                <li data-start="2214" data-end="2521">
+                  <p data-start="2217" data-end="2248"><strong data-start="2217" data-end="2246">Significance of the Study</strong></p>
+                  <ul data-start="2252" data-end="2521">
+                    <li data-start="2252" data-end="2359">
+                      <p data-start="2254" data-end="2359">Be more specific on who benefits and how (e.g., QA staff save time, administrators get faster reports).</p>
+                    </li>
+                    <li data-start="2363" data-end="2427">
+                      <p data-start="2365" data-end="2427">Add measurable impacts (e.g., reduce retrieval time by 40%).</p>
+                    </li>
+                    <li data-start="2431" data-end="2521">
+                      <p data-start="2433" data-end="2521">Connect to institutional goals such as accreditation support and ISO 21001 compliance.</p>
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Prepared by Panel | Capstone Proposal Evaluation for FilDAS | October 2, 2025</p>
+</footer>
+
+</body>
+</html>

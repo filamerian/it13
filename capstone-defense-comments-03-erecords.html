@@ -1,0 +1,247 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Capstone Proposal Evaluation - eRecords (SDO Roxas City)</title>
+  
+  		<link rel="stylesheet" href="assets/css/main.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: #111; margin: 20px; line-height: 1.45; }
+    header { border-bottom: 1px solid #e6e6e6; margin-bottom: 18px; padding-bottom: 10px; }
+    h1 { font-size: 1.4rem; margin: 0 0 6px; }
+    h2 { font-size: 1.1rem; margin: 18px 0 8px; }
+    h3 { font-size: 1rem; margin: 12px 0 6px; }
+    p { margin: 8px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; vertical-align: top; }
+    th { background: #f5f5f5; }
+    .section { padding: 10px 0; border-top: 1px solid #f0f0f0; }
+    ul { margin: 6px 0 12px 20px; }
+    ol { margin: 6px 0 12px 20px; }
+    .checklist { background: #fbfbfb; padding: 10px; border: 1px solid #eee; border-radius: 6px; }
+    .small { font-size: 0.9rem; color: #555; }
+    footer { margin-top: 18px; border-top: 1px solid #eee; padding-top: 12px; font-size: 0.9rem; color:#444; }
+    .grade { font-weight: bold; }
+    .note { background:#fffbe6; padding:10px; border:1px solid #ffe7a3; border-radius:6px; margin:10px 0; }
+  </style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+      <h1>Capstone Proposal Evaluation for BSIT Defense<br>
+      </h1>
+      <div class="meta">
+        <div><strong> Title:</strong> eRecords: Digitized Personnel Information System for SDO Roxas City</div>
+        <div><strong>Date:</strong> <span id="today"></span>02 October 2025 </div>
+        <div><strong>Proponents:</strong>
+          <table cellspacing="0" cellpadding="0">
+  <td height="75" width="245">LUCES, MARK JEFFERSON<br>
+    LORENZO, DANELLE AUBREY<br>
+    MONTAÑO, IAN CHRIS<br>
+    GALLARDO, STRANSKY SCHAIFFIER</td>
+          </table>
+        </div>
+        <div><strong>Panel:</strong>
+          <table cellspacing="0" cellpadding="0">
+  <td height="75" width="133">CABANUS<br>
+    EGIDA</td>
+          </table>
+        </div>
+        <div><strong>Chapters Covered:</strong> 1 to 3 and Prototype</div>
+        <div><strong>School/Unit:</strong> FCU-CCS </div>
+      </div>
+  </div>
+</header>
+
+<section class="section">
+  <h2> Summary</h2>
+  <p>
+    <img src="images/capstone-defense-03.png" width="200" height="200" align="right">The eRecords proposal addresses a clear and pressing need: digitization and better management of employee 201 files at the Schools Division Office of Roxas City. The document is generally complete and well structured. It provides a strong context, a reasonable set of objectives, a wide-ranging literature review that cites many comparable systems, and an Agile-based methodology suitable for iterative development.  </p>
+  <p>
+    Major strengths include a clear problem context, comprehensive list of documents to be digitized, and relevant related studies. Key weaknesses are limited technical detail on security controls and backup strategy, absence of concrete sample sizes for user studies, and lack of a simple database schema or entity-relationship overview. The proposal would benefit from stronger mapping between theory and measurable evaluation metrics and a clearer demonstration of prototype readiness.  </p>
+</section>
+
+<section class="section">
+  <h2>Detailed Evaluation by Section</h2>
+
+  <h3>Chapter I - Introduction</h3>
+  <table>
+    <tr><th>Item</th><th>Evaluation</th></tr>
+    <tr>
+      <td>Problem Definition</td>
+      <td>
+        <p>The proposal clearly describes the current paper-based or semi-digital processes and their consequences such as slow retrieval, misplaced files, and compliance risk. The background references national initiatives and similar systems, which situates the problem well.</p>
+        <p><strong>Issues to fix</strong>: The Statement of the Problem should be reformatted into one concise General Problem followed by numbered Specific Problems to make alignment with objectives easier.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Objectives</td>
+      <td>
+        <p>The general objective and specific objectives map to core modules: Employee Information Management, Document Management, and Report Generation. The objectives capture system purpose and scope.</p>
+        <p><strong>Suggestion</strong>: Revise wording so objectives emphasize project outcomes and improvements rather than only listing modules. The earlier guidance on avoiding feature-like objectives applies here.</p>
+        <p><table border="1" cellspacing="0" cellpadding="6" style="border-collapse:collapse; width:100%;">
+  <thead style="background:#f5f5f5;">
+    <tr>
+      <th>Original Objective <br>
+        (Feature-like)</th>
+      <th>Revised Objective<br>
+        (Outcome-focused)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>To create an Employee Information Module</td>
+      <td>To provide a secure and organized platform that enables faster retrieval and updating of employee records, reducing manual search time in the HR office.</td>
+    </tr>
+    <tr>
+      <td>To develop a Document Upload Module</td>
+      <td>To ensure that personnel documents are properly digitized, stored, and easily accessible, minimizing the risk of misplaced or damaged files.</td>
+    </tr>
+    <tr>
+      <td>To add a Report Generation Module</td>
+      <td>To support decision-making by generating accurate and timely personnel reports that improve administrative efficiency.</td>
+    </tr>
+    <tr>
+      <td>To implement a Search Module</td>
+      <td>To allow staff to quickly locate specific personnel records using a user-friendly search function, improving response time for record requests.</td>
+    </tr>
+  </tbody>
+</table>
+</p></td>
+    </tr>
+    <tr>
+      <td>Theoretical and Conceptual Framework</td>
+      <td>
+        <p>The Task-Technology Fit model is appropriate for this system. The conceptual framework lists modules and actors clearly: Admin, Staff, Employee, Authentication, File Upload, Document Management, Search, Audit Logs, and Database.</p>
+        <p><strong>Suggestion</strong>: Add one or two complementary theories such as Information Systems Success (DeLone and McLean) or Technology Acceptance Model to strengthen evaluation rationale and link theory to metrics.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Scope and Limitations</td>
+      <td>
+        <p>Scope focuses on SDO Roxas City and digitization of the 18 required 201 documents. Limitations list infrastructure, budget, and staff expertise as constraints.</p>
+        <p><strong>Suggestion</strong>: Clarify what is excluded (for example student records, financial systems), state whether the system will be accessible outside the SDO network, and include basic retention and archival policy notes.</p>
+      </td>
+    </tr>
+  </table>
+
+  <h3>Recommended Actions for Chapter I</h3>
+  <ul>
+    <li>Rewrite the Statement of the Problem as one General Problem plus 4 to 6 numbered Specific Problems.</li>
+    <li>Refine specific objectives so they read as project goals and improvements rather than feature lists.</li>
+    <li>Add one or two additional theoretical references and a short sentence explaining how they guide evaluation.</li>
+    <li>Make the scope exclusions explicit and add a brief data retention and access policy note.</li>
+  </ul>
+
+  <h3>Chapter II - Review of Related Literature</h3>
+  <table>
+    <tr><th>Item</th><th>Evaluation</th></tr>
+    <tr>
+      <td>Coverage</td>
+      <td>
+        <p>The review is broad and includes many relevant local and international studies and systems. Examples such as EDMS implementations and HRIS in educational institutions are appropriately referenced.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Analysis and Synthesis</td>
+      <td>
+        <p>The synthesis identifies common features across prior works like centralized repositories, search, and security. The proposal positions eRecords to build on these strengths.</p>
+        <p><strong>Issue</strong>: The synthesis remains general. It should draw out specific technical or policy gaps in the comparative systems and tie each gap to a design choice in eRecords.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>References</td>
+      <td>
+        <p>References are numerous and relevant. Many sources are conference or project reports and web documents. Consider adding policy or standards references such as DepEd circulars or Data Privacy Commission materials if available.</p>
+      </td>
+    </tr>
+  </table>
+
+  <h3>Recommended Actions for Chapter II</h3>
+  <ul>
+    <li>For each related system add a short note: what it does well, what it lacks, and how eRecords will address that specific gap.</li>
+    <li>Add local government or DepEd policy references and any peer-reviewed studies on digitization in Philippine public offices when available.</li>
+    <li>Make the synthesis table more analytical by mapping gaps to proposed system features (for example: lack of audit trail in X system -> eRecords audit logs design).</li>
+  </ul>
+
+  <h3>Chapter III - Research Methodology</h3>
+  <table>
+    <tr><th>Item</th><th>Evaluation</th></tr>
+    <tr>
+      <td>Development Method</td>
+      <td>
+        <p>Agile is an appropriate choice for iterative development and stakeholder involvement. The phases are logical: planning, requirements, design, coding, testing, deployment, feedback.</p>
+        <p><strong>Issue</strong>: The plan does not state sprint length, sprint deliverables, or sample backlog items. Stakeholder engagement is mentioned but lacks numeric detail.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Requirements Gathering</td>
+      <td>
+        <p>Methods listed include interviews, observation, and document review. The proposal recognizes the need to meet Records Unit and HR personnel to collect needs.</p>
+        <p><strong>Issue</strong>: No sample sizes or selection criteria are provided for surveys or interviews. Add target numbers for respondents and describe how participants will be chosen.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Design and Technical Plan</td>
+      <td>
+        <p>The conceptual design, DFDs and module descriptions are helpful. The role definitions and process flow are clear.</p>
+        <p><strong>Issue</strong>: The proposal lacks a visible database schema, description of file storage (object store vs database BLOBs), and explicit security controls such as encryption methods and backup strategy.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Testing and Evaluation</td>
+      <td>
+        <p>Testing phases are described: unit, integration, UAT, and production deployment. Metrics such as user satisfaction and efficiency are named.</p>
+        <p><strong>Suggestion</strong>: Define measurable acceptance criteria and sample sizes, and align evaluation items to ISO/IEC 25010 quality attributes for clarity.</p>
+      </td>
+    </tr>
+  </table>
+
+  <h3>Recommended Actions for Chapter III</h3>
+  <ul>
+    <li>State sprint cadence (for example two-week sprints), sample backlog items, and expected deliverables per sprint.</li>
+    <li>Specify sample sizes for surveys and interviews (for example: at least 10 Records Unit staff interviews and 50 employee survey responses if feasible).</li>
+    <li>Provide a simple database schema diagram (main tables and relationships) and discuss file storage approach and indexing strategy.</li>
+    <li>Add a technical security section: encryption in transit (TLS), encryption at rest, role-based access control, audit logging retention, backup frequency and restore test plan.</li>
+    <li>Make your evaluation tools clearer by linking them to standard quality measures. For example, use ISO 25010 (software quality model) or the DeLone and McLean model (information systems success) as a guide. Then, set specific targets such as “the system should get at least 4 out of 5 in usability surveys” or “the system should run with 95% uptime during testing.”</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>Ethics, Privacy, and Legal Considerations</h2>
+  <ul>
+    <li>Include a short compliance statement to Philippine Data Privacy Act (RA 10173) and DepEd guidance if applicable.</li>
+    <li>Describe consent process for employees whose personal documents will be digitized and stored.</li>
+    <li>State retention policy, archival schedule, and secure deletion procedures for records when they reach end of retention.</li>
+    <li>Specify emergency access rules and audit procedures for special access requests.</li>
+  </ul>
+</section>
+
+
+
+<section class="section">
+  <h2>Prioritized Revision Checklist for Students</h2>
+  <div class="checklist">
+    <ol>
+      <li>Rewrite Statement of the Problem into one General Problem and numbered Specific Problems for clarity.</li>
+      <li>Refine specific objectives so they express project outcomes and improvements instead of listing modules.</li>
+      <li>State sprint cadence, sample backlog examples, and sprint deliverables in Chapter III.</li>
+      <li>Specify respondent sample sizes and selection criteria for interviews and surveys.</li>
+      <li>Include a simple database schema (main tables and relationships) and explain file storage approach and indexing strategy.</li>
+      <li>Document security controls: TLS, encryption at rest, RBAC, audit log retention, backup schedule and restore test, password policy.</li>
+      <li>Provide prototype screenshots and a 3 to 5 step demo script covering a full user flow for the defense.</li>
+      <li>Add a short compliance statement for Data Privacy Act and a sample consent form or consent workflow for employees.</li>
+      <li>Map evaluation instruments to ISO 25010 quality attributes and define acceptance targets for usability and reliability.</li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="small"></div>
+</footer>
+
+</body>
+</html>

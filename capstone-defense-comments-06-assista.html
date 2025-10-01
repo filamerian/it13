@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Capstone Proposal Evaluation – ASSISTA</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+
+  <style>
+    body { margin: 20px; color: #111; line-height: 1.45; }
+    header { border-bottom: 1px solid #e6e6e6; margin-bottom: 16px; padding-bottom: 8px; }
+
+    p { margin: 8px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; vertical-align: top; }
+    th { background: #f5f5f5; }
+    .checklist { background: #fbfbfb; padding: 10px; border: 1px solid #eee; border-radius: 6px; }
+    .small { font-size: 0.9rem; color: #555; }
+    .grade { font-weight: bold; }
+    footer { margin-top: 18px; border-top: 1px solid #eee; padding-top: 10px; font-size: 0.9rem; color:#444; }
+    .note { background:#fffbe6; padding:10px; border:1px solid #ffe7a3; border-radius:6px; margin:10px 0; }
+  </style>
+</head>
+<body>
+
+<header>
+ <div class="wrap">
+      <h1>THESIS Proposal Evaluation for BSCS Defense<br>
+    </h1>
+      <div class="meta">
+        <div><strong> Title:</strong>ASSISTA - A Digital Platform for Managing Social Aid Requests and Beneficiary Records (CSWDO, Roxas City)</div>
+        <div><strong>Date:</strong> <span id="today"></span><span id="today"></span>02 October 2025</div>
+        <div><strong>Proponents:</strong>
+          <table cellspacing="0" cellpadding="0">
+  <td height="75" width="245">APA-AP, ARUELIZA<br>
+    BOLVIDER, MARC JOSEPH<br>
+    GEVERO, SANDRA <br>
+    MENTINO, PRINCE LORENZ<br>
+    VILLEZA, ELLA DANIELLE</td>
+          <tr>
+   
+          </table>
+        </div>
+        <div><strong>Panel:</strong>
+          <table cellspacing="0" cellpadding="0">
+  <td height="75" width="133">CABANUS<br>
+    EGIDA</td>
+          </table>
+        </div>
+        <div><strong>Chapters Covered:</strong> 1 to 3 and Prototype</div>
+        <div><strong>School/Unit:</strong> FCU-CCS </div>
+      </div>
+  </div></header>
+
+<section>
+  <h2> Summary</h2>
+  <p>
+    <img src="images/capstone-defense-06.png" width="200" height="200" align="right">ASSISTA addresses an important local problem: slow, paper-based processing of AICS applications that creates delays, fragmented records, and poor communication with beneficiaries. The proposal is relevant and well-structured. Strengths include a clear problem overview, a practical set of modules (registration, tracking, notification, reporting, awareness), and the use of Agile (Scrum). Areas to improve are clearer objectives (make them outcome-focused), more detail in methodology (sprint plan, sample sizes), technical design details (ERD, security, backup), and a stronger evaluation plan tied to standards and targets.  </p>
+</section>
+
+<section>
+  <h2>&nbsp;</h2>
+
+  <h3>Chapter I - Introduction</h3>
+  <table>
+    <tr><th>Item</th><th>Evaluation</th></tr>
+    <tr>
+      <td>Cover Sheet and Chapters 1-3 </td>
+      <td>Follow the format of the provided <a href="https://filamerian.github.io/it13/#downloads" target="_blank">templates</a> (font, indentions, etc.) </td>
+    </tr>
+    <tr>
+      <td>Overview of Current Technology</td>
+      <td>Good context: compares local manual practices with national systems like EDTMS and PhilSys. This helps show why ASSISTA is needed.<br><strong>Suggestion:</strong> Shorten a few long paragraphs and add one sentence that directly links these gaps to the CSWDO in Roxas City.</td>
+    </tr>
+    <tr>
+      <td>Desired State of Technology</td>
+      <td>Clear goals: digitize registration, add tracking, notifications, and reporting. Nice focus on transparency and outreach.<br><strong>Suggestion:</strong> Expand with short examples showing how an applicant or staff member benefits.</td>
+    </tr>
+    <tr>
+      <td>Statement of the Problem</td>
+      <td>Problems are listed and match real pain points in AICS processing.</td>
+    </tr>
+    <tr>
+      <td>Objectives</td>
+      <td><p>Objectives map to modules but are written as technical features.</p>
+        <p><strong>Revision needed:</strong> Rewrite objectives to emphasize outcomes. </p>
+      <p><strong>Example: </strong></p>
+      <p data-start="89" data-end="201">Based on the identified problems, the study aims to achieve the following specific objectives:</p>      
+      <ol>
+        <li>To develop a digital registration and submission process that reduces errors, shortens queues, and improves accessibility for applicants, especially in remote barangays.</li>
+        <li>To provide a real-time application tracking feature that enables administrators to monitor submission progress and improves transparency in the evaluation of assistance requests.</li>
+        <li>To establish an integrated communication and notification system that keeps applicants informed of updates, follow-ups, and status changes, improving engagement and reducing missed information.</li>
+        <li>To automate report generation for the CSWDO, ensuring timely compilation of assistance data that supports program monitoring, impact evaluation, and policy decision-making.</li>
+        <li>To promote awareness and accessibility of the AICS program in Roxas City by integrating digital tools that improve tracking of applications and strengthen engagement with beneficiaries.</li>
+      </ol>      </td>
+    </tr>
+    <tr>
+      <td>Theoretical & Conceptual Framework</td>
+      <td>Using Task-Technology Fit (TTF) is appropriate and well explained. To strengthen your framework, add at least two more theories or models (such as the DeLone & McLean IS Success Model or the Technology Acceptance Model) and briefly explain how they connect to your system and evaluation. This will give your study a stronger academic foundation.</td>
+    </tr>
+    <tr>
+      <td>Scope & Limitations</td>
+      <td>Your Scope and Limitations section is clear since it shows that the system will focus on processing AICS applications within the CSWDO of Roxas City. Still, it can be improved by being more specific about what is included, such as registration, tracking, notifications, reporting, and awareness features. At the same time, clearly state what is excluded, like other social aid programs (e.g., 4Ps or disaster relief) or features that go beyond the project’s timeline. Also, mention practical limitations such as the need for internet access, availability of computers or mobile devices, and that the project is limited to a web-based prototype. This will make your scope realistic and help set the right expectations.</td>
+    </tr>
+  </table>
+
+  <h3>&nbsp;</h3>
+  <h3>Chapter II - Review of Related Literature</h3>
+  <table>
+    <tr><th>Item</th><th>Evaluation</th></tr>
+    <tr>
+      <td>Coverage</td>
+      <td>Could not find Chapter 2 in the softcopy.</td>
+    </tr>
+    <tr>
+      <td>Synthesis</td>
+      <td>Be specific: identify 2–3 gaps in other systems and state how ASSISTA will fill them.</td>
+    </tr>
+    <tr>
+      <td>Screenshots & Captions</td>
+      <td>If including screenshots, label them as Figure 1, Figure 2 etc., add captions, and cite the source (APA). Always refer to figures in text.</td>
+    </tr>
+  </table>
+
+  <h3>&nbsp;</h3>
+  <h3>Chapter III - Methodology</h3>
+  <p data-start="240" data-end="542">Your methodology chapter is well-written and clearly explains why Agile (Scrum) was chosen. The structure flows logically from requirement analysis to deployment and maintenance, and you identified the tools and technologies correctly. It shows that you understand the process of developing a system.</p>
+  <p data-start="544" data-end="639">However, several parts need improvement to make the methodology stronger and more consistent:</p>
+  <ol data-start="641" data-end="2620">
+    <li data-start="641" data-end="866">
+      <p data-start="644" data-end="866"><strong data-start="644" data-end="669">Agile (Scrum) Details</strong>: You explained Scrum well, but you did not specify sprint length (for example, 2 weeks) and expected deliverables per sprint. This detail will make your plan more realistic and easier to follow.</p>
+    </li>
+    <li data-start="868" data-end="1104">
+      <p data-start="871" data-end="1104"><strong data-start="871" data-end="887">Design Phase</strong>: You mentioned Figma, UML diagrams, and database schema, but the ERD and schema are not shown in this section. Add at least one ERD and a sample database design to prove the data structure supports your objectives.</p>
+    </li>
+    <li data-start="1106" data-end="1388">
+      <p data-start="1109" data-end="1388"><strong data-start="1109" data-end="1130">Development Phase</strong>: You listed the technologies (React, Laravel, MySQL), which is good. To improve, briefly explain why these tools were chosen (for example, Laravel for security, React for modular UI, MySQL for scalability). This shows you did not just pick tools randomly.</p>
+    </li>
+    <li data-start="1390" data-end="1734">
+      <p data-start="1393" data-end="1734"><strong data-start="1393" data-end="1421">Testing and Verification</strong>: The testing part is strong because you included UAT with CSWDO staff. Still, it will be better if you add clear acceptance targets (for example, &quot;System should achieve 95 percent accuracy in test cases&quot; or &quot;average usability rating of 4 out of 5&quot;).</p>
+    </li>
+    <li data-start="1736" data-end="1884">
+      <p data-start="1739" data-end="1884"><strong data-start="1739" data-end="1759">Deployment Phase</strong>: You explained local deployment well. Strengthen this by adding your plan for data security and backups during deployment.</p>
+    </li>
+    <li data-start="1886" data-end="2118">
+      <p data-start="1889" data-end="2118"><strong data-start="1889" data-end="1918">Maintenance and Evolution</strong>: This section is good because you listed future upgrades. To improve, clarify which upgrades can be done within the capstone timeline and which ones are only recommendations for future development.</p>
+    </li>
+    <li data-start="2120" data-end="2368">
+      <p data-start="2123" data-end="2368"><strong data-start="2123" data-end="2151">Scrum Framework Overview</strong>: This is detailed, but avoid repeating what was already said under Agile Methodology. Make this shorter by focusing on how your team used each part (Product Backlog, Sprint Planning, etc.), not just the definition.</p>
+    </li>
+    <li data-start="2370" data-end="2620">
+      <p data-start="2373" data-end="2620"><strong data-start="2373" data-end="2399">Tools and Technologies</strong>: You listed tools clearly. Improve this by creating a simple table that matches each tool with its purpose (for example, “React.js – frontend development”). This makes it easier for readers and panelists to understand.</p>
+    </li>
+  </ol>
+  <h2 data-start="138" data-end="194"><strong data-start="142" data-end="192">Summary of Things to Revise – ASSISTA Proposal</strong></h2>
+  <ol data-start="196" data-end="2452">
+    <li data-start="196" data-end="349">
+      <p data-start="199" data-end="223"><strong data-start="199" data-end="221">Format and Writing</strong></p>
+      <ul data-start="227" data-end="349">
+        <li data-start="227" data-end="287">
+          <p data-start="229" data-end="287">Follow the required template (fonts, indents, headings).</p>
+        </li>
+        <li data-start="291" data-end="349">
+          <p data-start="293" data-end="349">Shorten long paragraphs and make transitions smoother.</p>
+        </li>
+      </ul>
+    </li>
+    <li data-start="351" data-end="1331">
+      <p data-start="354" data-end="384"><strong data-start="354" data-end="382">Chapter I – Introduction</strong></p>
+      <ul data-start="388" data-end="1331">
+        <li data-start="388" data-end="500">
+          <p data-start="390" data-end="500"><strong data-start="390" data-end="424">Overview of Current Technology</strong>: Add one clear sentence linking the gaps directly to CSWDO in Roxas City.</p>
+        </li>
+        <li data-start="504" data-end="587">
+          <p data-start="506" data-end="587"><strong data-start="506" data-end="523">Desired State</strong>: Give short examples of how applicants or staff will benefit.</p>
+        </li>
+        <li data-start="591" data-end="682">
+          <p data-start="593" data-end="682"><strong data-start="593" data-end="621">Statement of the Problem</strong>: Restate as one general problem and 3–5 specific problems.</p>
+        </li>
+        <li data-start="686" data-end="824">
+          <p data-start="688" data-end="824"><strong data-start="688" data-end="702">Objectives</strong>: Rewrite to show outcomes, not just modules. Example: “To reduce errors and shorten queues by digitizing registration.”</p>
+        </li>
+        <li data-start="828" data-end="1044">
+          <p data-start="830" data-end="1044"><strong data-start="830" data-end="868">Theoretical &amp; Conceptual Framework</strong>: Keep Task-Technology Fit but add 2 more theories (example: DeLone &amp; McLean IS Success Model, Technology Acceptance Model). Briefly explain how each connects to your system.</p>
+        </li>
+        <li data-start="1048" data-end="1331">
+          <p data-start="1050" data-end="1331"><strong data-start="1050" data-end="1075">Scope and Limitations</strong>: Be specific on what is included (registration, tracking, notifications, reporting, awareness). State what is excluded (like 4Ps or disaster relief). Add limitations such as internet requirement, device availability, and that the project is a prototype.</p>
+        </li>
+      </ul>
+    </li>
+    <li data-start="1333" data-end="1621">
+      <p data-start="1336" data-end="1383"><strong data-start="1336" data-end="1381">Chapter II – Review of Related Literature</strong></p>
+      <ul data-start="1387" data-end="1621">
+        <li data-start="1387" data-end="1437">
+          <p data-start="1389" data-end="1437">This chapter is missing in your draft. Add it.</p>
+        </li>
+        <li data-start="1441" data-end="1519">
+          <p data-start="1443" data-end="1519">Identify 2–3 gaps in other systems and explain how ASSISTA will fill them.</p>
+        </li>
+        <li data-start="1523" data-end="1621">
+          <p data-start="1525" data-end="1621">If using screenshots, caption them as figures, cite the source, and refer to them in the text.</p>
+        </li>
+      </ul>
+    </li>
+    <li data-start="1623" data-end="2452">
+      <p data-start="1626" data-end="1657"><strong data-start="1626" data-end="1655">Chapter III – Methodology</strong></p>
+      <ul data-start="1661" data-end="2452">
+        <li data-start="1661" data-end="1763">
+          <p data-start="1663" data-end="1763"><strong data-start="1663" data-end="1680">Agile (Scrum)</strong>: Indicate sprint length (example: 2 weeks) and expected deliverables per sprint.</p>
+        </li>
+        <li data-start="1767" data-end="1845">
+          <p data-start="1769" data-end="1845"><strong data-start="1769" data-end="1785">Design Phase</strong>: Add ERD and database schema to show your data structure.</p>
+        </li>
+        <li data-start="1849" data-end="1932">
+          <p data-start="1851" data-end="1932"><strong data-start="1851" data-end="1872">Development Phase</strong>: Explain briefly why you chose React, Laravel, and MySQL.</p>
+        </li>
+        <li data-start="1936" data-end="2063">
+          <p data-start="1938" data-end="2063"><strong data-start="1938" data-end="1949">Testing</strong>: Keep UAT with CSWDO staff but also set clear success targets (example: 95% accuracy or average rating of 4/5).</p>
+        </li>
+        <li data-start="2067" data-end="2127">
+          <p data-start="2069" data-end="2127"><strong data-start="2069" data-end="2083">Deployment</strong>: Add plans for data security and backups.</p>
+        </li>
+        <li data-start="2131" data-end="2251">
+          <p data-start="2133" data-end="2251"><strong data-start="2133" data-end="2148">Maintenance</strong>: Clarify which upgrades are possible during the capstone timeline and which are only for the future.</p>
+        </li>
+        <li data-start="2255" data-end="2361">
+          <p data-start="2257" data-end="2361"><strong data-start="2257" data-end="2285">Scrum Framework Overview</strong>: Shorten this. Focus on how <em data-start="2314" data-end="2320">your</em> team applied it, not just definitions.</p>
+        </li>
+        <li data-start="2365" data-end="2452">
+          <p data-start="2367" data-end="2452"><strong data-start="2367" data-end="2393">Tools and Technologies</strong>: Put in a simple table showing the tool and its purpose.</p>
+        </li>
+      </ul>
+    </li>
+  </ol>
+</section>
+
+<footer>
+  <p>Prepared by Panel | Capstone Proposal Evaluation for ASSISTA | October 2, 2025</p>
+</footer>
+
+</body>
+</html>

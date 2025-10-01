@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Capstone Proposal Evaluation - HSE-Archive</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+    		<link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    body { margin: 20px; color: #111; line-height: 1.45; }
+    header { border-bottom: 1px solid #e6e6e6; margin-bottom: 12px; padding-bottom: 8px; }
+    h1 { font-size: 1.4rem; margin: 0 0 6px; }
+    h2 { font-size: 1.1rem; margin: 12px 0 8px; }
+    h3 { font-size: 1rem; margin: 10px 0 6px; }
+    p { margin: 8px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; vertical-align: top; }
+    th { background: #f5f5f5; }
+    .checklist { background: #fbfbfb; padding: 10px; border: 1px solid #eee; border-radius: 6px; }
+    .small { font-size: 0.9rem; color: #555; }
+    .grade { font-weight: bold; }
+    footer { margin-top: 18px; border-top: 1px solid #eee; padding-top: 10px; font-size: 0.9rem; color:#444; }
+  </style>
+</head>
+<body>
+
+<header>
+
+  
+<div class="wrap">
+      <h1>Capstone Proposal Evaluation for BSIT Defense<br>
+      </h1>
+      <div class="meta">
+        <div><strong> Title:</strong> HSE-Archive: A Web-Based Repository for The Hillside Echo</div>
+        <div><strong>Date:</strong> <span id="today"></span><span id="today"></span>02 October 2025</div>
+        <div><strong>Proponents:</strong>
+          <table cellspacing="0" cellpadding="0">
+  <td height="75" width="245">VAFLOR, MA. ESTELLE ANTONETTE <br>
+    TABANAS, JHON REX <br>
+    ALTAVAS, RAVE LAURENZ</td>
+          </table>
+        </div>
+        <div><strong>Panel:</strong>
+          <table cellspacing="0" cellpadding="0">
+  <td height="75" width="133">CABANUS<br>
+    EGIDA</td>
+          </table>
+        </div>
+        <div><strong>Chapters Covered:</strong> 1 to 3 and Prototype</div>
+        <div><strong>School/Unit:</strong> FCU-CCS </div>
+      </div>
+  </div>
+</header>
+
+<section>
+  <h2> Summary</h2>
+  <p>
+    <img src="images/capstone-defense-01.png" width="200" height="200" align="right">HSE-Archive proposes a focused and relevant web-based archive for The Hillside Echo. The proposal identifies clear needs for preservation, searchable access, alumni engagement, and features such as publication modules, alumni directory, and a feedback mechanism. Strengths include a clear problem statement, a useful conceptual framework, and a reasonable methodology using Agile. Areas to improve are making objectives outcome-focused, adding a clear ERD and database schema, tightening the literature synthesis, providing concrete sprint plans and deliverables, and adding measurable acceptance targets for evaluation.  </p>
+</section>
+
+<section>
+  <h2>&nbsp;</h2>
+  <h2>Chapter I - Introduction</h2>
+  <table>
+    <tr><th>Item</th><th>Evaluation</th></tr>
+    <tr>
+      <td>Cover  and Chapters 1-3 </td>
+      <td><p>Follow the format of the provided <a href="https://filamerian.github.io/it13/#downloads" target="_blank">templates</a> (font, indentions, etc.) </p>
+      <p>Incorrect order of sections (<em>Operational Definition of Terms, Scope and Limitations of the Study</em>,  Significance of the Study)</p></td>
+    </tr>
+    <tr>
+      <td>Overview of Current Technology</td>
+      <td>Good historical context and clear description of the current manual and ad hoc practices. <br>
+        <strong> Suggestion: </strong>shorten long paragraphs and add a sentence linking these gaps specifically to users of The Hillside Echo.</td>
+    </tr>
+    <tr>
+      <td>Desired State of Technology</td>
+      <td>Well described. Consider adding 1-2 short user scenarios showing how students, staff, or alumni will benefit.</td>
+    </tr>
+    <tr>
+      <td>Statement of the Problem</td>
+      <td>Problems are relevant and well listed. <br>
+        <strong> Revision:</strong> restate as one General Problem and 3 to 5 Specific Problems so objectives map clearly to problems.</td>
+    </tr>
+    <tr>
+      <td>Objectives</td>
+      <td><p>Objectives are written as features. </p>
+      <p><strong>Revision: </strong>rewrite them to be outcome-focused (for example, "to make it easy for alumni to find and claim their articles").</p>
+      <p>Revise the Objectives so each one answers a specific problem. Use action words like design, develop, implement, evaluate.</p></td>
+    </tr>
+    <tr>
+      <td>Theoretical and Conceptual Framework</td>
+      <td><p>Task-Technology Fit is appropriate and explained. </p>
+      <p><strong>Suggestion</strong>: add two more theories such as DeLone and McLean IS Success Model or Technology Acceptance Model, and briefly show how each links to evaluation measures.</p></td>
+    </tr>
+    <tr>
+      <td>Definition of Terms</td>
+      <td>Follow format </td>
+    </tr>
+    <tr>
+      <td>Scope and Limitations</td>
+      <td><p>Scope is clear on included sections and intended users. </p>
+      <p><strong>Suggestion</strong>: explicitly state exclusions, minimum device or bandwidth requirements, and that full institutional integration is out of scope.</p></td>
+    </tr>
+    <tr>
+      <td><p data-start="103" data-end="145">Significance of the Study</p>      </td>
+      <td><p data-start="149" data-end="271">You identified the key beneficiaries well: Hillside Echo members, the university, the community, and future researchers.</p>
+        <p data-start="274" data-end="349">This makes the study relevant and clearly connected to real stakeholders.</p>
+        <p data-start="352" data-end="425">To improve, expand your discussion and make the benefits more specific and practical. For example:</p>
+        <ul>
+          <li>Instead of saying “equip them with digital skills,” specify the skills (e.g., online publishing, digital archiving).</li>
+          <li>For the university, explain how the system can reduce the time needed to search for old articles.</li>
+          <li>For the community, highlight how access to past publications can preserve cultural identity and history.</li>
+          <li>For researchers, clarify what types of studies or analysis the archive can support'</li>
+      </ul>        <p data-start="856" data-end="954">Adding measurable or concrete examples will make the significance stronger and easier to defend.</p>
+      <p data-start="856" data-end="954">Sample: </p>
+      <p data-start="173" data-end="203"><strong data-start="173" data-end="201">What to Include (Scope):</strong></p>
+      <ul data-start="204" data-end="1045">
+        <li data-start="204" data-end="305">
+          <p data-start="206" data-end="305"><strong data-start="206" data-end="216">Users:</strong> Identify who can use the system (e.g., Admin, Hillsider members, Alumni, Guest users).</p>
+        </li>
+        <li data-start="306" data-end="449">
+          <p data-start="308" data-end="449"><strong data-start="308" data-end="333">Modules and Features:</strong> Clearly list the modules (Publication, Admin, Hillsider, Feedback, Alumni Directory) and what each module can do.</p>
+        </li>
+        <li data-start="450" data-end="657">
+          <p data-start="452" data-end="657"><strong data-start="452" data-end="472">Content Covered:</strong> Specify that the system will store and archive <em data-start="520" data-end="525">all</em> official print and online publications of <em data-start="568" data-end="587">The Hillside Echo</em> (newspapers, magazines, folios, newsletters, literary works, etc.).</p>
+        </li>
+        <li data-start="658" data-end="805">
+          <p data-start="660" data-end="805"><strong data-start="660" data-end="674">Functions:</strong> Define what users can do in the system, such as login, upload, search,   filter by category, give feedback, view alumni directory.</p>
+        </li>
+        <li data-start="806" data-end="911">
+          <p data-start="808" data-end="911"><strong data-start="808" data-end="823">Technology:</strong> Indicate the technologies that will be used (HTML, CSS, React, Laravel, MySQL, etc.).</p>
+        </li>
+        <li data-start="912" data-end="1045">
+          <p data-start="914" data-end="1045"><strong data-start="914" data-end="925">Access:</strong> Mention if the system will be web-based and accessible only within the university network or also accessible outside.</p>
+        </li>
+      </ul>
+      <p data-start="1047" data-end="1083"><strong data-start="1047" data-end="1081">What to Exclude (Limitations):</strong></p>
+      <ul data-start="1084" data-end="1810">
+        <li data-start="1084" data-end="1186">
+          <p data-start="1086" data-end="1186">The system will not cover <strong data-start="1112" data-end="1142">other student publications</strong> within the university or outside schools.</p>
+        </li>
+        <li data-start="1187" data-end="1355">
+          <p data-start="1189" data-end="1355">The system will not serve as a <strong data-start="1220" data-end="1253">general social media platform</strong>; alumni engagement will be limited to directory and updates, not chatting or posting like Facebook.</p>
+        </li>
+        <li data-start="1356" data-end="1460">
+          <p data-start="1358" data-end="1460">It will not handle <strong data-start="1377" data-end="1418">printing, editing, or content writing</strong> of articles—only archiving and viewing.</p>
+        </li>
+        <li data-start="1461" data-end="1590">
+          <p data-start="1463" data-end="1590">The system will not provide <strong data-start="1491" data-end="1515">advanced AI features</strong> such as automatic summarization or translation (unless specified later).</p>
+        </li>
+        <li data-start="1591" data-end="1699">
+          <p data-start="1593" data-end="1699">It will not function as a <strong data-start="1619" data-end="1654">full learning management system</strong> or news portal for external organizations.</p>
+        </li>
+        <li data-start="1700" data-end="1810">
+          <p data-start="1702" data-end="1810">Access may be limited to users approved by the Editorial Board; the public may only view selected content.</p>
+        </li>
+      </ul>
+      <p data-start="856" data-end="954">&nbsp;</p></td>
+    </tr>
+  </table>
+
+  <h3>&nbsp;</h3>
+  <h2>Chapter II - Review of Related Literature</h2>
+  <table>
+    <tr><th>Item</th><th>Evaluation</th></tr>
+    <tr>
+      <td>Coverage</td>
+      <td>Good collection of international and local systems such as OnBase, BibSonomy, and university publications. Citations and examples are present.</td>
+    </tr>
+    <tr>
+      <td>Synthesis</td>
+      <td>The synthesis is informative but general. <br>
+      Revision: identify 2 to 3 specific gaps in existing systems and explain how HSE-Archive addresses them (for example, tailored alumni claiming, print media preservation, or integrated feedback).</td>
+    </tr>
+    <tr>
+      <td>Screenshots and Captions</td>
+      <td>If you include screenshots, label them as figures (Figure 1, Figure 2), add clear captions describing what is shown, and cite the source in APA. Refer to figures in the text.</td>
+    </tr>
+  </table>
+
+  <h3>&nbsp;</h3>
+  <h2>Chapter III - Methodology</h2>
+  <table>
+    <tr><th>Item</th><th>Evaluation</th></tr>
+    <tr>
+      <td>Development Method</td>
+      <td>Agile (Scrum) is a good choice for your project. To make your plan clearer and easier to follow, you should also state how long each sprint will be (for example, two weeks) and what you expect to finish in each sprint, such as a module, testing, or documentation. This will make your development plan more practical and organized.</td>
+    </tr>
+    <tr>
+      <td>Design and Data</td>
+      <td>You already mentioned design activities, wireframes, and UML diagrams, which is good. To make this section stronger, also include an ERD (Entity Relationship Diagram) and a sample database schema. These will clearly show how articles, users, and metadata are stored and connected in your system.</td>
+    </tr>
+    <tr>
+      <td>Development Tools</td>
+      <td>You listed the technologies you will use, which is good. To improve this part, add a short explanation of why you chose each tool (for example, React for a dynamic interface, Laravel for security, MySQL for structured data). It will also help if you create a simple table that matches each tool with its purpose so readers can easily see how each one supports the system.</td>
+    </tr>
+    <tr>
+      <td>Testing and Evaluation</td>
+      <td>Your testing steps are good, especially since you included User Acceptance Testing (UAT). To make this section stronger, add clear success targets, such as aiming for a usability rating of 4 out of 5 or at least 95 percent accuracy in searching. Also, explain how many users or participants will be involved in the testing so the results will be reliable.</td>
+    </tr>
+    <tr>
+      <td>Deployment and Maintenance</td>
+      <td>You already explained deployment and maintenance, which is good. To make it more complete, add details on how you will handle backups, how long data will be kept (data retention policy), and what security measures you will use, such as role-based access for different users and encryption to protect sensitive information.</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h2>Priority Revision Checklist</h2>
+  <div class="checklist">
+    <ol>
+      <li>Follow the template formatting and order. </li>
+      <li>Rewrite Statement of the Problem into one General Problem and 3 to 5 Specific Problems.</li>
+      <li>Rewrite specific objectives to be outcome-focused and map each to a specific problem.</li>
+      <li>Complete Chapter II synthesis by identifying specific gaps in related systems and linking them to HSE-Archive features.</li>
+      <li>Include ERD and a sample database schema in Chapter III.</li>
+      <li>Specify sprint length and provide a sprint plan with expected deliverables per sprint.</li>
+      <li>Add measurable acceptance targets for testing and state test sample sizes.</li>
+      <li>Describe security measures, backup strategy, and basic data retention rules.</li>
+      <li>Caption screenshots as figures and cite sources using APA format.</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <footer>
+    <p>Prepared by Panel | Capstone Proposal Evaluation for HSE-Archive | October 2, 2025</p>
+  </footer>
+</section>
+</body>
+</html>

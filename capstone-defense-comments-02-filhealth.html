@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Capstone Evaluation - FilHealth</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  		<link rel="stylesheet" href="assets/css/main.css" />
+
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: #111; margin: 20px; line-height: 1.45; }
+    header { border-bottom: 1px solid #e6e6e6; margin-bottom: 18px; padding-bottom: 10px; }
+    h1 { font-size: 1.4rem; margin: 0 0 6px; }
+    h2 { font-size: 1.1rem; margin: 18px 0 8px; }
+    h3 { font-size: 1rem; margin: 12px 0 6px; }
+    p { margin: 8px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; vertical-align: top; }
+    th { background: #f5f5f5; }
+    .section { padding: 10px 0; border-top: 1px solid #f0f0f0; }
+    ul { margin: 6px 0 12px 20px; }
+    ol { margin: 6px 0 12px 20px; }
+    .checklist { background: #fbfbfb; padding: 10px; border: 1px solid #eee; border-radius: 6px; }
+    .small { font-size: 0.9rem; color: #555; }
+    footer { margin-top: 18px; border-top: 1px solid #eee; padding-top: 12px; font-size: 0.9rem; color:#444; }
+    .grade { font-weight: bold; }
+  </style>
+</head>
+<body>
+
+<header>
+
+  
+<div class="wrap">
+      <h1>Capstone Proposal Evaluation for BSIT Defense<br>
+      </h1>
+      <div class="meta">
+        <div><strong> Title:</strong> FilHealth: A Centralized Web-Based Clinic System for Filamer Christian University, Inc.</div>
+        <div><strong>Date:</strong> <span id="today"></span><span id="today"></span>02 October 2025</div>
+        <div><strong>Proponents:</strong>
+          <table cellspacing="0" cellpadding="0">
+  <td height="75" width="245">GOLEZ, ANN MONIQUE<br>
+    PERLA, ALTHEA<br>
+    BIBIT, JADE<br>
+    RAMOS, RAFAEL<br>
+    BLASURCA, CRIS VAN</td>
+          </table>
+        </div>
+        <div><strong>Panel:</strong>
+          <table cellspacing="0" cellpadding="0">
+  <td height="75" width="133">CABANUS<br>
+    EGIDA</td>
+          </table>
+        </div>
+        <div><strong>Chapters Covered:</strong> 1 to 3 and Prototype</div>
+        <div><strong>School/Unit:</strong> FCU-CCS </div>
+      </div>
+  </div>
+</header>
+
+<section class="section">
+  <h2> Summary</h2>
+  <p>
+    <img src="images/capstone-defense-02.png" width="200" height="200" align="right">FilHealth is a well scoped and timely capstone project that proposes a centralized web-based clinic system for Filamer Christian University. The document is generally complete and covers the necessary sections: problem statement, objectives, theoretical and conceptual frameworks, literature review, and an Agile-based methodology with evaluation metrics.  </p>
+  <p>
+    Strengths include a broad and relevant literature review, a clear set of core modules, use of modern technologies, and an evaluation plan that mentions user satisfaction and operational efficiency. Main weaknesses are limited technical detail in security and data privacy implementation, missing numeric sampling details for surveys and tests, and no explicit database or API design in the proposal.  </p>
+</section>
+
+<section class="section">
+  <h2>Detailed Evaluation by Section</h2>
+
+  <h3>Chapter I - Introduction</h3>
+  <table>
+    <tr><th>Item</th><th>Evaluation</th></tr>
+    <tr>
+      <td>Problem Definition</td>
+      <td>
+        <p>Clear identification of the core problem: manual clinic operations causing inefficiencies in record keeping, scheduling, and communication. The background is well written and explains local and international context.</p>
+        <p><strong>Issues to fix</strong>: Statements sometimes repeat. The problem list should be rewritten into one General Problem and 3 to 5 Specific Problems for clarity.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Objectives</td>
+      <td>
+        <p>Specific objectives exist and map to modules: digital documentation, appointment scheduling, notifications, AI chatbot, report generation, and consultation record management.</p>
+        <p><strong>Issues to fix</strong>: The objectives are written more like a list of system features rather than clear project goals. Revise them so they emphasize what the project aims to achieve or improve, instead of simply describing modules or functions.</p>
+        <p data-start="452" data-end="488"><strong data-start="452" data-end="486">Sample Revision of Objectives:</strong></p>
+        <ul data-start="489" data-end="992">
+          <li data-start="489" data-end="660">
+            <p data-start="491" data-end="660">Instead of <em data-start="502" data-end="533">“To create a Feedback Module”</em>, write <em data-start="541" data-end="658">“To provide a platform where users can share feedback that will guide continuous improvement of the clinic system.”</em></p>
+          </li>
+          <li data-start="661" data-end="815">
+            <p data-start="663" data-end="815">Instead of <em data-start="674" data-end="703">“To create an Admin Module”</em>, write <em data-start="711" data-end="813">“To ensure proper management of clinic data and user access through a secure administration module.”</em></p>
+          </li>
+        </ul>        
+      </td>
+    </tr>
+    <tr>
+      <td>Theoretical and Conceptual Framework</td>
+      <td>
+        <p>Appropriate use of Task-Technology Fit theory. Conceptual framework clearly defines users and roles: Administrator, Student, Clinic Staff, Doctor.</p>
+        <p><strong>Suggestion</strong>: Incorporate additional relevant theories that align with the design and objectives of your proposed system to provide a stronger theoretical foundation.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Scope and Limitations</td>
+      <td>
+        <p>Scope is focused and reasonable. Limitations are stated, such as no integration with external labs or billing modules.</p>
+        <p><strong>Suggestion</strong>: Make the inclusion and exclusion list explicit and consider adding a short note about data retention policy and emergency access rules.</p>
+      </td>
+    </tr>
+  </table>
+
+  <h3>Recommendations for Chapter I - Action Items</h3>
+  <ul>
+    <li>Rewrite Statement of the Problem into a General Problem plus numbered Specific Problems.</li>
+    <li>Rewrite each Specific Objective as SMART. Add target metrics and expected timeline for each objective.</li>
+    <li>Add a short paragraph on legal and ethical compliance: Philippine Data Privacy Act (RA 10173), consent for student health data, and emergency access policy.</li>
+    <li>Clarify who approves access to records and how ad hoc emergency access is logged and audited.</li>
+  </ul>
+
+  <h3>Chapter II - Review of Related Literature</h3>
+  <table>
+    <tr><th>Item</th><th>Evaluation</th></tr>
+    <tr>
+      <td>Coverage</td>
+      <td>
+        <p>Excellent coverage. The team reviewed many international and local healthcare systems and EHR platforms. Comparative table is helpful.</p>
+        <p><strong>Positive</strong>: The inclusion of Philippine systems such as Klinika.ph, BluHealth, MDClinic PH, and QURE is directly relevant to the local context.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Analysis and Synthesis</td>
+      <td>
+        <p>The synthesis lists similarities and claims distinctiveness for FilHealth.</p>
+        <p><strong>Issue</strong>: The synthesis can be stronger. It should identify specific gaps in existing systems and map those gaps to FilHealth features. For example, discuss how privacy handling differs, or how the AI chatbot is tailored to an academic clinic rather than a commercial clinic.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>References</td>
+      <td>
+        <p>Many relevant sources are cited, but a number are website pages. Add more peer-reviewed or government sources when possible. Update citations to include full bibliographic information and ensure URLs are current.</p>
+      </td>
+    </tr>
+  </table>
+
+  <h3>Recommendations for Chapter II</h3>
+  <ul>
+    <li>After each reviewed system, add a short note: what it does well, what it lacks, and how FilHealth addresses the gap.</li>
+    <li>Add any available local research papers or theses that evaluated clinic digitization in Philippine schools to strengthen the literature base.</li>
+    <li>Cite standards or regulation references that matter to health records, for example, Philippine Department of Health guidelines or Data Privacy Commission advisories.</li>
+  </ul>
+
+  <h3>Chapter III - Methodology</h3>
+  <table>
+    <tr><th>Item</th><th>Evaluation</th></tr>
+    <tr>
+      <td>Development Method</td>
+      <td>
+        <p>Agile methodology is appropriate and clearly described. The phases are laid out: planning, iterative development, testing, deployment, and maintenance.</p>
+        <p><strong>Issue</strong>: No explicit sprint length, sprint goals, or backlog sample is shown. Stakeholder engagement is mentioned but the number and role of participants in each activity is not specified.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Data Collection and Requirements</td>
+      <td>
+        <p>Interviews, surveys, observation, and document review were used. User stories and prioritization workshops are included.</p>
+        <p><strong>Issue</strong>: The proposal does not state numeric sample sizes or selection criteria for surveys and interviews. Add details such as number of clinic staff interviewed and number of student respondents.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Tools, Technologies, and Testing</td>
+      <td>
+        <p>Technology stack is appropriate: HTML, CSS, JavaScript, PHP, Laravel, MySQL, Figma, Git. Testing described: unit, integration, usability.</p>
+        <p><strong>Issue</strong>: Technical security details are missing. There is no explicit mention of encryption in transit and at rest, role-based access control design, audit logging, data backup and restore plan, or penetration testing.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Evaluation Metrics</td>
+      <td>
+        <p>Metrics listed include user satisfaction, system reliability, operational efficiency, and data accuracy.</p>
+        <p><strong>Suggestion</strong>: Map each metric to measurable targets and instruments. For example: "User satisfaction measured by Likert survey with 20 students and 10 staff; target mean >= 4.0 out of 5." Also align metrics with ISO 25010 software quality attributes where appropriate.</p>
+      </td>
+    </tr>
+  </table>
+
+  <h3>Recommendations for Chapter III</h3>
+  <ul>
+    <li>Specify sprint duration, example sprint backlog items, and expected deliverables per sprint.</li>
+    <li>List sample sizes and sampling method for surveys and interviews. Example: at least 15 clinic staff interviews and 100 student survey responses if feasible.</li>
+    <li>Add a technical section describing security controls: TLS for communications, AES-256 or equivalent for data at rest, role-based access controls, password policy, session timeout, audit logs, and backup frequency and retention.</li>
+    <li>Show a simplified database schema or at least the main entities and relationships: User, StudentProfile, MedicalRecord, Appointment, NotificationLog, AuditLog.</li>
+    <li>Document how the AI chatbot will handle PHI. Add a short statement about the chatbot giving only general information and directing users to health professionals for diagnosis. Describe the model or service to be used and the retention policy for chat logs.</li>
+    <li>Add a security testing plan: vulnerability scan, penetration test, and UAT acceptance criteria.</li>
+  </ul>
+
+  <h3>Prototype and Deployment Readiness</h3>
+  <p>
+    The proposal mentions deployment and training. If a prototype already exists, include screenshots and a demo script in appendices for the defense. If not, prepare a live demo which covers the following flows: login, record lookup, appointment booking, notification delivery, and a demo of the chatbot responding to a generic question.
+  </p>
+
+</section>
+
+<section class="section">
+  <h2>Ethics, Privacy, and Legal Considerations</h2>
+  <ul>
+    <li>Add a compliance statement covering the Philippine Data Privacy Act of 2012 and how user consent is obtained and recorded.</li>
+    <li>Describe data retention policy, archival policy, and secure deletion strategy for personal health data.</li>
+    <li>Clarify who can access student records during emergencies and how emergency access is audited.</li>
+    <li>Include an informed consent form sample if student health records will be digitized and stored.</li>
+  </ul>
+</section>
+<section class="section">
+  <h2>Prioritized Revision Checklist</h2>
+  <div class="checklist">
+    <ol>
+      <li>Rewrite Statement of the Problem into General and numbered Specific Problems.</li>
+      <li>Convert Specific Objectives into SMART objectives with measurable targets and timelines.</li>
+      <li>Add numeric sample sizes and selection criteria for interviews and surveys in Chapter III.</li>
+      <li>Insert a simple database schema (main tables and relationships) and an API call example for the Appointment module.</li>
+      <li>Document security controls: TLS, password policy, role-based access, encryption, audit logs, backup schedule, and incident response plan.</li>
+      <li>Clarify the AI chatbot architecture, training data policy, andadd chatbot disclaimer rules.</li>
+      <li>Add Data Privacy Act compliance statement and include a sample consent form and access logging policy.</li>
+      <li>Define acceptance criteria for evaluation metrics, for example target mean scores for usability and acceptable performance thresholds for response time.</li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="small"></div>
+</footer>
+
+</body>
+</html>
