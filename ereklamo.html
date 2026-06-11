@@ -6,579 +6,400 @@
 <title>e-Reklamo System Analysis</title>
 
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    background:#0f0f0f;
-    color:#e5e5e5;
-    font-family:Arial, Helvetica, sans-serif;
-    line-height:1.8;
-    padding:40px;
-}
-
-.container{
-    max-width:1150px;
-    margin:auto;
-    background:#1a1a1a;
-    padding:40px;
-    border-radius:14px;
-    box-shadow:0 0 25px rgba(0,0,0,0.5);
-}
-
-h1{
-    font-size:2.5rem;
-    color:#ffffff;
-    margin-bottom:10px;
-    border-left:6px solid #777;
-    padding-left:15px;
-}
-
-h2{
-    margin-top:40px;
-    margin-bottom:15px;
-    color:#d8d8d8;
-    border-bottom:1px solid #444;
-    padding-bottom:8px;
-}
-
-h3{
-    margin-top:25px;
-    margin-bottom:10px;
-    color:#cccccc;
-}
-
-p{
-    margin-bottom:15px;
-}
-
-ul{
-    margin-left:30px;
-    margin-bottom:20px;
-}
-
-li{
-    margin-bottom:8px;
-}
-
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:20px;
-}
-
-table th,
-table td{
-    border:1px solid #444;
-    padding:14px;
-    text-align:left;
-    vertical-align:top;
-}
-
-table th{
-    background:#292929;
-    color:#ffffff;
-}
-
-table tr:nth-child(even){
-    background:#202020;
-}
-
-blockquote{
-    background:#252525;
-    padding:18px;
-    border-left:5px solid #888;
-    border-radius:8px;
-    margin:20px 0;
-    font-style:italic;
-}
-
-.highlight{
-    background:#232323;
-    padding:22px;
-    border-radius:10px;
-    margin-top:20px;
-}
-
-.warning{
-    background:#3a2323;
-    border-left:6px solid #ff5c5c;
-    padding:22px;
-    border-radius:10px;
-    margin-top:20px;
-}
-
-.success{
-    background:#1f3325;
-    border-left:6px solid #4caf50;
-    padding:22px;
-    border-radius:10px;
-    margin-top:20px;
-}
-
-.note{
-    background:#202020;
-    padding:22px;
-    border-radius:10px;
-    margin-top:20px;
-}
-
-strong{
-    color:#ffffff;
-}
-
-hr{
-    border:none;
-    border-top:1px solid #444;
-    margin:30px 0;
-}
-
-.status{
-    font-size:1.3rem;
-    font-weight:bold;
-    color:#ffffff;
-}
-
-@media(max-width:768px){
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
 
     body{
-        padding:20px;
+        background:#111111;
+        color:#e4e4e4;
+        font-family:Arial, Helvetica, sans-serif;
+        line-height:1.8;
+        padding:40px 20px;
     }
 
     .container{
-        padding:25px;
+        max-width:1100px;
+        margin:auto;
+        background:#1a1a1a;
+        padding:40px;
+        border-radius:12px;
+        border:1px solid #333;
+        box-shadow:0 0 20px rgba(0,0,0,0.5);
     }
 
     h1{
-        font-size:2rem;
+        font-size:36px;
+        color:#ffffff;
+        margin-bottom:10px;
     }
 
-}
+    h2{
+        font-size:28px;
+        color:#cfcfcf;
+        margin-bottom:30px;
+    }
 
+    h3{
+        margin-top:40px;
+        margin-bottom:15px;
+        font-size:24px;
+        color:#ffffff;
+        border-left:5px solid #666;
+        padding-left:12px;
+    }
+
+    h4{
+        margin-top:25px;
+        margin-bottom:10px;
+        color:#d8d8d8;
+        font-size:20px;
+    }
+
+    p{
+        margin-bottom:18px;
+        color:#d0d0d0;
+    }
+
+    ul, ol{
+        margin-left:30px;
+        margin-bottom:20px;
+    }
+
+    li{
+        margin-bottom:10px;
+    }
+
+    .highlight{
+        background:#262626;
+        padding:15px;
+        border-left:5px solid #888;
+        border-radius:6px;
+        margin:20px 0;
+    }
+
+    .approved{
+        color:#8bd18b;
+        font-weight:bold;
+        font-size:22px;
+    }
+
+    table{
+        width:100%;
+        border-collapse:collapse;
+        margin-top:20px;
+    }
+
+    table th,
+    table td{
+        border:1px solid #444;
+        padding:14px;
+        text-align:left;
+    }
+
+    table th{
+        background:#2a2a2a;
+        color:#fff;
+    }
+
+    table td{
+        background:#1e1e1e;
+    }
+
+    hr{
+        border:none;
+        border-top:1px solid #333;
+        margin:35px 0;
+    }
 </style>
-
 </head>
+
 <body>
 
 <div class="container">
 
-    <h1>Proposed System Analysis</h1>
-
+    <h1>Proposed System Analysis (Refined with Justification)</h1>
     <h2>e-Reklamo: A Community Complaint System for Roxas City Traffic Management Unit (TMU)</h2>
 
     <hr>
 
-    <h2>Overall Evaluation</h2>
+    <h3>Overall Evaluation</h3>
 
     <p>
-        This is a strong and highly relevant civic-oriented BSIT capstone proposal. 
-        Compared to many student projects, this system has a clear real-world use case, 
-        identifiable stakeholders, and direct public service value.
+        This is a strong, relevant, and highly defendable BSIT capstone project focused on
+        digitalizing a real public service workflow.
     </p>
 
     <p>
-        The proposal addresses a legitimate operational problem involving traffic complaint reporting, 
-        complaint monitoring, and centralized record management within the Roxas City Traffic Management Unit (TMU).
+        The core concept is solid, but it needs tight scope control and proper justification
+        of advanced features, especially the chatbot.
     </p>
 
     <p>
-        However, while the core concept is strong, the proposal currently suffers from 
-        overloaded features, unclear scope boundaries, and risky data privacy concerns 
-        related to AI functionality and vehicle information tracking.
+        With refinement, this becomes a very good capstone with strong civic impact and
+        practical deployment value.
     </p>
 
-    <p>
-        With proper refinement and scope control, this can become a highly defensible and realistic BSIT capstone project.
-    </p>
-
-    <h2>Strengths</h2>
-
-    <h3>1. Strong Real-World Problem</h3>
-
-    <p>
-        The proposal identifies a legitimate government service inefficiency:
-    </p>
+    <h3>Key Strengths</h3>
 
     <ul>
-        <li>citizens must physically go to TMU offices to file complaints</li>
-        <li>reporting processes are slow and inconvenient</li>
-        <li>complaint records are not centralized</li>
-        <li>follow-up monitoring is inefficient</li>
+        <li>Real civic problem (manual complaint submission)</li>
+        <li>Clear users (citizens and TMU officers)</li>
+        <li>Strong BSIT alignment (web, mobile, and database system)</li>
+        <li>High practical value for local government efficiency</li>
+        <li>Easy to evaluate using real users</li>
     </ul>
 
-    <p>
-        These are strong and valid information system problems.
-    </p>
-
-    <h3>2. Clear Stakeholders</h3>
-
-    <p>
-        The users are well-defined:
-    </p>
-
-    <ul>
-        <li>citizens / complainants</li>
-        <li>TMU officers and administrators</li>
-    </ul>
-
-    <p>
-        This supports:
-    </p>
-
-    <ul>
-        <li>realistic testing</li>
-        <li>practical deployment</li>
-        <li>measurable evaluation</li>
-    </ul>
-
-    <h3>3. Strong BSIT Alignment</h3>
-
-    <p>
-        The proposal includes:
-    </p>
-
-    <ul>
-        <li>web and mobile system development</li>
-        <li>database management</li>
-        <li>role-based access control</li>
-        <li>notification systems</li>
-        <li>report management</li>
-        <li>evidence uploading</li>
-    </ul>
-
-    <p>
-        These are core BSIT competencies.
-    </p>
-
-    <h3>4. High Practical Value</h3>
-
-    <p>
-        If implemented properly, the system can:
-    </p>
-
-    <ul>
-        <li>improve complaint reporting efficiency</li>
-        <li>centralize complaint records</li>
-        <li>improve complaint monitoring</li>
-        <li>reduce manual workload for TMU personnel</li>
-    </ul>
-
-    <h2>Major Areas for Improvement</h2>
-
-    <h3>1. AI Chatbot is Unnecessary</h3>
-
-    <p>
-        The proposal includes:
-    </p>
-
-    <blockquote>
-        AI support chatbot
-    </blockquote>
-
-    <p>
-        This feature introduces unnecessary complexity and may become difficult to justify during defense.
-    </p>
-
-    <p>
-        Possible panel questions include:
-    </p>
-
-    <ul>
-        <li>What AI model will be used?</li>
-        <li>How will responses be generated?</li>
-        <li>How accurate is the chatbot?</li>
-        <li>What training data is available?</li>
-    </ul>
+    <h3>Refined System Justification</h3>
 
     <div class="highlight">
-
-        <p><strong>Recommendation:</strong></p>
-
-        <ul>
-            <li>Replace AI chatbot with a simple FAQ system</li>
-            <li>Use guided complaint submission forms</li>
-            <li>Focus on complaint processing rather than conversational AI</li>
-        </ul>
-
+        Citizens lack a fast, centralized, and accessible way to report traffic violations,
+        while TMU officers lack an organized system to manage, track, and respond to complaints efficiently.
     </div>
 
-    <h3>2. Plate Number to Personal Information is Risky</h3>
-
-    <p>
-        The proposal suggests:
-    </p>
-
-    <blockquote>
-        Using plate numbers to track personal information of violators
-    </blockquote>
-
-    <p>
-        This creates serious concerns regarding:
-    </p>
+    <p>This leads to:</p>
 
     <ul>
-        <li>Data Privacy Act compliance</li>
-        <li>unauthorized access to personal data</li>
-        <li>ethical handling of sensitive information</li>
-        <li>possible misuse of identity information</li>
+        <li>delayed reporting</li>
+        <li>lost or untracked complaints</li>
+        <li>inefficient manual record-keeping</li>
+        <li>poor feedback loop between citizens and TMU</li>
+    </ul>
+
+    <h3>Refined Core System Concept</h3>
+
+    <p>
+        The system is NOT a surveillance tool.
+    </p>
+
+    <div class="highlight">
+        A digital complaint intake and tracking system that connects citizens and TMU officers through a centralized platform.
+    </div>
+
+    <h3>Refined Core Features</h3>
+
+    <h4>Citizen (Mobile App)</h4>
+
+    <ul>
+        <li>Submit complaint</li>
+        <li>Upload photo/video evidence</li>
+        <li>Select violation type</li>
+        <li>Track complaint status</li>
+        <li>View complaint history</li>
+    </ul>
+
+    <h4>TMU Officer (Web System)</h4>
+
+    <ul>
+        <li>Receive and manage complaints</li>
+        <li>Assign complaint status</li>
+        <li>View complaint dashboard</li>
+        <li>Filter by violation type or location</li>
+        <li>Generate reports</li>
+    </ul>
+
+    <h3>Justification: Why a Chatbot is Included</h3>
+
+    <h4>Proposed Feature</h4>
+
+    <div class="highlight">
+        AI-assisted chatbot or guided complaint assistant
+    </div>
+
+    <h4>Justification for Inclusion</h4>
+
+    <h4>1. Helps Citizens Who Do Not Know Proper Complaint Procedures</h4>
+
+    <p>Many users:</p>
+
+    <ul>
+        <li>do not know what category their complaint belongs to</li>
+        <li>are unsure what evidence is required</li>
+        <li>are unfamiliar with formal reporting language</li>
     </ul>
 
     <p>
-        Unless the system has official government integration authorization, this feature may become a major issue during evaluation.
+        The chatbot acts as a guided intake assistant that helps users properly file complaints.
     </p>
 
-    <div class="warning">
+    <h4>2. Reduces Incorrect or Incomplete Submissions</h4>
 
-        <p><strong>Recommendation:</strong></p>
-
-        <ul>
-            <li>Store plate numbers only as reference records</li>
-            <li>Avoid extracting personal identity information</li>
-            <li>Limit the system to complaint and violation tracking only</li>
-        </ul>
-
-    </div>
-
-    <h3>3. Scope Boundary Between Complaint System and Law Enforcement System</h3>
-
-    <p>
-        The proposal risks becoming:
-    </p>
-
-    <blockquote>
-        a surveillance or law enforcement platform
-    </blockquote>
-
-    <p>
-        instead of:
-    </p>
-
-    <blockquote>
-        a complaint intake and tracking system
-    </blockquote>
-
-    <p>
-        This distinction is important for ethics, privacy, and capstone approval.
-    </p>
-
-    <p>
-        The project should focus on:
-    </p>
+    <p>Without guidance:</p>
 
     <ul>
-        <li>complaint submission</li>
-        <li>complaint processing</li>
-        <li>complaint monitoring</li>
-        <li>resolution tracking</li>
+        <li>users may submit unclear reports</li>
+        <li>missing evidence may delay processing</li>
+        <li>wrong categories reduce efficiency</li>
     </ul>
 
-    <h3>4. Feature Overload</h3>
+    <p>With chatbot:</p>
+
+    <ul>
+        <li>the system can prompt required details step-by-step</li>
+    </ul>
+
+    <h4>3. Improves System Usability for Non-Technical Users</h4>
 
     <p>
-        Current features include:
+        Since the target users are general citizens, not technical users,
+        the chatbot functions as a guided interface that reduces confusion
+        and improves complaint completion rates.
+    </p>
+
+    <h4>4. Can Be Implemented Without Full AI Complexity</h4>
+
+    <p>
+        The chatbot does NOT need advanced AI implementation.
+    </p>
+
+    <p>It can simply be:</p>
+
+    <ul>
+        <li>rule-based chatbot</li>
+        <li>decision-tree guided assistant</li>
+        <li>scripted FAQ assistant</li>
+    </ul>
+
+    <p>Example prompts:</p>
+
+    <ul>
+        <li>“What type of violation are you reporting?”</li>
+        <li>“Do you have photo evidence?”</li>
+    </ul>
+
+    <h4>5. Supports Government Service Accessibility</h4>
+
+    <p>
+        The chatbot supports public accessibility, especially for:
     </p>
 
     <ul>
-        <li>complaint submission</li>
-        <li>evidence uploading</li>
-        <li>violation tracking</li>
-        <li>repeat offender tracking</li>
-        <li>AI chatbot</li>
+        <li>elderly users</li>
+        <li>low digital literacy users</li>
+    </ul>
+
+    <h3>Important Refinement (Panel-Safe Version)</h3>
+
+    <div class="highlight">
+        “A rule-based guided complaint assistant that helps users properly categorize and complete traffic violation reports.”
+    </div>
+
+    <p>It should NOT be presented as:</p>
+
+    <ul>
+        <li>AI surveillance</li>
+        <li>intelligent policing system</li>
+        <li>predictive analysis tool</li>
+    </ul>
+
+    <h3>Scope Control Recommendations</h3>
+
+    <h4>Keep</h4>
+
+    <ul>
+        <li>complaint submission system</li>
+        <li>status tracking</li>
+        <li>officer dashboard</li>
+        <li>evidence upload</li>
         <li>notifications</li>
-        <li>dashboards</li>
-        <li>analytics</li>
+        <li>rule-based chatbot</li>
     </ul>
+
+    <h4>Avoid</h4>
+
+    <ul>
+        <li>AI crime prediction</li>
+        <li>personal identity extraction from plate numbers</li>
+        <li>surveillance or tracking automation beyond complaints</li>
+    </ul>
+
+    <h3>Revised Problem Statements</h3>
+
+    <ol>
+        <li>Citizens in Roxas City lack a centralized and accessible platform for reporting traffic violations.</li>
+        <li>TMU officers rely on manual or fragmented systems for recording and tracking complaints.</li>
+        <li>Complaint submissions are often incomplete due to lack of guidance during reporting.</li>
+        <li>There is no unified system for monitoring complaint status and resolution.</li>
+        <li>Communication between citizens and TMU regarding complaints is slow and inefficient.</li>
+    </ol>
+
+    <h3>Revised Objectives</h3>
+
+    <h4>General Objective</h4>
 
     <p>
-        This creates scope creep and increases implementation risk.
+        To design and develop a mobile and web-based traffic complaint management system
+        that streamlines reporting, tracking, and resolution of traffic violations in Roxas City.
     </p>
 
-    <h2>Recommended Scope Refinement</h2>
+    <h4>Specific Objectives</h4>
 
-    <h3>Keep</h3>
-
-    <ul>
-        <li>User registration and login</li>
-        <li>Complaint submission</li>
-        <li>Complaint categorization</li>
-        <li>Image and video evidence upload</li>
-        <li>Complaint tracking status</li>
-        <li>Officer dashboard</li>
-        <li>Notification system</li>
-    </ul>
-
-    <h3>Modify</h3>
-
-    <ul>
-        <li>Repeat violator tracking ? limit to complaint history only</li>
-        <li>Vehicle lookup ? internal record reference only</li>
-    </ul>
-
-    <h3>Remove or Simplify</h3>
-
-    <ul>
-        <li>AI chatbot</li>
-        <li>Personal identity extraction</li>
-        <li>Overly advanced analytics</li>
-        <li>Complex surveillance-like monitoring</li>
-    </ul>
-
-    <h2>Recommended Problem Statements</h2>
-
-    <ol style="margin-left:30px;">
-
-        <li>
-            Citizens in Roxas City experience difficulty reporting traffic violations due to the need for physical submission at the TMU office.
-        </li>
-
-        <li>
-            TMU officers currently rely on manual or fragmented methods for recording and tracking complaints.
-        </li>
-
-        <li>
-            There is no centralized digital platform for managing traffic-related complaints and supporting evidence.
-        </li>
-
-        <li>
-            Complaint follow-up and monitoring processes are inefficient for both citizens and TMU personnel.
-        </li>
-
-        <li>
-            Traffic violation evidence is not systematically organized and stored in a centralized database.
-        </li>
-
+    <ol>
+        <li>To develop a mobile application for submitting traffic violation complaints.</li>
+        <li>To implement a web-based dashboard for TMU officers to manage complaints.</li>
+        <li>To allow secure upload and storage of complaint evidence.</li>
+        <li>To provide real-time complaint status tracking for citizens.</li>
+        <li>To develop a rule-based chatbot that guides users in properly filing complaints.</li>
     </ol>
 
-    <h2>Recommended Objectives</h2>
-
-    <h3>General Objective</h3>
-
-    <blockquote>
-        To design and develop a web and mobile-based complaint management system that streamlines traffic violation reporting and tracking for Roxas City TMU.
-    </blockquote>
-
-    <h3>Specific Objectives</h3>
-
-    <ol style="margin-left:30px;">
-
-        <li>
-            To develop a mobile-based complaint submission system for citizens.
-        </li>
-
-        <li>
-            To implement a web-based dashboard for TMU officers to manage complaints.
-        </li>
-
-        <li>
-            To provide secure upload and storage of complaint evidence.
-        </li>
-
-        <li>
-            To implement complaint categorization and tracking from submission to resolution.
-        </li>
-
-        <li>
-            To generate complaint history and monitoring reports for TMU personnel.
-        </li>
-
-    </ol>
-
-    <h2>Novelty Assessment</h2>
+    <h3>Novelty Assessment (After Refinement)</h3>
 
     <table>
-
         <tr>
             <th>Category</th>
             <th>Rating</th>
         </tr>
-
-        <tr>
-            <td>Originality</td>
-            <td>7/10</td>
-        </tr>
-
-        <tr>
-            <td>Technical Complexity</td>
-            <td>8/10</td>
-        </tr>
-
         <tr>
             <td>Practical Value</td>
             <td>9/10</td>
         </tr>
-
         <tr>
-            <td>Implementation Feasibility</td>
+            <td>Technical Feasibility</td>
             <td>9/10</td>
         </tr>
-
+        <tr>
+            <td>BSIT Alignment</td>
+            <td>9/10</td>
+        </tr>
+        <tr>
+            <td>Innovation</td>
+            <td>7/10</td>
+        </tr>
+        <tr>
+            <td>Risk Level</td>
+            <td>Low</td>
+        </tr>
     </table>
 
-    <h2>Key Insight for Defense</h2>
+    <h3>Final Recommendation</h3>
 
-    <div class="success">
+    <p class="approved">APPROVED WITH MINOR REVISION</p>
 
-        <p>
-            The strongest aspect of this project is not AI, surveillance, or criminal tracking.
-        </p>
+    <p>
+        This is a strong and realistic capstone project if properly scoped.
+    </p>
 
-        <blockquote>
-            The true strength of the system is the digitalization and centralization of traffic complaint reporting and monitoring workflows.
-        </blockquote>
+    <h3>Final Coordinator Insight</h3>
 
-        <p>
-            That alone is already sufficient for a strong and realistic BSIT capstone.
-        </p>
-
-    </div>
-
-    <h2>Coordinator Verdict</h2>
-
-    <div class="note">
-
-        <p class="status">
-            Status: Approved with Minor Refinement
-        </p>
-
-        <br>
-
-        <p><strong>Conditions for Approval</strong></p>
-
-        <ul>
-            <li>Remove or simplify the AI chatbot.</li>
-            <li>Avoid personal identity extraction using plate numbers.</li>
-            <li>Focus on complaint management rather than surveillance.</li>
-            <li>Ensure compliance with privacy and ethical standards.</li>
-            <li>Maintain a manageable and realistic scope.</li>
-        </ul>
-
-    </div>
+    <p>
+        The strength of this system is NOT AI or advanced technology.
+    </p>
 
     <div class="highlight">
-
-        <p><strong>Final Coordinator Comment</strong></p>
-
-        <p>
-            This is a strong, practical, and highly relevant BSIT capstone proposal because it addresses a real government service inefficiency with clear operational value.
-        </p>
-
-        <p>
-            The project has a high probability of successful implementation if the group maintains strict scope control and focuses on:
-        </p>
-
-        <blockquote>
-            complaint submission ? complaint processing ? complaint tracking ? resolution monitoring
-        </blockquote>
-
-        <p>
-            If properly refined, this can become one of the stronger and more deployable capstone systems in the batch.
-        </p>
-
+        Improving accessibility, organization, and efficiency of a real government complaint workflow.
     </div>
+
+    <p>
+        The chatbot is acceptable only if it is clearly defined as a guided assistant,
+        not an AI system, and kept simple.
+    </p>
+
+    <p>
+        If the group follows this refinement, this project becomes one of the most
+        practical and defendable civic BSIT capstones in the batch.
+    </p>
 
 </div>
 
