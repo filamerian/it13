@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enabled Mobile-Based RFID Monitoring System for FCU Kindergarten Department</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background:#111;
+        color:#e0e0e0;
+        line-height:1.8;
+        padding:40px 20px;
+    }
+
+    .container{
+        max-width:1100px;
+        margin:auto;
+        background:#1b1b1b;
+        padding:40px;
+        border-radius:12px;
+        border:1px solid #333;
+        box-shadow:0 0 20px rgba(0,0,0,0.4);
+    }
+
+    h1{
+        font-size:36px;
+        color:#ffffff;
+        margin-bottom:10px;
+    }
+
+    h2{
+        font-size:28px;
+        color:#d6d6d6;
+        margin-bottom:20px;
+    }
+
+    h3{
+        margin-top:35px;
+        margin-bottom:15px;
+        color:#ffffff;
+        border-left:5px solid #666;
+        padding-left:12px;
+        font-size:24px;
+    }
+
+    h4{
+        margin-top:25px;
+        margin-bottom:10px;
+        color:#d0d0d0;
+        font-size:20px;
+    }
+
+    p{
+        margin-bottom:18px;
+        color:#cfcfcf;
+    }
+
+    ul{
+        margin-left:25px;
+        margin-bottom:20px;
+    }
+
+    li{
+        margin-bottom:8px;
+    }
+
+    .section{
+        margin-bottom:35px;
+    }
+
+    .highlight{
+        background:#262626;
+        padding:15px;
+        border-left:5px solid #777;
+        border-radius:6px;
+        margin:15px 0;
+    }
+
+    .approved{
+        color:#7ee787;
+        font-weight:bold;
+    }
+
+    .table{
+        width:100%;
+        border-collapse:collapse;
+        margin-top:20px;
+    }
+
+    .table th,
+    .table td{
+        border:1px solid #444;
+        padding:12px;
+        text-align:left;
+    }
+
+    .table th{
+        background:#2a2a2a;
+        color:#fff;
+    }
+
+    .table td{
+        background:#1f1f1f;
+    }
+
+    hr{
+        border:none;
+        border-top:1px solid #333;
+        margin:35px 0;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Proposed System Analysis</h1>
+    <h2> Mobile-Based RFID Monitoring System for FCU Kindergarten Department</h2>
+
+    <hr>
+
+    <div class="section">
+        <h3>Overall Evaluation</h3>
+
+        <p>
+            This is a strong, relevant, and socially valuable capstone proposal focused on child safety,
+            attendance automation, and guardian verification.
+        </p>
+
+        <p>
+            However, while the problem is valid and well-defined, the system currently contains overstated
+            technical claims (especially “real-time location tracking”) and a scope that must be carefully
+            controlled to remain feasible and ethical for BSIT implementation.
+        </p>
+
+        <p>
+            With refinement, this can become a very strong and defensible capstone system.
+        </p>
+    </div>
+
+    <div class="section">
+        <h3>Strengths</h3>
+
+        <h4>1. Highly Relevant Real-World Problem</h4>
+
+        <p>The proposal addresses a genuine school concern:</p>
+
+        <ul>
+            <li>manual child pickup verification</li>
+            <li>delayed guardian identification</li>
+            <li>lack of real-time notification</li>
+            <li>safety risks during dismissal</li>
+        </ul>
+
+        <p>
+            This is a clear administrative and safety workflow problem, not theoretical.
+        </p>
+
+        <h4>2. Strong Practical Value</h4>
+
+        <p>If implemented properly, the system can:</p>
+
+        <ul>
+            <li>speed up dismissal process</li>
+            <li>improve guardian verification</li>
+            <li>reduce human error in child release</li>
+            <li>improve communication between school and parents</li>
+        </ul>
+
+        <h4>3. Clear Stakeholders</h4>
+
+        <p>Well-defined users:</p>
+
+        <ul>
+            <li>kindergarten teachers</li>
+            <li>school administrators</li>
+            <li>parents/guardians</li>
+        </ul>
+
+        <p>
+            This ensures easy validation, real deployment potential, and clear system roles.
+        </p>
+
+        <h4>4. Good BSIT Scope Fit (If Controlled)</h4>
+
+        <p>The system involves:</p>
+
+        <ul>
+            <li>RFID integration</li>
+            <li>mobile application development</li>
+            <li>database management</li>
+            <li>notification system</li>
+            <li>user authentication</li>
+        </ul>
+
+        <p>These are valid BSIT-level competencies.</p>
+    </div>
+
+    <div class="section">
+        <h3>Major Issues and Required Refinements</h3>
+
+        <h4>1. “Real-Time Location Tracking” is Misleading</h4>
+
+        <div class="highlight">
+            <strong>Current Claim:</strong> Real-time pupil location tracking
+        </div>
+
+        <p>
+            RFID systems do not provide continuous location tracking.
+            They only detect entry/exit points and scan events.
+        </p>
+
+        <p><strong>Recommendation:</strong></p>
+
+        <div class="highlight">
+            “Real-time attendance and pickup event tracking”
+        </div>
+
+        <h4>2. Risk of Over-Surveillance Perception</h4>
+
+        <p>
+            The system may be interpreted as a child tracking surveillance system,
+            which is sensitive because it involves minors.
+        </p>
+
+        <p><strong>Recommendation:</strong></p>
+
+        <div class="highlight">
+            Frame the system as a secure pickup verification and attendance monitoring system,
+            not a tracking system.
+        </div>
+
+        <h4>3. Scope is Slightly Overloaded</h4>
+
+        <p>Current features include:</p>
+
+        <ul>
+            <li>RFID scanning</li>
+            <li>mobile apps for multiple users</li>
+            <li>notifications</li>
+            <li>reports</li>
+            <li>guardian verification</li>
+            <li>centralized database</li>
+        </ul>
+
+        <p>
+            This is acceptable but should remain carefully structured.
+        </p>
+
+        <h4>4. No Working Prototype Yet</h4>
+
+        <p>
+            The project currently has no working prototype, which increases risk because
+            RFID hardware integration and mobile development require extensive testing.
+        </p>
+
+        <p>
+            The group should prioritize RFID scanning, login, and attendance logging immediately.
+        </p>
+    </div>
+
+    <div class="section">
+        <h3>Recommended Scope Refinement</h3>
+
+        <h4>Core System (Must Have)</h4>
+
+        <ul>
+            <li>RFID-based child identification (scan-in / scan-out)</li>
+            <li>Guardian verification system</li>
+            <li>Attendance and pickup logging</li>
+            <li>Teacher dashboard</li>
+            <li>Parent notification system</li>
+            <li>Centralized database</li>
+        </ul>
+
+        <h4>Optional Enhancements</h4>
+
+        <ul>
+            <li>mobile app for parents</li>
+            <li>attendance reports</li>
+            <li>simple analytics</li>
+        </ul>
+
+        <h4>Remove / Avoid</h4>
+
+        <ul>
+            <li>real-time location tracking</li>
+            <li>continuous tracking claims</li>
+            <li>AI or predictive features</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Recommended Problem Statements</h3>
+
+        <ol style="margin-left:25px;">
+            <li>
+                FCU Kindergarten Department relies on manual verification of guardians during pupil pickup,
+                which may cause delays and identification errors.
+            </li>
+
+            <li>
+                Teachers face difficulty in quickly confirming authorized guardians during dismissal hours.
+            </li>
+
+            <li>
+                There is no centralized digital system for recording pupil attendance and pickup logs.
+            </li>
+
+            <li>
+                Parents currently do not receive immediate confirmation when their child is picked up.
+            </li>
+
+            <li>
+                Manual monitoring methods reduce efficiency and may pose safety risks for kindergarten pupils.
+            </li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h3>Recommended Objectives</h3>
+
+        <h4>General Objective</h4>
+
+        <p>
+            To design and develop an RFID-based mobile monitoring system that improves the security
+            and efficiency of pupil pickup and attendance management in FCU Kindergarten Department.
+        </p>
+
+        <h4>Specific Objectives</h4>
+
+        <ol style="margin-left:25px;">
+            <li>To develop an RFID-based identification system for pupils and authorized guardians.</li>
+            <li>To implement a digital attendance and pickup logging system.</li>
+            <li>To create a system for verifying authorized guardians during pupil release.</li>
+            <li>To develop a notification system that informs parents of pickup events.</li>
+            <li>To design a centralized database for storing attendance and pickup records.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h3>Novelty Assessment</h3>
+
+        <table class="table">
+            <tr>
+                <th>Category</th>
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <td>Real-world Relevance</td>
+                <td>10/10</td>
+            </tr>
+            <tr>
+                <td>Technical Feasibility</td>
+                <td>8/10</td>
+            </tr>
+            <tr>
+                <td>Innovation Level</td>
+                <td>7/10</td>
+            </tr>
+            <tr>
+                <td>BSIT Alignment</td>
+                <td>9/10</td>
+            </tr>
+            <tr>
+                <td>Risk Level</td>
+                <td>Medium (hardware dependency)</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h3>Final Recommendation</h3>
+
+        <p class="approved">APPROVED WITH MINOR REVISION</p>
+
+        <p><strong>Conditions:</strong></p>
+
+        <ul>
+            <li>remove “real-time location tracking” claim</li>
+            <li>clarify RFID as event-based tracking only</li>
+            <li>ensure guardian verification is properly secured</li>
+            <li>focus on attendance and pickup workflow only</li>
+            <li>build early RFID prototype to reduce implementation risk</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Final Coordinator Insight</h3>
+
+        <p>
+            This is a strong and socially meaningful capstone because it solves a real school safety problem.
+        </p>
+
+        <p>
+            Its success depends on keeping it simple, event-based, and process-focused —
+            not surveillance-based or over-tracked.
+        </p>
+
+        <p>
+            If refined properly, this will be one of the most practical and deployable systems in the batch.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
