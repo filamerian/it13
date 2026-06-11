@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spinzone Laundry Management and Booking System</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#111111;
+    color:#e4e4e4;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.8;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+}
+
+.header{
+    background:#1b1b1b;
+    padding:40px;
+    border-left:6px solid #777;
+    margin-bottom:30px;
+    box-shadow:0 0 15px rgba(0,0,0,0.4);
+}
+
+.header h1{
+    font-size:2.3rem;
+    color:#ffffff;
+    margin-bottom:10px;
+}
+
+.header h2{
+    font-size:1.3rem;
+    color:#bdbdbd;
+    font-weight:normal;
+}
+
+.section{
+    background:#1a1a1a;
+    padding:30px;
+    margin-bottom:25px;
+    border-radius:8px;
+    box-shadow:0 0 12px rgba(0,0,0,0.35);
+}
+
+.section h2{
+    color:#ffffff;
+    margin-bottom:18px;
+    border-bottom:2px solid #555;
+    padding-bottom:10px;
+}
+
+.section h3{
+    color:#d0d0d0;
+    margin-top:20px;
+    margin-bottom:12px;
+}
+
+p{
+    margin-bottom:15px;
+    color:#d7d7d7;
+}
+
+ul, ol{
+    margin-left:25px;
+    margin-top:10px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+.highlight{
+    color:#ffffff;
+    font-weight:bold;
+}
+
+.note{
+    background:#262626;
+    padding:20px;
+    border-left:5px solid #888;
+    margin-top:15px;
+}
+
+.footer{
+    text-align:center;
+    color:#888;
+    padding:20px;
+    font-size:0.9rem;
+}
+
+@media(max-width:768px){
+
+    .container{
+        width:95%;
+    }
+
+    .header h1{
+        font-size:1.8rem;
+    }
+
+    .section{
+        padding:22px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Proposed System Analysis</h1>
+        <h2>Spinzone Laundry Management and Booking System</h2>
+    </div>
+
+    <div class="section">
+        <h2>Overall Evaluation</h2>
+
+        <p>
+            This is a well-structured and <span class="highlight">acceptable BSIT capstone project</span> with a clear real-world problem, defined users, and a practical system workflow.
+        </p>
+
+        <p>
+            The revised scope is now properly aligned with what can realistically be implemented within a capstone timeframe.
+        </p>
+
+        <p>
+            The system is no longer treated as a full business ERP, but as a focused <span class="highlight">service management and tracking system</span>, which makes it appropriate for BSIT standards.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Validation of the Problem</h2>
+
+        <p>
+            The problem is valid and observable in real laundry operations:
+        </p>
+
+        <ul>
+            <li>manual logbook recording leads to errors and missing entries</li>
+            <li>customers lack visibility on laundry status</li>
+            <li>staff struggle to manage multiple service requests efficiently</li>
+            <li>there is no centralized system for tracking transactions and history</li>
+        </ul>
+
+        <p>
+            These issues are practical, recurring, and measurable, which makes them suitable for a capstone study.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Evaluation of System Scope</h2>
+
+        <p>
+            The revised scope is now appropriate and manageable. It focuses on the core workflow:
+        </p>
+
+        <ul>
+            <li>service request submission</li>
+            <li>centralized record management</li>
+            <li>laundry status tracking</li>
+            <li>notifications</li>
+            <li>basic reporting</li>
+        </ul>
+
+        <p>
+            This is a <span class="highlight">correct capstone-level system size</span>. It avoids unnecessary complexity such as full logistics tracking, advanced analytics, or inventory systems that are not clearly defined.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>BSIT Alignment</h2>
+
+        <p>
+            The project strongly aligns with BSIT competencies, including:
+        </p>
+
+        <ul>
+            <li>web-based system development</li>
+            <li>database design and management</li>
+            <li>CRUD operations</li>
+            <li>user authentication and role management</li>
+            <li>notification systems</li>
+            <li>transaction processing and reporting</li>
+        </ul>
+
+        <p>
+            This is consistent with CHED expectations for BSIT capstone outputs.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Technical Feasibility</h2>
+
+        <p>
+            The system is fully implementable using standard technologies such as:
+        </p>
+
+        <ul>
+            <li>PHP or Laravel</li>
+            <li>MySQL database</li>
+            <li>basic notification services (email or SMS API)</li>
+            <li>web dashboard for staff</li>
+            <li>mobile-responsive interface for customers</li>
+        </ul>
+
+        <p>
+            No part of the system requires advanced or risky technologies.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Novelty Assessment</h2>
+
+        <p>
+            The innovation is not in complex technology but in:
+        </p>
+
+        <ul>
+            <li>digitizing a manual laundry workflow</li>
+            <li>improving customer transparency through real-time status tracking</li>
+            <li>centralizing service operations into a single system</li>
+        </ul>
+
+        <p>
+            This level of novelty is acceptable for BSIT capstone standards.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Risks and Limitations</h2>
+
+        <p>
+            The system is low-risk. However, the group should ensure:
+        </p>
+
+        <ul>
+            <li>clear workflow definition for laundry status updates</li>
+            <li>proper role separation between staff and customers</li>
+            <li>consistent database design for transactions and history</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Problem Statement</h2>
+
+        <ol>
+            <li>Laundry businesses still rely on manual logbooks to record customer service requests, which often leads to missing or inaccurate records.</li>
+
+            <li>There is no centralized system for managing and organizing laundry service requests from customers.</li>
+
+            <li>Customers do not receive real-time updates on the status of their laundry, leading to frequent follow-ups and inconvenience.</li>
+
+            <li>Staff experience difficulty in tracking and managing multiple laundry orders efficiently using manual processes.</li>
+
+            <li>Laundry operations lack a simple system that can store, monitor, and retrieve transaction history for reporting purposes.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>Objectives</h2>
+
+        <h3>General Objective</h3>
+
+        <p>
+            To design and develop a web-based laundry management system that automates service tracking, status updates, and notifications for Spinzone Laundry.
+        </p>
+
+        <h3>Specific Objectives</h3>
+
+        <ol>
+            <li>To develop a system that allows customers to submit laundry service requests.</li>
+
+            <li>To implement a centralized system for managing all laundry transactions.</li>
+
+            <li>To provide real-time laundry status tracking for customers.</li>
+
+            <li>To develop a notification system that updates customers about their laundry progress.</li>
+
+            <li>To generate simple reports for monitoring laundry operations and sales.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>Final Recommendation</h2>
+
+        <div class="note">
+            <p>
+                This project is acceptable and practical for a BSIT capstone. It should be approved with minor revisions focusing on scope reduction.
+            </p>
+
+            <p>
+                The main improvement needed is simplification. The system should focus only on the essential workflow: service request, processing, status update, and notification.
+            </p>
+
+            <p>
+                If the scope is controlled, this can become a successful and fully implementable capstone project.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        Spinzone Laundry Management and Booking System Review
+    </div>
+
+</div>
+
+</body>
+</html>
