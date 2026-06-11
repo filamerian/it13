@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Financial Management System Analysis</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#0f0f0f;
+    color:#e5e5e5;
+    line-height:1.8;
+    padding:40px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    background:#1b1b1b;
+    padding:40px;
+    border-radius:14px;
+    box-shadow:0 0 25px rgba(0,0,0,0.6);
+}
+
+h1{
+    font-size:2.5rem;
+    color:#ffffff;
+    margin-bottom:10px;
+    border-left:6px solid #7d7d7d;
+    padding-left:15px;
+}
+
+h2{
+    margin-top:40px;
+    margin-bottom:15px;
+    color:#d6d6d6;
+    border-bottom:1px solid #444;
+    padding-bottom:8px;
+}
+
+h3{
+    margin-top:25px;
+    margin-bottom:10px;
+    color:#c8c8c8;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+ul{
+    margin-left:30px;
+    margin-bottom:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+blockquote{
+    background:#262626;
+    padding:18px;
+    border-left:5px solid #8a8a8a;
+    border-radius:8px;
+    margin:20px 0;
+    color:#f0f0f0;
+    font-style:italic;
+}
+
+.highlight{
+    background:#232323;
+    padding:20px;
+    border-left:5px solid #9b9b9b;
+    border-radius:8px;
+    margin:20px 0;
+}
+
+.warning{
+    background:#3a2323;
+    border-left:6px solid #ff5c5c;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.success{
+    background:#1f3326;
+    border-left:6px solid #4caf50;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.note{
+    background:#202020;
+    padding:20px;
+    border-radius:8px;
+    margin-top:20px;
+}
+
+.status{
+    font-size:1.3rem;
+    font-weight:bold;
+    color:#ffffff;
+}
+
+strong{
+    color:#ffffff;
+}
+
+hr{
+    border:none;
+    border-top:1px solid #444;
+    margin:30px 0;
+}
+
+.rating-box{
+    background:#242424;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    .container{
+        padding:25px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Proposed System Analysis</h1>
+
+    <h2>Financial Decision Support System for Fishing Trawl Businesses in Barangay Cantil</h2>
+
+    <hr>
+
+    <h2>Overall Evaluation</h2>
+
+    <p>
+        This is one of the <strong>strongest and most defensible proposals</strong> among the capstone projects reviewed.
+        The project addresses a real livelihood-based problem, has clearly identified users, involves meaningful data processing,
+        and aligns well with BSIT competencies.
+    </p>
+
+    <p>
+        Unlike many proposals that focus on general record keeping, this project deals with a specific operational process involving
+        fishing trips, expenses, sales, profit computation, and income distribution.
+        The system has a clear purpose and measurable outputs.
+    </p>
+
+    <h2>Strengths</h2>
+
+    <h3>1. Real and Localized Problem</h3>
+
+    <p>
+        The proposal is based on an actual business activity in Barangay Cantil.
+    </p>
+
+    <p><strong>Current issues include:</strong></p>
+
+    <ul>
+        <li>paper-based recording</li>
+        <li>verbal reporting</li>
+        <li>missing or incomplete records</li>
+        <li>inaccurate profit calculations</li>
+        <li>disputes in income sharing</li>
+    </ul>
+
+    <p>
+        These are legitimate operational problems.
+    </p>
+
+    <h3>2. Strong BSIT Alignment</h3>
+
+    <p>
+        The project involves:
+    </p>
+
+    <ul>
+        <li>database management</li>
+        <li>financial computation</li>
+        <li>reporting</li>
+        <li>dashboards</li>
+        <li>role-based access</li>
+        <li>decision support</li>
+    </ul>
+
+    <p>
+        These are core BSIT competencies.
+    </p>
+
+    <h3>3. Clear Stakeholders</h3>
+
+
+    <p>
+        Primary users:
+    </p>
+
+    <ul>
+        <li>fishing trawl owners</li>
+        <li>boat captains</li>
+    </ul>
+
+    <p>
+        The users are specific and easily accessible for testing and validation.
+    </p>
+
+    <h3>4. Measurable Benefits</h3>
+
+    <p>
+        The system can directly measure:
+    </p>
+
+    <ul>
+        <li>reduction in computation errors</li>
+        <li>faster report generation</li>
+        <li>improved financial tracking</li>
+        <li>more accurate profit sharing</li>
+    </ul>
+
+    <p>
+        This makes evaluation easier during defense.
+    </p>
+
+    <h2>Areas for Improvement</h2>
+
+    <h3>1. Title May Be Overstating the System</h3>
+
+    <p><strong>Current title:</strong></p>
+
+    <blockquote>
+        Financial Decision Support System
+    </blockquote>
+
+    <p>
+        A panel may ask:
+    </p>
+
+    <blockquote>
+        "What decisions is the system actually supporting?"
+    </blockquote>
+
+    <p>
+        Currently the features mainly provide:
+    </p>
+
+    <ul>
+        <li>recording</li>
+        <li>computation</li>
+        <li>reporting</li>
+    </ul>
+
+    <p>
+        These are more characteristic of a:
+    </p>
+
+    <blockquote>
+        Financial Management System
+    </blockquote>
+
+    <p>
+        rather than a true Decision Support System (DSS).
+    </p>
+
+    <p>
+        A DSS typically includes:
+    </p>
+
+    <ul>
+        <li>trend analysis</li>
+        <li>forecasting</li>
+        <li>recommendations</li>
+        <li>scenario analysis</li>
+    </ul>
+
+    <p>
+        The current proposal does not yet show these capabilities.
+    </p>
+
+    <div class="highlight">
+
+        <p><strong>Recommended Titles</strong></p>
+
+        <blockquote>
+            Financial Management and Profit Monitoring System for Fishing Trawl Businesses in Barangay Cantil
+        </blockquote>
+
+        <p>or</p>
+
+        <blockquote>
+            Trip-Based Financial Monitoring System for Fishing Trawl Businesses in Barangay Cantil
+        </blockquote>
+
+        <p>
+            These titles are more accurate and easier to defend.
+        </p>
+
+    </div>
+
+    <h3>2. Problem Statement Needs More Specificity</h3>
+
+    <p><strong>Current problem:</strong></p>
+
+    <blockquote>
+        Manual and inaccurate financial management.
+    </blockquote>
+
+    <p>
+        This is somewhat broad.
+    </p>
+
+    <p>
+        A stronger version would identify specific operational issues:
+    </p>
+
+    <ul>
+        <li>delayed recording of expenses</li>
+        <li>incorrect computation of trip profits</li>
+        <li>inconsistent crew income distribution</li>
+        <li>difficulty reviewing previous trips</li>
+    </ul>
+
+    <h3>3. "Smart Recommendations" May Create Problems</h3>
+
+    <p>
+        The proposal includes:
+    </p>
+
+    <blockquote>
+        Smart recommendation tips
+    </blockquote>
+
+    <p>
+        This is risky.
+    </p>
+
+    <p>
+        A panel may ask:
+    </p>
+
+    <ul>
+        <li>What algorithm is used?</li>
+        <li>What data supports recommendations?</li>
+        <li>Is AI involved?</li>
+    </ul>
+
+    <p>
+        If the answer is unclear, this feature weakens the proposal.
+    </p>
+
+    <div class="highlight">
+
+        <p><strong>Recommendation:</strong></p>
+
+        <ul>
+            <li>Remove this feature</li>
+            <li>Or convert it into simple rule-based alerts</li>
+        </ul>
+
+        <p><strong>Example:</strong></p>
+
+        <blockquote>
+            Fuel cost exceeded average trip cost by 20%.
+        </blockquote>
+
+    </div>
+
+    <h3>4. Advanced Analytics May Cause Scope Expansion</h3>
+
+    <p>
+        The system already has:
+    </p>
+
+    <ul>
+        <li>expenses</li>
+        <li>sales</li>
+        <li>profit computation</li>
+        <li>reports</li>
+        <li>dashboards</li>
+    </ul>
+
+    <p>
+        These are sufficient.
+    </p>
+
+    <p>
+        Complex analytics are not necessary for capstone success.
+    </p>
+
+    <h2>Problem Validation Assessment</h2>
+
+    <p>
+        The problem is believable but needs stronger evidence.
+    </p>
+
+    <p>
+        The group should gather:
+    </p>
+
+    <ul>
+        <li>sample expense records</li>
+        <li>sample sales records</li>
+        <li>owner interviews</li>
+        <li>examples of computation mistakes</li>
+    </ul>
+
+    <p>
+        This strengthens Chapter 1 significantly.
+    </p>
+
+    <h2>Recommended Problem Statements</h2>
+
+    <ol style="margin-left:30px;">
+
+        <li>
+            Fishing trawl businesses in Barangay Cantil rely on manual recording of trip expenses and fish sales.
+        </li>
+
+        <li>
+            Manual computation of profits and income distribution is prone to errors and inconsistencies.
+        </li>
+
+        <li>
+            Business owners and captains have difficulty monitoring the financial performance of individual fishing trips.
+        </li>
+
+        <li>
+            Historical financial records are difficult to retrieve and analyze due to paper-based documentation.
+        </li>
+
+        <li>
+            There is no centralized system for generating financial reports and monitoring profitability.
+        </li>
+
+    </ol>
+
+    <h2>Recommended Objectives</h2>
+
+    <h3>General Objective</h3>
+
+    <p>
+        To design and develop a Financial Management and Profit Monitoring System for Fishing Trawl Businesses in Barangay Cantil.
+    </p>
+
+    <h3>Specific Objectives</h3>
+
+    <ol style="margin-left:30px;">
+
+        <li>
+            To develop a system for recording fishing trip expenses and fish sales.
+        </li>
+
+        <li>
+            To automate the computation of trip profits, losses, and income distribution.
+        </li>
+
+        <li>
+            To provide dashboards that summarize financial performance.
+        </li>
+
+        <li>
+            To generate trip-based and monthly financial reports.
+        </li>
+
+        <li>
+            To maintain a centralized database of financial records for monitoring and analysis.
+        </li>
+
+    </ol>
+
+    <h2>Scope Recommendations</h2>
+
+    <h3>Keep</h3>
+
+    <ul>
+        <li>Expense recording</li>
+        <li>Sales recording</li>
+        <li>Profit computation</li>
+        <li>Crew income computation</li>
+        <li>Dashboard</li>
+        <li>Reports</li>
+        <li>User roles</li>
+    </ul>
+
+    <p>
+        These are sufficient for a complete capstone.
+    </p>
+
+    <h3>Remove or Simplify</h3>
+
+    <ul>
+        <li>Smart recommendation tips</li>
+        <li>Advanced analytics</li>
+        <li>Complex predictive features</li>
+    </ul>
+
+    <p>
+        Unless they can clearly justify and implement them.
+    </p>
+
+    <h2>Progress Assessment</h2>
+
+    <h3>Positive</h3>
+
+    <p>
+        Already completed:
+    </p>
+
+    <ul>
+        <li>login system</li>
+        <li>role management</li>
+    </ul>
+
+    <p>
+        This shows actual development has started.
+    </p>
+
+    <h3>Concern</h3>
+
+    <p>
+        Core modules remain unfinished:
+    </p>
+
+    <ul>
+        <li>expenses</li>
+        <li>sales</li>
+        <li>computations</li>
+        <li>reporting</li>
+    </ul>
+
+    <p>
+        These should be prioritized immediately because they form the heart of the system.
+    </p>
+
+    <h2>Novelty Assessment</h2>
+
+    <div class="rating-box">
+
+        <p><strong>Originality:</strong> 7/10</p>
+        <p><strong>Technical Complexity:</strong> 7/10</p>
+        <p><strong>Practical Value:</strong> 9/10</p>
+        <p><strong>Feasibility:</strong> 9/10</p>
+
+        <br>
+
+        <p>
+            The novelty does not come from financial management itself,
+            but from its localization to fishing trawl operations and automated crew income computation.
+        </p>
+
+    </div>
+
+    <h2>Coordinator Verdict</h2>
+
+    <div class="success">
+
+        <p class="status">
+            Status: Approved with Minor Revision
+        </p>
+
+        <br>
+
+        <p><strong>Reasons</strong></p>
+
+        <ul>
+            <li>Real and validated local problem.</li>
+            <li>Strong BSIT alignment.</li>
+            <li>Clear users and measurable outcomes.</li>
+            <li>Manageable scope.</li>
+            <li>Practical deployment potential.</li>
+        </ul>
+
+    </div>
+
+    <div class="note">
+
+        <p><strong>Recommendations</strong></p>
+
+        <ul>
+            <li>Change or justify the term "Decision Support System."</li>
+            <li>Remove vague intelligent features unless clearly defined.</li>
+            <li>Focus on trip-based financial monitoring and profit computation.</li>
+            <li>Gather stronger evidence from actual fishing operators to support the problem statement.</li>
+        </ul>
+
+        <br>
+
+        <p>
+            Among the proposals reviewed, this is one of the more realistic,
+            useful, and achievable capstone projects and has a high likelihood
+            of successful completion if the scope remains controlled.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

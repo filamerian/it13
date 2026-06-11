@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZERO TRUST - Proposed System Analysis</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#0d0d0d;
+    color:#e6e6e6;
+    line-height:1.8;
+    padding:40px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    background:#181818;
+    padding:40px;
+    border-radius:14px;
+    box-shadow:0 0 25px rgba(0,0,0,0.6);
+}
+
+h1{
+    font-size:2.5rem;
+    color:#ffffff;
+    margin-bottom:10px;
+    border-left:6px solid #6f6f6f;
+    padding-left:15px;
+}
+
+h2{
+    margin-top:40px;
+    margin-bottom:15px;
+    color:#d7d7d7;
+    border-bottom:1px solid #444;
+    padding-bottom:8px;
+}
+
+h3{
+    margin-top:25px;
+    margin-bottom:10px;
+    color:#c6c6c6;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+ul{
+    margin-left:30px;
+    margin-bottom:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+blockquote{
+    background:#262626;
+    padding:18px;
+    border-left:5px solid #777;
+    border-radius:8px;
+    margin:20px 0;
+    color:#f0f0f0;
+    font-style:italic;
+}
+
+.highlight{
+    background:#232323;
+    padding:20px;
+    border-left:5px solid #8f8f8f;
+    border-radius:8px;
+    margin:20px 0;
+}
+
+.warning{
+    background:#3a2323;
+    border-left:6px solid #ff5c5c;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.success{
+    background:#1d3325;
+    border-left:6px solid #4caf50;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.note{
+    background:#202020;
+    padding:20px;
+    border-radius:8px;
+    margin-top:20px;
+}
+
+.status{
+    font-size:1.3rem;
+    font-weight:bold;
+    color:#ffffff;
+}
+
+strong{
+    color:#ffffff;
+}
+
+hr{
+    border:none;
+    border-top:1px solid #444;
+    margin:30px 0;
+}
+
+.title-box{
+    background:#1f1f1f;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    .container{
+        padding:25px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Proposed System Analysis</h1>
+
+    <h2>ZERO TRUST: A Mobile-Based Interactive Cybersecurity Game for FCU SHS Students</h2>
+
+    <hr>
+
+    <h2>Overall Evaluation (Capstone Coordinator View)</h2>
+
+    <p>
+        This proposal has a <strong>good educational objective</strong> and addresses a real problem, 
+        but in its current form it is <strong>too broad, lacks a clear system problem, and risks becoming merely an educational game rather than a BSIT capstone project</strong>.
+    </p>
+
+    <div class="warning">
+
+        <p>
+            The biggest concern is that the group has not clearly identified what specific cybersecurity awareness gap exists among FCU SHS students and how it will be measured.
+        </p>
+
+    </div>
+
+    <h2>Strengths</h2>
+
+    <h3>1. Real and Relevant Problem</h3>
+
+    <p>
+        Cybersecurity threats such as:
+    </p>
+
+    <ul>
+        <li>phishing</li>
+        <li>social engineering</li>
+        <li>fake websites</li>
+        <li>malicious links</li>
+        <li>password attacks</li>
+    </ul>
+
+    <p>
+        are real and increasing.
+    </p>
+
+    <p>
+        This is a valid problem area.
+    </p>
+
+    <h3>2. Specific Target Users</h3>
+
+    <p>
+        The project clearly identifies:
+    </p>
+
+    <blockquote>
+        FCU Senior High School Students
+    </blockquote>
+
+    <p>
+        This is good because:
+    </p>
+
+    <ul>
+        <li>users are identifiable</li>
+        <li>testing is feasible</li>
+        <li>evaluation is manageable</li>
+    </ul>
+
+    <h3>3. Educational Value</h3>
+
+    <p>
+        The project supports:
+    </p>
+
+    <ul>
+        <li>cybersecurity awareness</li>
+        <li>digital citizenship</li>
+        <li>safe online behavior</li>
+    </ul>
+
+    <p>
+        This aligns with current educational needs.
+    </p>
+
+    <h2>Major Weaknesses</h2>
+
+    <h3>1. The Problem Statement is Too Generic</h3>
+
+    <p><strong>Current problem:</strong></p>
+
+    <blockquote>
+        "Phishing is rampant nowadays."
+    </blockquote>
+
+    <p>A panel may immediately ask:</p>
+
+    <blockquote>
+        "How do you know FCU SHS students are vulnerable to phishing?"
+    </blockquote>
+
+    <blockquote>
+        "Do you have data?"
+    </blockquote>
+
+    <p>
+        Currently, the proposal assumes the problem exists without proving it.
+    </p>
+
+    <h3>2. Weak Connection to "Zero Trust"</h3>
+
+    <p>The title uses:</p>
+
+    <blockquote>
+        "ZERO TRUST"
+    </blockquote>
+
+    <p>
+        However, Zero Trust is actually a cybersecurity framework involving:
+    </p>
+
+    <ul>
+        <li>verification</li>
+        <li>least privilege access</li>
+        <li>continuous authentication</li>
+    </ul>
+
+    <p>
+        The proposed features are mostly:
+    </p>
+
+    <ul>
+        <li>educational content</li>
+        <li>storylines</li>
+        <li>simulations</li>
+    </ul>
+
+    <p>
+        The project does not actually implement Zero Trust concepts beyond awareness.
+    </p>
+
+    <div class="highlight">
+
+        <p>
+            This creates a title-content mismatch.
+        </p>
+
+    </div>
+
+    <h3>3. Risk of Becoming Just a Mobile Game</h3>
+
+    <p>Panels may ask:</p>
+
+    <blockquote>
+        "What makes this a BSIT system and not simply an educational game?"
+    </blockquote>
+
+    <p>
+        Currently the proposal lacks:
+    </p>
+
+    <ul>
+        <li>analytics</li>
+        <li>learning assessment mechanisms</li>
+        <li>behavioral tracking</li>
+        <li>measurable cybersecurity learning outcomes</li>
+    </ul>
+
+    <h3>4. No Existing Prototype</h3>
+
+    <p><strong>Current status:</strong></p>
+
+    <blockquote>
+        nothing started
+    </blockquote>
+
+    <p>
+        For a game-based capstone, this is concerning because:
+    </p>
+
+    <ul>
+        <li>game development takes longer than expected</li>
+        <li>content creation is time-consuming</li>
+        <li>testing educational effectiveness requires additional time</li>
+    </ul>
+
+    <h2>Problem Validation Needed</h2>
+
+    <p>
+        Before proceeding, the group should gather evidence.
+    </p>
+
+    <p><strong>Possible survey questions:</strong></p>
+
+    <ul>
+        <li>Have you received suspicious links?</li>
+        <li>Can you identify phishing emails?</li>
+        <li>Do you reuse passwords?</li>
+        <li>Have you experienced account compromise?</li>
+    </ul>
+
+    <p>
+        If results show low awareness, the problem becomes evidence-based.
+    </p>
+
+    <h2>Current Problem Statement Weakness</h2>
+
+    <p><strong>Current:</strong></p>
+
+    <blockquote>
+        Phishing is rampant nowadays.
+    </blockquote>
+
+    <p>
+        This is not enough.
+    </p>
+
+    <p>
+        It is a societal problem, not yet an FCU SHS problem.
+    </p>
+
+    <h2>Recommended Problem Statements</h2>
+
+    <ol style="margin-left:30px;">
+
+        <li>
+            Senior High School students are frequently exposed to online threats such as phishing links, fake websites, and social engineering attacks.
+        </li>
+
+        <li>
+            Many students have limited knowledge of how to identify and respond to common cybersecurity threats.
+        </li>
+
+        <li>
+            Existing cybersecurity awareness activities are often delivered through lectures or presentations that may not fully engage students.
+        </li>
+
+        <li>
+            There is no interactive mobile-based learning tool in FCU that allows students to experience cybersecurity scenarios through simulation and guided decision-making.
+        </li>
+
+        <li>
+            There is a need for an engaging digital platform that improves cybersecurity awareness and safe online behavior among students.
+        </li>
+
+    </ol>
+
+</div>
+
+</body>
+</html>

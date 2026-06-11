@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart School Bell System Analysis</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#0f0f0f;
+    color:#e5e5e5;
+    line-height:1.8;
+    padding:40px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    background:#1b1b1b;
+    padding:40px;
+    border-radius:14px;
+    box-shadow:0 0 25px rgba(0,0,0,0.6);
+}
+
+h1{
+    font-size:2.5rem;
+    color:#ffffff;
+    margin-bottom:10px;
+    border-left:6px solid #7d7d7d;
+    padding-left:15px;
+}
+
+h2{
+    margin-top:40px;
+    margin-bottom:15px;
+    color:#d6d6d6;
+    border-bottom:1px solid #444;
+    padding-bottom:8px;
+}
+
+h3{
+    margin-top:25px;
+    margin-bottom:10px;
+    color:#c8c8c8;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+ul{
+    margin-left:30px;
+    margin-bottom:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+blockquote{
+    background:#262626;
+    padding:18px;
+    border-left:5px solid #888;
+    border-radius:8px;
+    margin:20px 0;
+    color:#f0f0f0;
+    font-style:italic;
+}
+
+.highlight{
+    background:#232323;
+    padding:20px;
+    border-left:5px solid #9b9b9b;
+    border-radius:8px;
+    margin:20px 0;
+}
+
+.warning{
+    background:#3a2323;
+    border-left:6px solid #ff5c5c;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.success{
+    background:#1f3326;
+    border-left:6px solid #4caf50;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.note{
+    background:#202020;
+    padding:20px;
+    border-radius:8px;
+    margin-top:20px;
+}
+
+.status{
+    font-size:1.3rem;
+    font-weight:bold;
+    color:#ffffff;
+}
+
+strong{
+    color:#ffffff;
+}
+
+hr{
+    border:none;
+    border-top:1px solid #444;
+    margin:30px 0;
+}
+
+.rating-box{
+    background:#242424;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    .container{
+        padding:25px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Proposed System Analysis</h1>
+
+    <h2>Smart School Bell and Announcement Automation System for FCU Elementary Department</h2>
+
+    <hr>
+
+    <h2>Overall Evaluation</h2>
+
+    <p>
+        Among the proposals reviewed so far, this is one of the <strong>more feasible hardware-software capstone projects</strong>.
+        The problem is specific, the users are clearly identified, and the system has a direct operational purpose.
+    </p>
+
+    <p>
+        Unlike many projects that attempt to solve broad societal issues, this proposal focuses on a clearly defined institutional process that can realistically be automated.
+    </p>
+
+    <div class="warning">
+
+        <p>
+            However, the project still has weaknesses in problem justification, novelty, and scope definition.
+        </p>
+
+    </div>
+
+    <h2>Strengths</h2>
+
+    <h3>1. Real and Existing Problem</h3>
+
+    <p>
+        The problem exists within the FCU Elementary Department.
+    </p>
+
+    <p><strong>Current situation:</strong></p>
+
+    <ul>
+        <li>Bell operation depends on a person.</li>
+        <li>Human delays can affect schedule consistency.</li>
+        <li>There is no automated scheduling mechanism.</li>
+    </ul>
+
+    <p>
+        This is a legitimate operational problem.
+    </p>
+
+    <h3>2. Clear Users</h3>
+
+    <p>
+        Beneficiaries are identifiable:
+    </p>
+
+    <ul>
+        <li>Elementary Department</li>
+        <li>School administrators</li>
+        <li>Teachers</li>
+        <li>Students</li>
+    </ul>
+
+    <p>
+        This makes testing and evaluation easier.
+    </p>
+
+    <h3>3. Strong BSIT Components</h3>
+
+    <p>
+        The project includes:
+    </p>
+
+    <ul>
+        <li>Embedded systems</li>
+        <li>Database</li>
+        <li>Web application</li>
+        <li>Scheduling engine</li>
+        <li>Hardware integration</li>
+        <li>Audio automation</li>
+    </ul>
+
+    <p>
+        These are appropriate BSIT competencies.
+    </p>
+
+    <h3>4. Feasible Implementation</h3>
+
+    <p>
+        Compared to:
+    </p>
+
+    <ul>
+        <li>AI systems</li>
+        <li>Marketplace platforms</li>
+        <li>Mobile games</li>
+    </ul>
+
+    <p>
+        this project is more achievable within the capstone timeline.
+    </p>
+
+    <h2>Weaknesses</h2>
+
+    <h3>1. Problem Severity is Overstated</h3>
+
+    <p><strong>Current justification:</strong></p>
+
+    <blockquote>
+        "Teachers and students don't know when it's time for break or next subject."
+    </blockquote>
+
+    <p>
+        This may be challenged by a panel.
+    </p>
+
+    <p>Realistically:</p>
+
+    <ul>
+        <li>teachers already have schedules</li>
+        <li>students know approximate class times</li>
+        <li>occasional late bell ringing does not create complete confusion</li>
+    </ul>
+
+    <div class="highlight">
+
+        <p>
+            The problem should focus on:
+        </p>
+
+        <blockquote>
+            lack of automation and scheduling consistency
+        </blockquote>
+
+        <p>
+            instead of implying severe operational disruption.
+        </p>
+
+    </div>
+
+    <h3>2. Novelty is Weak</h3>
+
+    <p>
+        A school bell timer already exists.
+    </p>
+
+    <p>
+        Commercial products already provide:
+    </p>
+
+    <ul>
+        <li>automated bells</li>
+        <li>programmable schedules</li>
+        <li>announcement systems</li>
+    </ul>
+
+    <p><strong>Therefore:</strong></p>
+
+    <h3>Weak novelty claim:</h3>
+
+    <blockquote>
+        "We automated the bell."
+    </blockquote>
+
+    <h3>Stronger novelty claim:</h3>
+
+    <blockquote>
+        "A localized web-managed school scheduling and emergency notification platform integrated with programmable bell automation."
+    </blockquote>
+
+    <p>
+        The novelty is in the integration, not the bell itself.
+    </p>
+
+    <h3>3. Push-to-Talk Paging May Be Unnecessary</h3>
+
+    <p>
+        Current features include:
+    </p>
+
+    <ul>
+        <li>Push-to-Talk Paging</li>
+        <li>Custom Audio Alerts</li>
+        <li>Bell Scheduling</li>
+    </ul>
+
+    <p>
+        These are essentially separate systems.
+    </p>
+
+    <p>
+        The danger is scope expansion.
+    </p>
+
+    <blockquote>
+        "Is this a bell system or a school-wide communication system?"
+    </blockquote>
+
+    <h3>4. Emergency Use Case Missing</h3>
+
+    <p>
+        This is actually a missed opportunity.
+    </p>
+
+    <p>
+        The system would become more valuable if it included:
+    </p>
+
+    <ul>
+        <li>emergency alarm activation</li>
+        <li>evacuation signal</li>
+        <li>lockdown signal</li>
+        <li>urgent school announcements</li>
+    </ul>
+
+    <p>
+        This provides stronger justification than merely ringing bells.
+    </p>
+
+    <h2>Scope Assessment</h2>
+
+    <h3>Must Keep</h3>
+
+    <ul>
+        <li>Automated Bell Scheduling</li>
+        <li>RTC Integration</li>
+        <li>Web-Based Schedule Management</li>
+        <li>Manual Override</li>
+        <li>Audio Output</li>
+    </ul>
+
+    <p>
+        These are enough for a complete capstone.
+    </p>
+
+    <h3>Optional Features</h3>
+
+    <ul>
+        <li>Emergency Alarm Mode</li>
+        <li>Special Event Scheduling</li>
+        <li>Different Bell Patterns</li>
+    </ul>
+
+    <h3>Consider Removing</h3>
+
+    <ul>
+        <li>Push-to-Talk Paging</li>
+        <li>Complex Audio Decoder Features</li>
+    </ul>
+
+    <p>
+        Unless these are already proven feasible.
+    </p>
+
+    <h2>Current Progress Assessment</h2>
+
+    <h3>Positive</h3>
+
+    <p>
+        Already completed:
+    </p>
+
+    <ul>
+        <li>Time Management Engine</li>
+        <li>Web Dashboard Interface</li>
+    </ul>
+
+    <p>
+        This is a good sign.
+    </p>
+
+    <h3>Concern</h3>
+
+    <p>
+        Remaining work includes:
+    </p>
+
+    <ul>
+        <li>hardware integration</li>
+        <li>audio modules</li>
+        <li>enclosure fabrication</li>
+    </ul>
+
+    <p>
+        For hardware projects, these are usually the most difficult parts.
+    </p>
+
+    <p>
+        They should prioritize hardware immediately.
+    </p>
+
+    <h2>Recommended Revised Problem Statements</h2>
+
+    <ol style="margin-left:30px;">
+
+        <li>
+            The FCU Elementary Department relies on manual bell operation to signal class schedules and daily activities.
+        </li>
+
+        <li>
+            There is no automated scheduling mechanism to ensure accurate and consistent bell activation.
+        </li>
+
+        <li>
+            Administrators have no centralized platform for managing and modifying bell schedules.
+        </li>
+
+        <li>
+            The current system does not provide automated emergency alerts and announcements when needed.
+        </li>
+
+        <li>
+            There is no digital logging and monitoring system for scheduled bell and announcement activities.
+        </li>
+
+    </ol>
+
+    <h2>Recommended Objectives</h2>
+
+    <h3>General Objective</h3>
+
+    <p>
+        To design and develop a Smart School Bell and Announcement Automation System that improves schedule management and school-wide notification processes in the FCU Elementary Department.
+    </p>
+
+    <h3>Specific Objectives</h3>
+
+    <ol style="margin-left:30px;">
+
+        <li>
+            To develop an automated bell scheduling system using a Real-Time Clock (RTC) module.
+        </li>
+
+        <li>
+            To create a web-based platform for managing and updating bell schedules.
+        </li>
+
+        <li>
+            To implement customizable audio alerts and announcements.
+        </li>
+
+        <li>
+            To provide manual override and emergency alarm functionality for authorized personnel.
+        </li>
+
+        <li>
+            To develop a database system for storing schedules and activity logs.
+        </li>
+
+    </ol>
+
+    <h2>Novelty Rating</h2>
+
+    <div class="rating-box">
+
+        <p><strong>Originality:</strong> 6/10</p>
+        <p><strong>Technical Complexity:</strong> 8/10</p>
+        <p><strong>Practical Value:</strong> 9/10</p>
+        <p><strong>Implementation Feasibility:</strong> 8/10</p>
+
+    </div>
+
+    <h2>Coordinator Verdict</h2>
+
+    <div class="success">
+
+        <p class="status">
+            Status: Approved with Minor Revision
+        </p>
+
+        <br>
+
+        <p><strong>Reasons</strong></p>
+
+        <ul>
+            <li>Real and localized problem.</li>
+            <li>Strong hardware-software integration.</li>
+            <li>Clear beneficiaries.</li>
+            <li>Good implementation progress compared to most groups.</li>
+            <li>Scope is generally manageable.</li>
+        </ul>
+
+    </div>
+
+    <div class="note">
+
+        <p><strong>Recommendations</strong></p>
+
+        <ul>
+            <li>Reframe the problem around automation and emergency communication rather than occasional secretary delays.</li>
+            <li>Strengthen novelty by emphasizing integrated scheduling, monitoring, and emergency notification features.</li>
+            <li>Reduce non-essential communication features if hardware integration becomes difficult.</li>
+            <li>Prioritize hardware and audio module development immediately because these are now the highest-risk components.</li>
+        </ul>
+
+        <br>
+
+        <p>
+            Of the proposals reviewed so far, this is one of the stronger candidates for successful completion and deployment, provided the group maintains a controlled scope and focuses on completing the hardware integration early.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

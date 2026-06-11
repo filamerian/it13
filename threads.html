@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Threads of the Forgotten Chant - Proposed System Analysis</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#101010;
+    color:#e5e5e5;
+    line-height:1.8;
+    padding:40px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    background:#1b1b1b;
+    padding:40px;
+    border-radius:14px;
+    box-shadow:0 0 25px rgba(0,0,0,0.6);
+}
+
+h1{
+    font-size:2.6rem;
+    color:#ffffff;
+    margin-bottom:10px;
+    border-left:6px solid #8a8a8a;
+    padding-left:15px;
+}
+
+h2{
+    margin-top:40px;
+    margin-bottom:15px;
+    color:#d8d8d8;
+    border-bottom:1px solid #444;
+    padding-bottom:8px;
+}
+
+h3{
+    margin-top:25px;
+    margin-bottom:10px;
+    color:#c5c5c5;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+ul{
+    margin-left:30px;
+    margin-bottom:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+blockquote{
+    background:#2a2a2a;
+    padding:18px;
+    border-left:5px solid #777;
+    border-radius:8px;
+    margin:20px 0;
+    color:#f1f1f1;
+    font-style:italic;
+}
+
+.highlight{
+    background:#252525;
+    padding:20px;
+    border-left:5px solid #999;
+    border-radius:8px;
+    margin:20px 0;
+}
+
+.warning{
+    background:#3a2323;
+    border-left:6px solid #ff5c5c;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.success{
+    background:#1f3326;
+    border-left:6px solid #4caf50;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.rating-box{
+    background:#222;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.status{
+    font-size:1.3rem;
+    font-weight:bold;
+    color:#ffffff;
+}
+
+strong{
+    color:#ffffff;
+}
+
+hr{
+    border:none;
+    border-top:1px solid #444;
+    margin:30px 0;
+}
+
+.note{
+    background:#202020;
+    padding:20px;
+    border-radius:8px;
+    margin-top:20px;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    .container{
+        padding:25px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Proposed System Analysis</h1>
+
+    <h2>Threads of the Forgotten Chant</h2>
+
+    <hr>
+
+    <h2>Overall Evaluation</h2>
+
+    <p>
+        This is one of the most creative and culturally significant proposals submitted. 
+        Unlike typical inventory or monitoring systems, it focuses on the preservation 
+        and promotion of local cultural heritage through interactive technology.
+    </p>
+
+    <div class="warning">
+        <p>
+            However, from a BSIT capstone perspective, the project currently suffers from a major issue:
+        </p>
+
+        <blockquote>
+            The scope resembles a commercial educational game rather than a manageable BSIT capstone project.
+        </blockquote>
+
+        <p>
+            The group itself already recognized this by indicating that scope reduction is necessary.
+        </p>
+    </div>
+
+    <h2>Strengths</h2>
+
+    <h3>1. Strong Cultural Relevance</h3>
+
+    <p>The project addresses:</p>
+
+    <ul>
+        <li>Suguidanon epic chanting</li>
+        <li>Panubok embroidery</li>
+        <li>Oral storytelling</li>
+        <li>Panay-Bukidnon traditions</li>
+    </ul>
+
+    <p>
+        These are legitimate cultural heritage topics that are often underrepresented in digital learning tools.
+    </p>
+
+    <p>
+        This gives the project strong community and educational value.
+    </p>
+
+    <h3>2. Clear Target Users</h3>
+
+    <p>The users are clearly identified:</p>
+
+    <ul>
+        <li>FCU Elementary Students</li>
+        <li>Teachers</li>
+        <li>FCU Elementary Department</li>
+    </ul>
+
+    <p>
+        This allows for realistic testing and evaluation.
+    </p>
+
+    <h3>3. Strong Localization</h3>
+
+    <p>
+        Many educational games are generic.
+    </p>
+
+    <p>This project is unique because it focuses on:</p>
+
+    <ul>
+        <li>Tapaz, Capiz</li>
+        <li>Panay-Bukidnon culture</li>
+        <li>Local heritage preservation</li>
+    </ul>
+
+    <p>
+        This localization is the strongest novelty of the proposal.
+    </p>
+
+    <h3>4. Educational Purpose</h3>
+
+    <p>The system aims to:</p>
+
+    <ul>
+        <li>increase cultural awareness</li>
+        <li>improve engagement</li>
+        <li>support heritage education</li>
+    </ul>
+
+    <p>
+        This gives the project a meaningful purpose beyond entertainment.
+    </p>
+
+    <h2>Major Concerns</h2>
+
+    <h3>1. Problem Validation is Weak</h3>
+
+    <p>The proposal assumes:</p>
+
+    <blockquote>
+        Students have limited awareness of local cultural heritage.
+    </blockquote>
+
+    <p>The panel will likely ask:</p>
+
+    <ul>
+        <li>How was this measured?</li>
+        <li>Was a survey conducted?</li>
+        <li>Were teachers interviewed?</li>
+        <li>Are there pre-test results showing low cultural knowledge?</li>
+    </ul>
+
+    <p>
+        Currently, the problem appears assumed rather than validated.
+    </p>
+
+    <h3>2. Scope is Extremely Large</h3>
+
+    <p>Current features include:</p>
+
+    <ul>
+        <li>split-screen co-op gameplay</li>
+        <li>explorer role</li>
+        <li>guide role</li>
+        <li>combat mechanics</li>
+        <li>puzzle solving</li>
+        <li>chant restoration</li>
+        <li>artifact discovery</li>
+        <li>AI-assisted hints</li>
+        <li>digital museum</li>
+        <li>database integration</li>
+    </ul>
+
+    <p>
+        This is far beyond a normal BSIT capstone.
+    </p>
+
+    <p>
+        In reality, this is closer to an indie game development project.
+    </p>
+
+    <h3>3. Combat Mechanics are Difficult to Justify</h3>
+
+    <p>One of the largest concerns is:</p>
+
+    <blockquote>
+        combat mechanics
+    </blockquote>
+
+    <p>Panel question:</p>
+
+    <blockquote>
+        "How does combat contribute to cultural heritage learning?"
+    </blockquote>
+
+    <p>
+        The connection is weak.
+    </p>
+
+    <p>
+        Combat appears to be a game feature rather than a learning feature.
+    </p>
+
+    <div class="highlight">
+        <strong>Recommendation:</strong> Remove combat entirely.
+    </div>
+
+    <h3>4. AI-Assisted Learning is Poorly Defined</h3>
+
+    <p>The proposal mentions:</p>
+
+    <blockquote>
+        AI-assisted hints
+    </blockquote>
+
+    <p>Questions that may arise:</p>
+
+    <ul>
+        <li>What AI model will be used?</li>
+        <li>How will it be trained?</li>
+        <li>What data will support it?</li>
+        <li>Is internet access required?</li>
+    </ul>
+
+    <p>
+        If these questions cannot be answered clearly, the AI feature becomes a liability.
+    </p>
+
+    <div class="highlight">
+        <strong>Recommendation:</strong>
+        Replace AI with:
+        <ul>
+            <li>rule-based hints</li>
+            <li>scripted guidance</li>
+            <li>adaptive hint progression</li>
+        </ul>
+    </div>
+
+    <h3>5. Split-Screen Co-op Adds Significant Complexity</h3>
+
+    <p>The project includes:</p>
+
+    <ul>
+        <li>two player roles</li>
+        <li>simultaneous interaction</li>
+        <li>shared puzzle solving</li>
+    </ul>
+
+    <p>
+        This greatly increases development difficulty.
+    </p>
+
+    <p>
+        For a capstone prototype, single-player gameplay may be sufficient.
+    </p>
+
+    <h2>Problem Statement Assessment</h2>
+
+    <p>The actual problem is not:</p>
+
+    <blockquote>
+        "Culture is being forgotten."
+    </blockquote>
+
+    <p>The stronger problem is:</p>
+
+    <blockquote>
+        Elementary students have limited engagement with localized cultural heritage due to the lack of interactive digital learning tools.
+    </blockquote>
+
+    <p>
+        This is measurable and defendable.
+    </p>
+
+    <h2>Recommended Problem Statements</h2>
+
+    <ol style="margin-left:30px;">
+        <li>Elementary students have limited exposure to localized cultural heritage topics such as Suguidanon chanting, Panubok embroidery, and Panay-Bukidnon traditions.</li>
+
+        <li>Existing cultural learning materials are primarily lecture-based and lack interactive digital components.</li>
+
+        <li>Students are generally more engaged with digital games and multimedia than traditional instructional methods.</li>
+
+        <li>There is currently no localized educational game that promotes the cultural heritage of Tapaz, Capiz within the FCU Elementary Department.</li>
+
+        <li>Teachers have limited access to interactive digital tools for teaching local cultural heritage.</li>
+    </ol>
+
+    <h2>Recommended Objectives</h2>
+
+    <h3>General Objective</h3>
+
+    <p>
+        To design and develop an interactive educational game that promotes awareness 
+        and understanding of the cultural heritage of Tapaz, Capiz among FCU Elementary students.
+    </p>
+
+    <h3>Specific Objectives</h3>
+
+    <ol style="margin-left:30px;">
+        <li>To develop a game-based learning environment featuring localized cultural heritage content.</li>
+
+        <li>To implement interactive puzzles based on Panubok embroidery and Suguidanon traditions.</li>
+
+        <li>To provide cultural information through exploration and storytelling mechanics.</li>
+
+        <li>To incorporate guided assistance that helps students progress through educational activities.</li>
+
+        <li>To evaluate the effectiveness of the game in improving student engagement and cultural awareness.</li>
+    </ol>
+
+    <h2>Recommended Scope Reduction</h2>
+
+    <div class="success">
+
+        <h3>Keep</h3>
+
+        <ul>
+            <li>One playable level</li>
+            <li>Cultural storytelling</li>
+            <li>Panubok-inspired puzzles</li>
+            <li>Chant restoration activity</li>
+            <li>Cultural information system</li>
+            <li>Simple hint mechanism</li>
+        </ul>
+
+        <p>
+            These alone are enough for a capstone.
+        </p>
+
+    </div>
+
+    <div class="warning">
+
+        <h3>Remove</h3>
+
+        <ul>
+            <li>Combat system</li>
+            <li>Multiple game worlds</li>
+            <li>Large-scale artifact collection</li>
+            <li>Advanced AI implementation</li>
+            <li>Extensive co-op mechanics</li>
+        </ul>
+
+        <p>
+            These features dramatically increase risk without significantly improving educational outcomes.
+        </p>
+
+    </div>
+
+    <h2>Novelty Assessment</h2>
+
+    <div class="rating-box">
+
+        <p><strong>Originality:</strong> 9/10</p>
+        <p><strong>Technical Complexity:</strong> 8/10</p>
+        <p><strong>Practical Value:</strong> 8/10</p>
+        <p><strong>Feasibility (Current Scope):</strong> 4/10</p>
+        <p><strong>Feasibility (Reduced Scope):</strong> 8/10</p>
+
+    </div>
+
+    <p>The novelty comes from:</p>
+
+    <ul>
+        <li>local cultural heritage integration</li>
+        <li>educational gamification</li>
+        <li>Panay-Bukidnon content</li>
+    </ul>
+
+    <p>
+        Not from AI, combat, or co-op gameplay.
+    </p>
+
+    <h2>Progress Assessment</h2>
+
+    <h3>Current Status</h3>
+
+    <p><strong>Completed:</strong></p>
+
+    <ul>
+        <li>concept</li>
+        <li>planning</li>
+        <li>narrative direction</li>
+    </ul>
+
+    <p><strong>Not Started:</strong></p>
+
+    <ul>
+        <li>actual game development</li>
+        <li>gameplay mechanics</li>
+        <li>puzzles</li>
+        <li>database</li>
+        <li>testing</li>
+    </ul>
+
+    <p>
+        This is concerning because June 30, 2026 is very close and there is currently no playable prototype.
+    </p>
+
+    <h2>Coordinator Verdict</h2>
+
+    <div class="success">
+
+        <p class="status">Status: Approved with Major Scope Reduction</p>
+
+        <br>
+
+        <h3>Reasons</h3>
+
+        <ul>
+            <li>Strong educational and cultural value.</li>
+            <li>Highly localized and unique.</li>
+            <li>Appropriate target users.</li>
+            <li>Good potential for community impact.</li>
+        </ul>
+
+        <h3>Required Revisions</h3>
+
+        <ul>
+            <li>Validate the problem through surveys or pre-tests.</li>
+            <li>Remove combat mechanics.</li>
+            <li>Simplify or remove AI components.</li>
+            <li>Reduce co-op complexity.</li>
+            <li>Focus on one complete playable educational experience rather than multiple game systems.</li>
+        </ul>
+
+    </div>
+
+    <div class="note">
+
+        <p>
+            If the group follows its own realization and limits the project to a single cultural learning environment with puzzles and storytelling, this can become one of the most unique and successful BSIT capstone projects in the batch.
+        </p>
+
+        <br>
+
+        <p>
+            However, if they attempt to build everything currently proposed, the likelihood of completing a working system on time is very low.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

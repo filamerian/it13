@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IoT-Based Secure Coin Changer System Analysis</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#0f0f0f;
+    color:#e5e5e5;
+    line-height:1.8;
+    padding:40px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    background:#1b1b1b;
+    padding:40px;
+    border-radius:14px;
+    box-shadow:0 0 25px rgba(0,0,0,0.6);
+}
+
+h1{
+    font-size:2.5rem;
+    color:#ffffff;
+    margin-bottom:10px;
+    border-left:6px solid #8a8a8a;
+    padding-left:15px;
+}
+
+h2{
+    margin-top:40px;
+    margin-bottom:15px;
+    color:#d8d8d8;
+    border-bottom:1px solid #444;
+    padding-bottom:8px;
+}
+
+h3{
+    margin-top:25px;
+    margin-bottom:10px;
+    color:#c8c8c8;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+ul{
+    margin-left:30px;
+    margin-bottom:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+blockquote{
+    background:#2b2b2b;
+    padding:18px;
+    border-left:5px solid #777;
+    border-radius:8px;
+    margin:20px 0;
+    color:#f0f0f0;
+    font-style:italic;
+}
+
+.highlight{
+    background:#252525;
+    padding:20px;
+    border-left:5px solid #999;
+    border-radius:8px;
+    margin:20px 0;
+}
+
+.warning{
+    background:#3a2323;
+    border-left:6px solid #ff5c5c;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.success{
+    background:#1f3326;
+    border-left:6px solid #4caf50;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.note{
+    background:#202020;
+    padding:20px;
+    border-radius:8px;
+    margin-top:20px;
+}
+
+.status{
+    font-size:1.3rem;
+    font-weight:bold;
+    color:#ffffff;
+}
+
+strong{
+    color:#ffffff;
+}
+
+hr{
+    border:none;
+    border-top:1px solid #444;
+    margin:30px 0;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    .container{
+        padding:25px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Proposed System Analysis</h1>
+
+    <h2>IoT-Based Secure Coin Changer System for Lukas Gaming Center</h2>
+
+    <hr>
+
+    <h2>Overall Evaluation</h2>
+
+    <p>
+        This is a <strong>practical and industry-oriented BSIT capstone project</strong> because it solves a real operational problem in a specific business environment.
+    </p>
+
+    <p>
+        Unlike many proposed systems that only digitize records, this project combines 
+        <strong>hardware, software, IoT, automation, and security</strong>, making it more technically substantial.
+    </p>
+
+    <div class="warning">
+
+        <p>
+            However, the proposal currently has several weaknesses that need to be addressed before it can be considered ready for implementation.
+        </p>
+
+    </div>
+
+    <h2>Strengths</h2>
+
+    <h3>1. Real and Observable Problem</h3>
+
+    <p>
+        The problem exists in actual operations.
+    </p>
+
+    <p><strong>Example:</strong></p>
+
+    <ul>
+        <li>Customer wants to exchange bills for coins.</li>
+        <li>Owner is unavailable.</li>
+        <li>Customer cannot immediately use the pisonet machines.</li>
+        <li>Business loses potential revenue.</li>
+    </ul>
+
+    <p>
+        This is a legitimate operational problem.
+    </p>
+
+    <h3>2. Clear Users</h3>
+
+    <p>
+        The beneficiaries are clearly identified:
+    </p>
+
+    <ul>
+        <li>Gaming center owner</li>
+        <li>Customers</li>
+    </ul>
+
+    <p>
+        This is better than projects with vague stakeholders.
+    </p>
+
+    <h3>3. Strong BSIT Components</h3>
+
+    <p>The proposal includes:</p>
+
+    <ul>
+        <li>Embedded systems</li>
+        <li>IoT</li>
+        <li>Database</li>
+        <li>Web monitoring</li>
+        <li>Security mechanisms</li>
+        <li>Transaction logging</li>
+    </ul>
+
+    <p>
+
+        These align well with BSIT outcomes.
+    </p>
+
+    <h2>Major Weaknesses</h2>
+
+    <h3>1. Problem Statement Needs More Evidence</h3>
+
+    <p>Current problem:</p>
+
+    <blockquote>
+        Owner is not present to exchange money.
+    </blockquote>
+
+    <p>
+        This is too narrow.
+    </p>
+
+    <p>A panel may ask:</p>
+
+    <blockquote>
+        "How often does this actually happen?"
+    </blockquote>
+
+    <blockquote>
+        "Does it happen enough to justify building an entire automated machine?"
+    </blockquote>
+
+    <p>
+        The group needs actual data such as:
+    </p>
+
+    <ul>
+        <li>average daily coin exchange requests</li>
+        <li>number of delayed transactions</li>
+        <li>customer complaints</li>
+        <li>owner interviews</li>
+    </ul>
+
+    <p>
+        Without evidence, the problem appears anecdotal.
+    </p>
+
+    <h3>2. Scope is Too Hardware-Heavy</h3>
+
+    <p>The system includes:</p>
+
+    <ul>
+        <li>bill validator</li>
+        <li>coin acceptor</li>
+        <li>coin dispenser</li>
+        <li>ESP32</li>
+        <li>Firebase</li>
+        <li>web dashboard</li>
+        <li>motion sensor</li>
+        <li>GSM alerts</li>
+    </ul>
+
+    <p>
+        This is a large hardware integration project.
+    </p>
+
+    <p>
+        The biggest risk is not coding.
+    </p>
+
+    <div class="highlight">
+
+        <p><strong>The biggest risk is:</strong></p>
+
+        <ul>
+            <li>mechanical reliability</li>
+            <li>dispensing accuracy</li>
+            <li>sensor integration</li>
+            <li>hardware procurement</li>
+        </ul>
+
+    </div>
+
+    <p>
+        Many capstone groups underestimate this.
+    </p>
+
+    <h3>3. Security Claims are Too Broad</h3>
+
+    <p>The proposal mentions:</p>
+
+    <blockquote>
+        Anti-Theft and Security System
+    </blockquote>
+
+    <p>
+        This is vague.
+    </p>
+
+    <p>Questions likely asked by panels:</p>
+
+    <ul>
+        <li>What theft scenarios?</li>
+        <li>How is theft detected?</li>
+        <li>What happens when theft is detected?</li>
+        <li>How reliable is detection?</li>
+    </ul>
+
+    <p>
+        Security must be clearly defined.
+    </p>
+
+    <h3>4. No Working Prototype Yet</h3>
+
+    <p><strong>Current status:</strong></p>
+
+    <blockquote>
+        None of the system components are currently working.
+    </blockquote>
+
+    <p>
+        This is concerning.
+    </p>
+
+    <p>
+        Most successful hardware capstones already have:
+    </p>
+
+    <ul>
+        <li>ESP32 tests</li>
+        <li>Firebase connection</li>
+        <li>sensor prototypes</li>
+    </ul>
+
+    <p>
+        before proposal approval.
+    </p>
+
+    <h2>Novelty Assessment</h2>
+
+    <h3>Is it Novel?</h3>
+
+    <p>
+        Partially.
+    </p>
+
+    <p>
+        Coin changers already exist commercially.
+    </p>
+
+    <h3>Weak Novelty Argument</h3>
+
+    <blockquote>
+        "It changes bills into coins."
+    </blockquote>
+
+    <p>
+        Not novel.
+    </p>
+
+    <h3>Strong Novelty Argument</h3>
+
+    <p>
+        The novelty should focus on:
+    </p>
+
+    <ul>
+        <li>low-cost implementation for small gaming centers</li>
+        <li>IoT monitoring capability</li>
+        <li>remote inventory monitoring</li>
+        <li>theft detection alerts</li>
+        <li>transaction history and analytics</li>
+    </ul>
+
+    <div class="highlight">
+
+        <p>
+            The novelty is not the changer itself.
+        </p>
+
+        <p>
+            The novelty is the integration of:
+        </p>
+
+        <blockquote>
+            Automated coin changing + IoT monitoring + security tracking for small gaming businesses.
+        </blockquote>
+
+    </div>
+
+    <h2>Recommended Problem Statements</h2>
+
+    <ol style="margin-left:30px;">
+
+        <li>
+            Lukas Gaming Center relies on manual coin-changing transactions that require the owner's presence, causing delays in customer transactions.
+        </li>
+
+        <li>
+            There is no automated mechanism for converting bills into coins for pisonet users.
+        </li>
+
+        <li>
+            The owner has no real-time monitoring tool to track machine usage, coin inventory, and transaction records remotely.
+        </li>
+
+        <li>
+            Coin inventory levels are manually monitored, increasing the risk of service interruption when coins run out.
+        </li>
+
+        <li>
+            There is no automated alert system to notify the owner of possible tampering, unauthorized access, or machine-related issues.
+        </li>
+
+    </ol>
+
+    <h2>Recommended Objectives</h2>
+
+    <h3>General Objective</h3>
+
+    <p>
+        To design and develop an IoT-Based Secure Coin Changer System for Lukas Gaming Center that automates coin-changing transactions and provides real-time monitoring and security features.
+    </p>
+
+    <h3>Specific Objectives</h3>
+
+    <ol style="margin-left:30px;">
+
+        <li>
+            To develop an automated bill acceptance and coin dispensing mechanism.
+        </li>
+
+        <li>
+            To implement a currency validation system for accurate transaction processing.
+        </li>
+
+        <li>
+            To develop a web-based monitoring dashboard for viewing transactions and machine status.
+        </li>
+
+        <li>
+            To integrate an IoT platform that records transaction data in real time.
+        </li>
+
+        <li>
+            To implement a security alert system that notifies the owner of potential tampering or abnormal activities.
+        </li>
+
+    </ol>
+
+    <h2>Scope Reduction Recommendation</h2>
+
+    <div class="success">
+
+        <h3>For the 50% milestone, focus only on:</h3>
+
+        <h3>Core Features</h3>
+
+        <ul>
+            <li>Bill acceptance</li>
+            <li>Coin dispensing</li>
+            <li>ESP32 integration</li>
+            <li>Firebase logging</li>
+            <li>Web dashboard</li>
+            <li>Basic security alert</li>
+        </ul>
+
+        <h3>Move to Future Enhancement</h3>
+
+        <ul>
+            <li>Advanced anti-theft mechanisms</li>
+            <li>Analytics</li>
+            <li>Predictive maintenance</li>
+            <li>Multi-machine monitoring</li>
+        </ul>
+
+    </div>
+
+    <h2>Coordinator Verdict</h2>
+
+    <div class="success">
+
+        <p class="status">
+            Status: Approved with Major Revision
+        </p>
+
+        <br>
+
+        <p><strong>Reasons:</strong></p>
+
+        <ul>
+            <li>The problem is real and appropriate.</li>
+            <li>The system demonstrates strong BSIT competencies.</li>
+            <li>The novelty should be reframed around IoT monitoring and automation, not coin changing alone.</li>
+            <li>The proposal lacks evidence that the problem occurs frequently enough.</li>
+            <li>Hardware integration risk is extremely high and should be prioritized immediately.</li>
+        </ul>
+
+    </div>
+
+    <div class="note">
+
+        <p>
+            My biggest concern is not the concept itself, but the fact that 
+            <strong>none of the hardware or software components have been started yet</strong>.
+        </p>
+
+        <br>
+
+        <p>
+            For a hardware-based capstone, this group should begin prototyping immediately, because implementation and troubleshooting will consume far more time than expected.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

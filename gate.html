@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automated Bar Gate System Analysis</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#0f0f0f;
+    color:#e5e5e5;
+    line-height:1.8;
+    padding:40px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    background:#1b1b1b;
+    padding:40px;
+    border-radius:14px;
+    box-shadow:0 0 25px rgba(0,0,0,0.6);
+}
+
+h1{
+    font-size:2.5rem;
+    color:#ffffff;
+    margin-bottom:10px;
+    border-left:6px solid #7c7c7c;
+    padding-left:15px;
+}
+
+h2{
+    margin-top:40px;
+    margin-bottom:15px;
+    color:#d6d6d6;
+    border-bottom:1px solid #444;
+    padding-bottom:8px;
+}
+
+h3{
+    margin-top:25px;
+    margin-bottom:10px;
+    color:#c8c8c8;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+ul{
+    margin-left:30px;
+    margin-bottom:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+blockquote{
+    background:#262626;
+    padding:18px;
+    border-left:5px solid #8a8a8a;
+    border-radius:8px;
+    margin:20px 0;
+    color:#f0f0f0;
+    font-style:italic;
+}
+
+.highlight{
+    background:#232323;
+    padding:20px;
+    border-left:5px solid #9c9c9c;
+    border-radius:8px;
+    margin:20px 0;
+}
+
+.warning{
+    background:#3a2323;
+    border-left:6px solid #ff5c5c;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.success{
+    background:#1f3326;
+    border-left:6px solid #4caf50;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.note{
+    background:#202020;
+    padding:20px;
+    border-radius:8px;
+    margin-top:20px;
+}
+
+.status{
+    font-size:1.3rem;
+    font-weight:bold;
+    color:#ffffff;
+}
+
+strong{
+    color:#ffffff;
+}
+
+hr{
+    border:none;
+    border-top:1px solid #444;
+    margin:30px 0;
+}
+
+.rating-box{
+    background:#242424;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    .container{
+        padding:25px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Proposed System Analysis</h1>
+
+    <h2>Arduino-Powered Automated Bar Gate with Proximity Detection in St. Joseph Village</h2>
+
+    <hr>
+
+    <h2>Overall Evaluation</h2>
+
+    <p>
+        In its current form, this proposal is <strong>one of the weaker capstone proposals reviewed so far</strong>.
+        The idea is not inherently bad, but the group has not clearly identified a significant problem, validated its existence, or justified why an automated gate system is needed.
+    </p>
+
+    <p>
+        The proposal currently appears to be a <strong>technology-first project</strong> rather than a <strong>problem-driven capstone project</strong>.
+    </p>
+
+    <div class="warning">
+
+        <p>
+            A BSIT capstone should start with a real operational problem and then propose a technology solution.
+            In this case, the group appears to have started with the idea of an automated gate and then tried to find a problem afterward.
+        </p>
+
+    </div>
+
+    <h2>Major Concerns</h2>
+
+    <h3>1. Problem Validation is Weak</h3>
+
+    <p>
+        The group answered:
+    </p>
+
+    <blockquote>
+        "Not sure"
+    </blockquote>
+
+    <p>
+        when asked whether the problem exists in real life.
+    </p>
+
+    <p>
+        This is a serious issue.
+    </p>
+
+    <p>
+        If the proponents themselves are unsure whether the problem exists, then the foundation of the capstone is weak.
+    </p>
+
+    <p>
+        A panel will likely ask:
+    </p>
+
+    <ul>
+        <li>How many unauthorized entry incidents occurred?</li>
+        <li>How often do guards fail to identify vehicles?</li>
+        <li>Are there security reports supporting this problem?</li>
+    </ul>
+
+    <p>
+        Currently, there is no evidence.
+    </p>
+
+    <h3>2. Problem Occurs "Rarely"</h3>
+
+    <p>
+        The group indicated:
+    </p>
+
+    <blockquote>
+        Rarely
+    </blockquote>
+
+    <p>
+        This creates another challenge.
+    </p>
+
+    <p>
+        A capstone should generally solve a recurring operational problem.
+    </p>
+
+    <blockquote>
+        Why build an entire automated gate system for a problem that rarely happens?
+    </blockquote>
+
+    <p>
+        The cost and complexity of the solution may not be justified by the frequency of the problem.
+    </p>
+
+    <h3>3. Unclear System Scope</h3>
+
+    <p>
+        The title includes:
+    </p>
+
+    <ul>
+        <li>Automated Bar Gate</li>
+        <li>Proximity Detection</li>
+    </ul>
+
+    <p>
+        The features include:
+    </p>
+
+    <ul>
+        <li>Car Identification</li>
+        <li>Automated Gate</li>
+        <li>Car Logs</li>
+    </ul>
+
+    <p>
+        The core feature is:
+    </p>
+
+    <blockquote>
+        Plate Number Identification
+    </blockquote>
+
+    <p>
+        These are different technologies.
+    </p>
+
+    <p>
+        The group must clearly define whether the system uses:
+    </p>
+
+    <h3>Option A</h3>
+
+    <blockquote>
+        License Plate Recognition
+    </blockquote>
+
+    <p>or</p>
+
+    <h3>Option B</h3>
+
+    <blockquote>
+        RFID / proximity-based vehicle identification
+    </blockquote>
+
+    <div class="highlight">
+
+        <p>
+            Trying to implement both significantly increases complexity.
+        </p>
+
+    </div>
+
+    <h3>4. Novelty is Weak</h3>
+
+    <p>
+        Commercial systems already exist that provide:
+    </p>
+
+    <ul>
+        <li>automatic gates</li>
+        <li>RFID access control</li>
+        <li>license plate recognition</li>
+        <li>vehicle logging</li>
+    </ul>
+
+    <p>
+        The proposal currently does not explain what is new or improved.
+    </p>
+
+    <blockquote>
+        "Why not just buy an existing gate system?"
+    </blockquote>
+
+    <p>
+        The group currently has no strong answer.
+    </p>
+
+    <h3>5. Beneficiaries are Too Broad</h3>
+
+    <p>
+        Current users:
+    </p>
+
+    <blockquote>
+        Home Owner / Residence
+    </blockquote>
+
+    <p>
+        This is vague.
+    </p>
+
+    <p>
+        Who actually uses the system?
+    </p>
+
+    <ul>
+        <li>Security guards?</li>
+        <li>Homeowners?</li>
+        <li>Village administrators?</li>
+    </ul>
+
+    <p>
+        The primary user should be clearly identified.
+    </p>
+
+    <h2>Technical Risk Assessment</h2>
+
+    <h3>Positive</h3>
+
+    <p>
+        The web-based side is already working.
+    </p>
+
+    <p>
+        This suggests:
+    </p>
+
+    <ul>
+        <li>database connectivity</li>
+        <li>interface development</li>
+        <li>logging features</li>
+    </ul>
+
+    <p>
+        may already be progressing.
+    </p>
+
+    <h3>Concern</h3>
+
+    <p>
+        The entire hardware side remains unfinished.
+    </p>
+
+    <p>
+        This includes:
+    </p>
+
+    <ul>
+        <li>gate mechanism</li>
+        <li>sensors</li>
+        <li>controller integration</li>
+        <li>vehicle detection</li>
+    </ul>
+
+    <p>
+        For hardware projects, these are usually the most difficult parts.
+    </p>
+
+    <h2>How to Save the Project</h2>
+
+    <p>
+        The project becomes much stronger if it is reframed as:
+    </p>
+
+    <h3>Current Idea</h3>
+
+    <blockquote>
+        Automated Gate System
+    </blockquote>
+
+    <h3>Better Idea</h3>
+
+    <blockquote>
+        Village Vehicle Access Monitoring and Automated Gate Control System
+    </blockquote>
+
+    <div class="highlight">
+
+        <p>
+            The emphasis shifts from merely opening a gate to:
+        </p>
+
+        <ul>
+            <li>access control</li>
+            <li>visitor tracking</li>
+            <li>security logging</li>
+            <li>vehicle monitoring</li>
+        </ul>
+
+        <p>
+            This creates a stronger BSIT justification.
+        </p>
+
+    </div>
+
+    <h2>Recommended Problem Statements</h2>
+
+    <ol style="margin-left:30px;">
+
+        <li>
+            St. Joseph Village currently relies on manual monitoring of vehicle entry and exit at the village gate.
+        </li>
+
+        <li>
+            Security personnel have limited tools for verifying and recording vehicle access information.
+        </li>
+
+        <li>
+            Vehicle entry logs are manually recorded, making monitoring and retrieval of records inefficient.
+        </li>
+
+        <li>
+            There is no automated mechanism for controlling gate access based on authorized vehicle identification.
+        </li>
+
+        <li>
+            Village administrators lack a centralized system for monitoring vehicle entry and exit activities.
+        </li>
+
+    </ol>
+
+    <h2>Recommended Objectives</h2>
+
+    <h3>General Objective</h3>
+
+    <p>
+        To design and develop an Automated Vehicle Access Monitoring and Gate Control System for St. Joseph Village.
+    </p>
+
+    <h3>Specific Objectives</h3>
+
+    <ol style="margin-left:30px;">
+
+        <li>
+            To develop a vehicle identification mechanism using a selected access technology.
+        </li>
+
+        <li>
+            To implement an automated gate control system using Arduino.
+        </li>
+
+        <li>
+            To develop a database for storing vehicle entry and exit records.
+        </li>
+
+        <li>
+            To create a web-based monitoring dashboard for authorized personnel.
+        </li>
+
+        <li>
+            To generate vehicle access logs and monitoring reports.
+        </li>
+
+    </ol>
+
+    <h2>Novelty Assessment</h2>
+
+    <div class="rating-box">
+
+        <p><strong>Current Novelty:</strong> 4/10</p>
+
+        <p>
+            The system is very similar to existing commercial gate automation systems.
+        </p>
+
+        <br>
+
+        <p><strong>Improved Novelty:</strong> 7/10</p>
+
+        <p>
+            If focused on:
+        </p>
+
+        <ul>
+            <li>localized village implementation</li>
+            <li>integrated vehicle logging</li>
+            <li>low-cost Arduino deployment</li>
+            <li>centralized monitoring</li>
+        </ul>
+
+        <p>
+            the project becomes more defensible.
+        </p>
+
+    </div>
+
+    <h2>Coordinator Verdict</h2>
+
+    <div class="warning">
+
+        <p class="status">
+            Status: Needs Major Revision
+        </p>
+
+        <br>
+
+        <p><strong>Reasons</strong></p>
+
+        <ul>
+            <li>Problem validation is weak.</li>
+            <li>Problem frequency is reported as "rare."</li>
+            <li>Novelty is currently insufficient.</li>
+            <li>Technology selection is unclear.</li>
+            <li>The proposal appears solution-driven rather than problem-driven.</li>
+        </ul>
+
+    </div>
+
+    <div class="note">
+
+        <p><strong>Recommendation</strong></p>
+
+        <p>
+            The group should first validate whether access control and vehicle monitoring are genuine concerns within St. Joseph Village.
+            If evidence can be gathered, the project should be reframed as a vehicle access monitoring and security management system rather than simply an automated gate.
+        </p>
+
+        <br>
+
+        <p>
+            Without stronger problem justification, this proposal may struggle during proposal defense and final evaluation.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

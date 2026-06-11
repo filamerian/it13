@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PoultryLink System Analysis</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background:#121212;
+        color:#e0e0e0;
+        line-height:1.8;
+        padding:40px;
+    }
+
+    .container{
+        max-width:1100px;
+        margin:auto;
+        background:#1c1c1c;
+        padding:40px;
+        border-radius:12px;
+        box-shadow:0 0 20px rgba(0,0,0,0.5);
+    }
+
+    h1{
+        color:#ffffff;
+        font-size:2.5rem;
+        margin-bottom:10px;
+        border-left:6px solid #888;
+        padding-left:15px;
+    }
+
+    h2{
+        color:#d6d6d6;
+        margin-top:40px;
+        margin-bottom:15px;
+        border-bottom:1px solid #444;
+        padding-bottom:8px;
+    }
+
+    h3{
+        color:#bbbbbb;
+        margin-top:25px;
+        margin-bottom:10px;
+    }
+
+    p{
+        margin-bottom:15px;
+    }
+
+    ul{
+        margin-left:30px;
+        margin-bottom:20px;
+    }
+
+    li{
+        margin-bottom:8px;
+    }
+
+    .highlight{
+        background:#2a2a2a;
+        padding:20px;
+        border-left:5px solid #888;
+        border-radius:8px;
+        margin:20px 0;
+    }
+
+    .status{
+        font-size:1.2rem;
+        font-weight:bold;
+        color:#ffffff;
+    }
+
+    .recommendation{
+        background:#252525;
+        padding:20px;
+        border-radius:10px;
+        margin-top:20px;
+    }
+
+    hr{
+        border:none;
+        border-top:1px solid #444;
+        margin:30px 0;
+    }
+
+    strong{
+        color:#ffffff;
+    }
+
+    blockquote{
+        background:#2a2a2a;
+        padding:15px;
+        border-left:4px solid #777;
+        margin:15px 0;
+        color:#d0d0d0;
+    }
+
+    @media(max-width:768px){
+        body{
+            padding:20px;
+        }
+
+        .container{
+            padding:25px;
+        }
+
+        h1{
+            font-size:2rem;
+        }
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Capstone Problem Analysis</h1>
+
+    <h2>PoultryLink: A Web-Based Multi-Vendor Marketplace for Capiz</h2>
+
+
+
+    <h2>Overall Evaluation</h2>
+
+    <p>
+        This proposal has a <strong>strong problem domain and high social relevance</strong>, 
+        but in its current form it is <strong>one of the most over-scoped projects among the submissions reviewed</strong>.
+    </p>
+
+    <p>The group is attempting to build:</p>
+
+    <ul>
+        <li>an e-commerce marketplace</li>
+        <li>a permit verification system</li>
+        <li>a biosecurity tracking platform</li>
+        <li>a poultry inventory management system</li>
+        <li>a traceability system</li>
+        <li>a logistics monitoring system</li>
+    </ul>
+
+    <p>
+        These are essentially multiple capstone projects combined into one.
+    </p>
+
+    <div class="highlight">
+        The proposal has potential, but it requires significant scope reduction before it becomes a realistic BSIT capstone.
+    </div>
+
+    <h2>Strengths</h2>
+
+    <h3>1. Real Industry Problem</h3>
+
+    <p>The poultry industry faces genuine challenges:</p>
+
+    <ul>
+        <li>paper-based records</li>
+        <li>traceability difficulties</li>
+        <li>pricing disputes</li>
+        <li>supply chain transparency issues</li>
+    </ul>
+
+    <p>These are legitimate problems.</p>
+
+    <h3>2. Localized Application</h3>
+
+    <p>Unlike generic marketplace systems, this proposal focuses on:</p>
+
+    <ul>
+        <li>poultry sellers in Capiz</li>
+        <li>small-scale resellers</li>
+        <li>local consumers</li>
+    </ul>
+
+    <p>This improves relevance and practicality.</p>
+
+    <h3>3. Clear Stakeholders</h3>
+
+    <p>The beneficiaries are well-defined:</p>
+
+    <ul>
+        <li>poultry farm operators</li>
+        <li>resellers</li>
+        <li>consumers</li>
+        <li>administrators</li>
+    </ul>
+
+    <p>This makes system evaluation easier.</p>
+
+    <h3>4. Good Potential for Community Impact</h3>
+
+    <p>A successful implementation could improve:</p>
+
+    <ul>
+        <li>transaction transparency</li>
+        <li>product traceability</li>
+        <li>record management</li>
+        <li>local poultry trade efficiency</li>
+    </ul>
+
+    <h2>Major Concerns</h2>
+
+    <h3>1. The Project is Trying to Solve Too Many Problems</h3>
+
+    <p>Current problems include:</p>
+
+    <h3>Trading</h3>
+    <ul>
+        <li>buyer-seller transactions</li>
+    </ul>
+
+    <h3>Pricing</h3>
+    <ul>
+        <li>catch-weight computation</li>
+    </ul>
+
+    <h3>Compliance</h3>
+    <ul>
+        <li>permit verification</li>
+    </ul>
+
+    <h3>Biosecurity</h3>
+    <ul>
+        <li>disease traceability</li>
+    </ul>
+
+    <h3>Inventory</h3>
+    <ul>
+        <li>hatch and lay monitoring</li>
+    </ul>
+
+    <h3>Logistics</h3>
+    <ul>
+        <li>route tracking</li>
+    </ul>
+
+    <p>Each of these could be an independent capstone project.</p>
+
+    <h3>2. Unrealistic Government Verification Claims</h3>
+
+    <p>The proposal includes:</p>
+
+    <blockquote>
+        Real-time BAI/NMIS Permit Verification
+    </blockquote>
+
+    <p>This is a major red flag.</p>
+
+    <p>Questions a panel will ask:</p>
+
+    <ul>
+        <li>Does BAI provide an API?</li>
+        <li>Does NMIS provide an API?</li>
+        <li>Have you secured access?</li>
+    </ul>
+
+    <p>Most likely the answer is no.</p>
+
+    <div class="highlight">
+        <strong>Recommendation:</strong><br><br>
+        Replace:
+        <blockquote>Real-time permit verification</blockquote>
+        with
+        <blockquote>Permit upload and administrator validation</blockquote>
+    </div>
+
+    <h3>3. Marketplace Alone is Already a Large Project</h3>
+
+    <p>A multi-vendor marketplace requires:</p>
+
+    <ul>
+        <li>vendor management</li>
+        <li>product management</li>
+        <li>order processing</li>
+        <li>transaction handling</li>
+        <li>buyer management</li>
+        <li>reporting</li>
+    </ul>
+
+    <p>
+        This already represents a substantial capstone scope.
+    </p>
+
+    <p>
+        Adding biosecurity, logistics, and inventory tracking creates unnecessary complexity.
+    </p>
+
+    <h3>4. Biological Inventory Module is Difficult to Justify</h3>
+
+    <blockquote>
+        Hatch and lay date tracking
+    </blockquote>
+
+    <p>Questions:</p>
+
+    <ul>
+        <li>Why is this necessary for a marketplace?</li>
+        <li>Is PoultryLink a trading platform or a farm management system?</li>
+    </ul>
+
+    <p>
+        This feature creates confusion regarding the system's purpose.
+    </p>
+
+    <h3>5. Source-to-Destination Route Navigation is Unnecessary</h3>
+
+    <p>
+        This feature appears disconnected from the core problem.
+    </p>
+
+    <p>
+        The project is not a logistics platform.
+    </p>
+
+    <p>
+        This should be removed unless the group can clearly justify its necessity.
+    </p>
+
+    <h2>Problem Statement Assessment</h2>
+
+    <p>
+        The current problem statement is actually describing multiple separate problems.
+    </p>
+
+    <div class="highlight">
+        <strong>Core Problem:</strong><br><br>
+        Poultry trading in Capiz is largely conducted through manual processes that make transactions, record management, and product traceability inefficient.
+    </div>
+
+    <h2>Recommended Problem Statements</h2>
+
+    <ol style="margin-left:30px;">
+        <li>Poultry sellers and resellers in Capiz rely on manual methods for managing transactions and product listings.</li>
+        <li>Buyers have limited information regarding the source and traceability of poultry products.</li>
+        <li>Product and permit records are commonly stored in paper-based formats, making verification and monitoring difficult.</li>
+        <li>Small-scale poultry sellers have limited access to digital platforms for marketing and selling their products.</li>
+        <li>There is no centralized system that integrates poultry trading, product traceability, and seller information in a single platform.</li>
+    </ol>
+
+    <h2>Recommended Objectives</h2>
+
+    <h3>General Objective</h3>
+
+    <p>
+        To design and develop a web-based poultry trading and traceability platform for poultry sellers, resellers, and consumers in Capiz.
+    </p>
+
+    <h3>Specific Objectives</h3>
+
+    <ol style="margin-left:30px;">
+        <li>To develop a multi-vendor marketplace for poultry sellers and resellers.</li>
+        <li>To provide a centralized platform for managing poultry products and transactions.</li>
+        <li>To implement product traceability through seller and source information records.</li>
+        <li>To allow sellers to upload and manage compliance-related documents and permits.</li>
+        <li>To generate transaction and monitoring reports for administrators.</li>
+    </ol>
+
+    <h2>Features to Keep</h2>
+
+    <ul>
+        <li>User registration</li>
+        <li>Vendor management</li>
+        <li>Product listings</li>
+        <li>Order management</li>
+        <li>Product source information</li>
+        <li>Permit upload</li>
+        <li>Transaction records</li>
+        <li>Reporting</li>
+    </ul>
+
+    <h2>Features Recommended for Removal</h2>
+
+    <ul>
+        <li>Real-time BAI/NMIS verification</li>
+        <li>Source-to-destination navigation</li>
+        <li>Biological inventory tracking</li>
+        <li>Complex compliance automation</li>
+    </ul>
+
+    <h2>Novelty Assessment</h2>
+
+    <h3>Current Novelty Claim</h3>
+
+    <p>Weak — Marketplace systems already exist.</p>
+
+    <h3>Stronger Novelty Position</h3>
+
+    <blockquote>
+        A localized poultry trading marketplace integrated with product traceability and permit management for small-scale poultry sellers in Capiz.
+    </blockquote>
+
+    <h2>Progress Assessment</h2>
+
+    <h3>Current Status</h3>
+
+    <p><strong>Working:</strong></p>
+
+    <ul>
+        <li>Login page</li>
+    </ul>
+
+    <p><strong>Not Started:</strong></p>
+
+    <ul>
+        <li>Most major modules</li>
+    </ul>
+
+    <p>
+        This is concerning because the most complex features remain unfinished.
+    </p>
+
+    <p>
+        The group should begin developing the marketplace core immediately rather than spending time on advanced compliance and biosecurity modules.
+    </p>
+
+    <h2>Coordinator Verdict</h2>
+
+    <div class="recommendation">
+
+        <p class="status">Status: Needs Major Revision</p>
+
+        <br>
+
+        <h3>Reasons</h3>
+
+        <ul>
+            <li>Scope is excessively large.</li>
+            <li>Multiple unrelated systems are combined into one project.</li>
+            <li>Government permit verification claims are unrealistic.</li>
+            <li>System identity is unclear.</li>
+            <li>Most major features have not yet started.</li>
+        </ul>
+
+        <h3>Recommendation</h3>
+
+        <p>
+            Reduce the project to a <strong>Poultry Trading and Traceability Marketplace</strong>. 
+            Focus on transactions, seller management, product traceability, and permit uploads. 
+            Remove advanced government integration, logistics navigation, and biological inventory management.
+        </p>
+
+        <p>
+            With these revisions, the project can become a strong, realistic, and defendable BSIT capstone.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
