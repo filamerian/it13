@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capstone Proposal Analysis</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0f0f0f;
+    color:#e4e4e4;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.8;
+    padding:40px;
+}
+
+.container{
+    max-width:1150px;
+    margin:auto;
+    background:#1b1b1b;
+    padding:40px;
+    border-radius:14px;
+    box-shadow:0 0 25px rgba(0,0,0,0.5);
+}
+
+h1{
+    font-size:2.6rem;
+    margin-bottom:10px;
+    color:#ffffff;
+    border-left:6px solid #777;
+    padding-left:15px;
+}
+
+h2{
+    margin-top:40px;
+    margin-bottom:15px;
+    color:#d8d8d8;
+    border-bottom:1px solid #444;
+    padding-bottom:8px;
+}
+
+h3{
+    margin-top:25px;
+    margin-bottom:10px;
+    color:#cfcfcf;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+ul{
+    margin-left:30px;
+    margin-bottom:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+blockquote{
+    background:#262626;
+    padding:18px;
+    border-left:5px solid #8d8d8d;
+    border-radius:8px;
+    margin:20px 0;
+    font-style:italic;
+    color:#f0f0f0;
+}
+
+.section-box{
+    background:#232323;
+    padding:22px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.success{
+    background:#1f3325;
+    border-left:6px solid #4caf50;
+    padding:22px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.warning{
+    background:#3b2424;
+    border-left:6px solid #ff5c5c;
+    padding:22px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.note{
+    background:#202020;
+    padding:22px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th,
+table td{
+    border:1px solid #444;
+    padding:14px;
+    text-align:left;
+}
+
+table th{
+    background:#2c2c2c;
+    color:#ffffff;
+}
+
+table tr:nth-child(even){
+    background:#1f1f1f;
+}
+
+strong{
+    color:#ffffff;
+}
+
+hr{
+    border:none;
+    border-top:1px solid #444;
+    margin:30px 0;
+}
+
+.status{
+    font-size:1.3rem;
+    font-weight:bold;
+    color:#ffffff;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    .container{
+        padding:25px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Proposed System Analysis</h1>
+
+    <h2>Automated Financial Forecasting and Operational Budgeting Dashboard for Short-Term Rental Businesses</h2>
+
+    <hr>
+
+    <h2>Overall Evaluation</h2>
+
+    <p>
+        This is a <strong>highly ambitious and technically strong capstone proposal</strong>.
+        It shows advanced thinking in data engineering, financial analytics,
+        and system integration.
+    </p>
+
+    <p>
+        Compared to typical BSIT systems, this is
+        <strong>above-average in concept quality and technical direction</strong>.
+    </p>
+
+    <p>
+        However, the current version is
+        <strong>over-scoped and over-dependent on external systems
+        (APIs and forecasting claims)</strong>.
+    </p>
+
+    <p>
+        With proper refinement, this can become a
+        <strong>very strong and defensible capstone project</strong>,
+        but only if it is simplified and made more realistic.
+    </p>
+
+    <h2>Strengths</h2>
+
+    <h3>1. Strong Real-World Problem</h3>
+
+    <p>
+        The proposal correctly identifies a real issue:
+    </p>
+
+    <ul>
+        <li>fragmented financial data across platforms</li>
+        <li>manual spreadsheet consolidation</li>
+        <li>difficulty determining true profitability</li>
+        <li>lack of centralized reporting</li>
+    </ul>
+
+    <p>
+        This is a <strong>valid business information system problem</strong>.
+    </p>
+
+    <h3>2. High BSIT Value</h3>
+
+    <p>
+        The system involves:
+    </p>
+
+    <ul>
+        <li>database design and management</li>
+        <li>data integration concepts (ETL-style thinking)</li>
+        <li>financial computation logic</li>
+        <li>dashboard development</li>
+        <li>analytics and reporting</li>
+    </ul>
+
+    <p>
+        These are <strong>strong BSIT-aligned competencies</strong>.
+    </p>
+
+    <h3>3. Clear Target Users</h3>
+
+    <p>
+        Well-defined users:
+    </p>
+
+    <ul>
+        <li>property managers</li>
+        <li>short-term rental hosts</li>
+        <li>investors</li>
+    </ul>
+
+    <p>
+        This supports meaningful system evaluation.
+    </p>
+
+    <h3>4. Good System Direction</h3>
+
+    <p>
+        Even if simplified, the system can provide:
+    </p>
+
+    <ul>
+        <li>centralized financial visibility</li>
+        <li>operational monitoring</li>
+        <li>performance tracking per property</li>
+    </ul>
+
+    <p>
+        This is a <strong>strong foundation for a capstone system</strong>.
+    </p>
+
+    <h2>Areas for Improvement (Key Refinements Needed)</h2>
+
+    <h3>1. Reduce Dependence on External APIs</h3>
+
+    <div class="warning">
+
+        <p><strong>Current Risk:</strong></p>
+
+        <ul>
+            <li>Airbnb / VRBO API integration may not be accessible</li>
+            <li>banking APIs are restricted</li>
+            <li>scraping is legally and technically risky</li>
+        </ul>
+
+        <p><strong>Recommendation:</strong></p>
+
+        <blockquote>
+            “Manual import of financial data (CSV upload or encoded transactions)”
+        </blockquote>
+
+        <p>OR</p>
+
+        <blockquote>
+            “Simulated API dataset for system demonstration”
+        </blockquote>
+
+        <p>
+            This makes the system fully controllable and defendable.
+        </p>
+
+    </div>
+
+    <h3>2. Reframe “ETL Pipeline” into a Simpler Concept</h3>
+
+    <p><strong>Current:</strong></p>
+
+    <blockquote>
+        Automated ETL from multiple platforms
+    </blockquote>
+
+    <p><strong>Recommended:</strong></p>
+
+    <blockquote>
+        “Data Import and Financial Consolidation Module”
+    </blockquote>
+
+    <p>
+        Focus on:
+    </p>
+
+    <ul>
+        <li>uploading data</li>
+        <li>cleaning/formatting</li>
+        <li>storing unified records</li>
+    </ul>
+
+    <p>
+        This keeps the idea but removes heavy infrastructure dependency.
+    </p>
+
+    <h3>3. Simplify Forecasting Feature</h3>
+
+    <div class="section-box">
+
+        <p><strong>Current Risk:</strong></p>
+
+        <ul>
+            <li>unclear predictive model</li>
+            <li>too AI-heavy</li>
+            <li>difficult to defend mathematically</li>
+        </ul>
+
+        <p><strong>Recommendation:</strong></p>
+
+        <blockquote>
+            “Historical Trend-Based Financial Projection”
+        </blockquote>
+
+        <p><strong>Examples:</strong></p>
+
+        <ul>
+            <li>average monthly revenue projection</li>
+            <li>seasonal comparison charts</li>
+            <li>simple moving average trends</li>
+        </ul>
+
+        <p>
+            This is defensible and implementable.
+        </p>
+
+    </div>
+
+    <h3>4. Reduce “Enterprise-Level Language”</h3>
+
+    <p>
+        Avoid terms like:
+    </p>
+
+    <ul>
+        <li>“C-Suite dashboard”</li>
+        <li>“financial intelligence ecosystem”</li>
+        <li>“debt optimization engine”</li>
+    </ul>
+
+    <p><strong>Replace with:</strong></p>
+
+    <ul>
+        <li>“admin dashboard”</li>
+        <li>“financial summary dashboard”</li>
+        <li>“loan tracking module”</li>
+    </ul>
+
+    <p>
+        This makes it more academically appropriate.
+    </p>
+
+    <h3>5. Define a Clear MVP (Minimum Viable Product)</h3>
+
+    <p>
+        The system should clearly focus on:
+    </p>
+
+    <div class="section-box">
+
+        <p><strong>Core System Scope:</strong></p>
+
+        <ul>
+            <li>property management</li>
+            <li>income and expense tracking</li>
+            <li>profit computation per property</li>
+            <li>monthly reporting</li>
+            <li>dashboard visualization</li>
+        </ul>
+
+        <p>
+            Everything else should be optional enhancements.
+        </p>
+
+    </div>
+
+    <h2>Recommended System Structure (Refined Version)</h2>
+
+    <h3>Core Modules</h3>
+
+    <ul>
+        <li>User Management (Owners / Managers)</li>
+        <li>Property Listing Management</li>
+        <li>Income & Expense Tracking</li>
+        <li>Profit Computation Engine</li>
+        <li>Financial Dashboard</li>
+        <li>Monthly Reports Generator</li>
+    </ul>
+
+    <h3>Optional Enhancements</h3>
+
+    <ul>
+        <li>Data Import (CSV upload)</li>
+        <li>Trend Charts (historical only)</li>
+        <li>Simple forecasting (average-based projection)</li>
+    </ul>
+
+    <h3>Remove or Defer</h3>
+
+    <ul>
+        <li>direct Airbnb/VRBO API integration</li>
+        <li>advanced predictive AI models</li>
+        <li>debt optimization algorithms</li>
+        <li>multi-platform scraping systems</li>
+    </ul>
+
+    <h2>Revised Problem Statement Focus</h2>
+
+    <p>
+        Instead of emphasizing “AI forecasting,” focus on:
+    </p>
+
+    <ul>
+        <li>fragmented financial records</li>
+        <li>manual consolidation of income/expenses</li>
+        <li>difficulty tracking profitability per property</li>
+        <li>lack of centralized reporting system</li>
+    </ul>
+
+    <p>
+        This is much more defensible in a capstone defense.
+    </p>
+
+    <h2>Revised Objectives (Recommended)</h2>
+
+    <h3>General Objective</h3>
+
+    <blockquote>
+        To design and develop a financial management and reporting system for short-term rental businesses that centralizes income, expenses, and performance monitoring.
+    </blockquote>
+
+    <h3>Specific Objectives</h3>
+
+    <ol style="margin-left:30px;">
+
+        <li>
+            To develop a system for recording property income and operational expenses.
+        </li>
+
+        <li>
+            To compute net profit per property automatically.
+        </li>
+
+        <li>
+            To generate monthly financial reports for property owners and managers.
+        </li>
+
+        <li>
+            To provide a dashboard for visualizing financial performance trends.
+        </li>
+
+        <li>
+            To allow data import and consolidation from external records.
+        </li>
+
+    </ol>
+
+    <h2>Novelty Assessment (After Refinement)</h2>
+
+    <table>
+
+        <tr>
+            <th>Category</th>
+            <th>Rating</th>
+        </tr>
+
+        <tr>
+            <td>Originality</td>
+            <td>7/10</td>
+        </tr>
+
+        <tr>
+            <td>Technical Feasibility</td>
+            <td>9/10</td>
+        </tr>
+
+        <tr>
+            <td>BSIT Alignment</td>
+            <td>9/10</td>
+        </tr>
+
+        <tr>
+            <td>Practical Value</td>
+            <td>9/10</td>
+        </tr>
+
+        <tr>
+            <td>Risk Level</td>
+            <td>Low</td>
+        </tr>
+
+    </table>
+
+    <h2>Final Recommendation</h2>
+
+    <div class="success">
+
+        <p class="status">
+            APPROVED WITH MAJOR SCOPE REFINEMENT
+        </p>
+
+        <br>
+
+        <p>
+            This is a strong capstone idea if simplified properly.
+        </p>
+
+        <p><strong>The success of this project depends on:</strong></p>
+
+        <ul>
+            <li>removing external API dependency</li>
+            <li>simplifying forecasting to trend analysis</li>
+            <li>focusing on financial recording + reporting</li>
+            <li>keeping the system implementable within BSIT timeline</li>
+        </ul>
+
+    </div>
+
+    <h2>Final Coordinator Insight</h2>
+
+    <div class="note">
+
+        <p>
+            This proposal has <strong>high potential but is currently “over-engineered in concept.”</strong>
+        </p>
+
+        <p>
+            Once refined, it becomes:
+        </p>
+
+        <blockquote>
+            a very strong financial management system with analytics capability
+        </blockquote>
+
+        <p>instead of:</p>
+
+        <blockquote>
+            a risky enterprise-level forecasting platform
+        </blockquote>
+
+    </div>
+
+</div>
+
+</body>
+</html>

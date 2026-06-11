@@ -1,0 +1,11 @@
+CIPAC: An Application for Capiz Indigenous Peoples' Arts and Crafts	Hannah Fhe A. Butalon	BSIT 3C	"Hannah Fhe Butalon - Project Manager, UI/UX Designer
+A-J N. Cusay - System Analyst, Database Administrator 
+Ian Josh Dollete - Frontend Developer, Backend Developer
+Viness Tacluyan -  Documentation Specialist "	Indigenous artisans in Capiz have limited visibility and market reach because there is no dedicated digital platform to showcase, promote, and preserve their arts and crafts.	Not sure	Indigenous People	Yes	An indigenous artisan in Capiz cannot sell their handmade crafts to customers outside their local community because there is no dedicated online platform to showcase and promote their products.	Not sure	"E-commerce
+User account
+Artisan  Profiles
+Marketing and Engagement
+Administrative"	"User Account
+Artisan Profiles
+E-commerce"	No	".
+"	Yes	Yes	Yes	-	all	1/1/2000	Needs scope reduction	very hard

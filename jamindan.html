@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emergency Response System Analysis</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0f0f0f;
+    color:#e4e4e4;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.8;
+    padding:40px;
+}
+
+.container{
+    max-width:1150px;
+    margin:auto;
+    background:#1a1a1a;
+    padding:40px;
+    border-radius:14px;
+    box-shadow:0 0 25px rgba(0,0,0,0.5);
+}
+
+h1{
+    font-size:2.5rem;
+    color:#ffffff;
+    margin-bottom:10px;
+    border-left:6px solid #777;
+    padding-left:15px;
+}
+
+h2{
+    margin-top:40px;
+    margin-bottom:15px;
+    color:#d6d6d6;
+    border-bottom:1px solid #444;
+    padding-bottom:8px;
+}
+
+h3{
+    margin-top:25px;
+    margin-bottom:10px;
+    color:#cccccc;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+ul{
+    margin-left:30px;
+    margin-bottom:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th,
+table td{
+    border:1px solid #444;
+    padding:14px;
+    text-align:left;
+    vertical-align:top;
+}
+
+table th{
+    background:#292929;
+    color:#ffffff;
+}
+
+table tr:nth-child(even){
+    background:#202020;
+}
+
+blockquote{
+    background:#252525;
+    padding:18px;
+    border-left:5px solid #888;
+    border-radius:8px;
+    margin:20px 0;
+    font-style:italic;
+}
+
+.highlight{
+    background:#232323;
+    padding:22px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.warning{
+    background:#3a2323;
+    border-left:6px solid #ff5c5c;
+    padding:22px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.success{
+    background:#1f3325;
+    border-left:6px solid #4caf50;
+    padding:22px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.note{
+    background:#202020;
+    padding:22px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+strong{
+    color:#ffffff;
+}
+
+hr{
+    border:none;
+    border-top:1px solid #444;
+    margin:30px 0;
+}
+
+.status{
+    font-size:1.3rem;
+    font-weight:bold;
+    color:#ffffff;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    .container{
+        padding:25px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Proposed System Analysis</h1>
+
+    <h2>Emergency Response System Platform for Jamindan</h2>
+
+    <hr>
+
+    <h2>Overall Evaluation</h2>
+
+    <p>
+        This proposal addresses a legitimate and socially important operational problem involving emergency incident reporting and response coordination within the Municipality of Jamindan.
+    </p>
+
+    <p>
+        Compared to many generic monitoring systems, this proposal has stronger real-world relevance because it focuses on disaster response, emergency communication, and incident coordination among multiple agencies.
+    </p>
+
+    <p>
+        However, while the concept is strong, the current proposal is still over-scoped and contains several features that may become difficult to complete within the capstone timeline.
+    </p>
+
+    <p>
+        The project has strong potential if the proponents focus only on core emergency reporting and coordination functionalities.
+    </p>
+
+    <h2>Project Information</h2>
+
+    <table>
+
+        <tr>
+            <th>Project Title</th>
+            <td>Emergency Response System Platform for Jamindan</td>
+        </tr>
+
+        <tr>
+            <th>Section</th>
+            <td>BSIT 3B</td>
+        </tr>
+
+        <tr>
+            <th>Target Users</th>
+            <td>
+                Residents of Jamindan, Barangay Officials, MDRRMO, LGU, Emergency Responders, PNP, BFP, and Community Volunteers
+            </td>
+        </tr>
+
+        <tr>
+            <th>Current Status</th>
+            <td>Needs Major Revision</td>
+        </tr>
+
+        <tr>
+            <th>Target Completion</th>
+            <td>May 5, 2027</td>
+        </tr>
+
+    </table>
+
+    <h2>Development Team</h2>
+
+    <ul>
+        <li><strong>Fred Vacaro</strong> – Project Manager / Team Leader</li>
+        <li><strong>Steven Altovero</strong> – System Analyst / Frontend Developer</li>
+        <li><strong>Jyrus Dale Paderes</strong> – Backend Developer / Database Administrator / Data Manager</li>
+        <li><strong>Jason Ysrael B. Relano</strong> – UI/UX Designer / Research Lead / Documentation Specialist</li>
+    </ul>
+
+    <h2>Strengths</h2>
+
+    <h3>1. Real and Relevant Community Problem</h3>
+
+    <p>
+        The proposal addresses real operational issues during emergencies such as:
+    </p>
+
+    <ul>
+        <li>delayed emergency response</li>
+        <li>incomplete incident information</li>
+        <li>difficulty identifying exact locations</li>
+        <li>uncoordinated communication channels</li>
+    </ul>
+
+    <p>
+        These are legitimate problems during:
+    </p>
+
+    <ul>
+        <li>typhoons</li>
+        <li>flooding</li>
+        <li>fires</li>
+        <li>medical emergencies</li>
+        <li>road accidents</li>
+    </ul>
+
+    <h3>2. Strong Public Service Value</h3>
+
+    <p>
+        The system directly benefits:
+    </p>
+
+    <ul>
+        <li>residents</li>
+        <li>emergency responders</li>
+        <li>barangay officials</li>
+        <li>municipal disaster offices</li>
+    </ul>
+
+    <p>
+        This gives the project high community impact and practical relevance.
+    </p>
+
+    <h3>3. Strong BSIT Alignment</h3>
+
+    <p>
+        The proposal includes:
+    </p>
+
+    <ul>
+        <li>database management</li>
+        <li>GPS integration</li>
+        <li>notification systems</li>
+        <li>dashboard development</li>
+        <li>report management</li>
+        <li>communication modules</li>
+    </ul>
+
+    <p>
+        These are strong BSIT-related competencies.
+    </p>
+
+    <h3>4. Existing Development Progress</h3>
+
+    <p>
+        The group already completed:
+    </p>
+
+    <ul>
+        <li>UI design</li>
+        <li>dashboard design</li>
+        <li>database planning</li>
+        <li>system architecture planning</li>
+    </ul>
+
+    <p>
+        This is a positive indicator because development has already started.
+    </p>
+
+    <h2>Major Concerns</h2>
+
+    <h3>1. Scope is Too Large</h3>
+
+    <p>
+        The proposal currently attempts to include:
+    </p>
+
+    <ul>
+        <li>incident reporting</li>
+        <li>GPS tracking</li>
+        <li>alert systems</li>
+        <li>communication modules</li>
+        <li>news and updates</li>
+        <li>safety guidelines</li>
+        <li>dashboard analytics</li>
+        <li>activity logging</li>
+        <li>APK deployment</li>
+    </ul>
+
+    <p>
+        This is already a large-scale information system.
+    </p>
+
+    <p>
+        The project risks becoming too broad for a BSIT capstone if all features are fully implemented.
+    </p>
+
+    <h3>2. Communication Module Complexity</h3>
+
+    <p>
+        The communication module may significantly increase system complexity.
+    </p>
+
+    <p>
+        A panel may ask:
+    </p>
+
+    <blockquote>
+        Is this an emergency reporting system or a real-time communication platform?
+    </blockquote>
+
+    <p>
+        Real-time messaging introduces:
+    </p>
+
+    <ul>
+        <li>synchronization issues</li>
+        <li>notification management</li>
+        <li>server load concerns</li>
+        <li>security considerations</li>
+    </ul>
+
+    <p>
+        This may become difficult to complete properly within the timeline.
+    </p>
+
+    <h3>3. WebView APK is Weak as a Mobile Solution</h3>
+
+    <p>
+        The proposal mentions:
+    </p>
+
+    <blockquote>
+        WebView APK for Mobile Access
+    </blockquote>
+
+    <p>
+        Panels may challenge this because:
+    </p>
+
+    <ul>
+        <li>it is essentially a wrapped website</li>
+        <li>it may not function fully offline</li>
+        <li>native emergency functionality may be limited</li>
+    </ul>
+
+    <p>
+        The proponents should clarify whether:
+    </p>
+
+    <ul>
+        <li>the system is primarily web-based</li>
+        <li>or a true mobile emergency application</li>
+    </ul>
+
+    <h3>4. GPS Accuracy and Emergency Reliability</h3>
+
+    <p>
+        The system heavily depends on GPS location tracking.
+    </p>
+
+    <p>
+        Possible concerns include:
+    </p>
+
+    <ul>
+        <li>weak mobile signal during disasters</li>
+        <li>inaccurate GPS coordinates</li>
+        <li>user inability to access internet connection</li>
+    </ul>
+
+    <p>
+        The proposal should clearly define limitations and fallback procedures.
+    </p>
+
+    <h3>5. Too Many Stakeholders</h3>
+
+    <p>
+        Current stakeholders include:
+    </p>
+
+    <ul>
+        <li>LGU</li>
+        <li>MDRRMO</li>
+        <li>PNP</li>
+        <li>BFP</li>
+        <li>Volunteers</li>
+        <li>Barangay Officials</li>
+    </ul>
+
+    <p>
+        This may create workflow complexity.
+    </p>
+
+    <p>
+        For a capstone prototype, the project should prioritize:
+    </p>
+
+    <ul>
+        <li>Residents</li>
+        <li>MDRRMO</li>
+        <li>Barangay Officials</li>
+    </ul>
+
+    <p>
+        Additional agencies can be future enhancements.
+    </p>
+
+    <h2>Recommended Scope Reduction</h2>
+
+    <h3>Keep</h3>
+
+    <ul>
+        <li>User Registration and Login</li>
+        <li>Incident Reporting</li>
+        <li>GPS Location Detection</li>
+        <li>Emergency Notifications</li>
+        <li>Command Center Dashboard</li>
+        <li>Report Status Tracking</li>
+        <li>User Management</li>
+    </ul>
+
+    <h3>Remove or Simplify</h3>
+
+    <ul>
+        <li>Advanced analytics</li>
+        <li>Complex communication modules</li>
+        <li>News and updates module</li>
+        <li>Emergency tips module</li>
+        <li>Complex activity logs</li>
+        <li>Multi-agency workflow automation</li>
+    </ul>
+
+    <h2>Recommended Problem Statements</h2>
+
+    <ol style="margin-left:30px;">
+
+        <li>
+            Emergency incidents in Jamindan are commonly reported through phone calls, text messages, and social media, causing delays and incomplete information.
+        </li>
+
+        <li>
+            Emergency responders have difficulty identifying the exact location of incidents during emergencies.
+        </li>
+
+        <li>
+            There is no centralized platform for monitoring and managing emergency reports within the municipality.
+        </li>
+
+        <li>
+            Manual coordination between residents and emergency response agencies may result in delayed response times.
+        </li>
+
+        <li>
+            Local emergency offices lack a digital system for tracking incident reports and response activities.
+        </li>
+
+    </ol>
+
+    <h2>Recommended Objectives</h2>
+
+    <h3>General Objective</h3>
+
+    <blockquote>
+        To design and develop an Emergency Response System Platform that improves incident reporting and emergency coordination in the Municipality of Jamindan.
+    </blockquote>
+
+    <h3>Specific Objectives</h3>
+
+    <ol style="margin-left:30px;">
+
+        <li>
+            To develop a digital incident reporting system with photo upload and GPS location detection.
+        </li>
+
+        <li>
+            To implement a centralized dashboard for monitoring emergency incidents.
+        </li>
+
+        <li>
+            To provide emergency notifications and status updates for reported incidents.
+        </li>
+
+        <li>
+            To create a database for storing emergency reports and activity records.
+        </li>
+
+        <li>
+            To improve coordination between residents and emergency response personnel through a centralized platform.
+        </li>
+
+    </ol>
+
+    <h2>Novelty Assessment</h2>
+
+    <table>
+
+        <tr>
+            <th>Category</th>
+            <th>Rating</th>
+        </tr>
+
+        <tr>
+            <td>Originality</td>
+            <td>7/10</td>
+        </tr>
+
+        <tr>
+            <td>Technical Complexity</td>
+            <td>8/10</td>
+        </tr>
+
+        <tr>
+            <td>Practical Value</td>
+            <td>9/10</td>
+        </tr>
+
+        <tr>
+            <td>Implementation Feasibility</td>
+            <td>6/10</td>
+        </tr>
+
+    </table>
+
+    <p>
+        The novelty comes from:
+    </p>
+
+    <ul>
+        <li>localized emergency coordination</li>
+        <li>GPS-based incident reporting</li>
+        <li>community-centered emergency management</li>
+    </ul>
+
+    <p>
+        The novelty does not come from notifications or dashboards alone because these are common system components.
+    </p>
+
+    <h2>Progress Assessment</h2>
+
+    <div class="highlight">
+
+        <p><strong>Completed:</strong></p>
+
+        <ul>
+            <li>User Interface Design</li>
+            <li>Login Page Design</li>
+            <li>Dashboard Design</li>
+            <li>Incident Report Form Design</li>
+            <li>System Architecture Planning</li>
+            <li>Database Planning</li>
+        </ul>
+
+        <p><strong>Not Yet Completed:</strong></p>
+
+        <ul>
+            <li>Backend Development</li>
+            <li>GPS Integration</li>
+            <li>Notification System</li>
+            <li>Communication Module</li>
+            <li>APK Deployment</li>
+            <li>Testing and Deployment</li>
+        </ul>
+
+    </div>
+
+    <h2>Coordinator Verdict</h2>
+
+    <div class="warning">
+
+        <p class="status">
+            Status: Needs Major Revision
+        </p>
+
+        <br>
+
+        <p><strong>Reasons</strong></p>
+
+        <ul>
+            <li>Strong and socially relevant concept.</li>
+            <li>Good BSIT alignment and practical value.</li>
+            <li>Current scope is too broad for the timeline.</li>
+            <li>Communication and multi-agency modules may become too complex.</li>
+            <li>Critical backend and integration components are not yet started.</li>
+        </ul>
+
+    </div>
+
+    <div class="note">
+
+        <p><strong>Final Recommendations</strong></p>
+
+        <ul>
+            <li>Focus on core emergency reporting and GPS tracking first.</li>
+            <li>Simplify the communication module.</li>
+            <li>Limit the number of stakeholder workflows during initial implementation.</li>
+            <li>Prioritize backend development and GPS integration immediately.</li>
+            <li>Keep the system lightweight and usable for elderly and non-technical users.</li>
+        </ul>
+
+        <br>
+
+        <p>
+            If the proponents reduce the scope and focus on essential emergency response functionalities,
+            this project can become a strong and impactful BSIT capstone with practical deployment potential
+            for the Municipality of Jamindan.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

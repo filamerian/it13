@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CIPAC System Analysis</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0f0f0f;
+    color:#e5e5e5;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.8;
+    padding:40px;
+}
+
+.container{
+    max-width:1150px;
+    margin:auto;
+    background:#1a1a1a;
+    padding:40px;
+    border-radius:14px;
+    box-shadow:0 0 25px rgba(0,0,0,0.5);
+}
+
+h1{
+    font-size:2.5rem;
+    color:#ffffff;
+    margin-bottom:10px;
+    border-left:6px solid #777;
+    padding-left:15px;
+}
+
+h2{
+    margin-top:40px;
+    margin-bottom:15px;
+    color:#d8d8d8;
+    border-bottom:1px solid #444;
+    padding-bottom:8px;
+}
+
+h3{
+    margin-top:25px;
+    margin-bottom:10px;
+    color:#cccccc;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+ul{
+    margin-left:30px;
+    margin-bottom:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th,
+table td{
+    border:1px solid #444;
+    padding:14px;
+    text-align:left;
+}
+
+table th{
+    background:#292929;
+    color:#ffffff;
+}
+
+table tr:nth-child(even){
+    background:#202020;
+}
+
+blockquote{
+    background:#252525;
+    padding:18px;
+    border-left:5px solid #888;
+    border-radius:8px;
+    margin:20px 0;
+    font-style:italic;
+}
+
+.highlight{
+    background:#232323;
+    padding:22px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.warning{
+    background:#3a2323;
+    border-left:6px solid #ff5c5c;
+    padding:22px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.success{
+    background:#1f3325;
+    border-left:6px solid #4caf50;
+    padding:22px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.note{
+    background:#202020;
+    padding:22px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+strong{
+    color:#ffffff;
+}
+
+hr{
+    border:none;
+    border-top:1px solid #444;
+    margin:30px 0;
+}
+
+.status{
+    font-size:1.3rem;
+    font-weight:bold;
+    color:#ffffff;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    .container{
+        padding:25px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Proposed System Analysis</h1>
+
+    <h2>CIPAC: An Application for Capiz Indigenous Peoples' Arts and Crafts</h2>
+
+    <hr>
+
+    <h2>Overall Evaluation</h2>
+
+    <p>
+        This proposal has a meaningful cultural and community-centered objective because it focuses on promoting and preserving indigenous arts and crafts in Capiz.
+        The project also addresses digital visibility and market accessibility for indigenous artisans.
+    </p>
+
+    <p>
+        However, in its current form, the proposal is still too broad and lacks clear problem validation.
+        The system currently resembles a full-scale e-commerce marketplace platform, which may become difficult to complete within the BSIT capstone timeline.
+    </p>
+
+    <p>
+        The project has strong potential if the scope is significantly reduced and the focus is narrowed to manageable core features.
+    </p>
+
+    <h2>Project Information</h2>
+
+    <table>
+
+        <tr>
+            <th>Project Title</th>
+            <td>CIPAC: An Application for Capiz Indigenous Peoples' Arts and Crafts</td>
+        </tr>
+
+        <tr>
+            <th>Section</th>
+            <td>BSIT 3C</td>
+        </tr>
+
+        <tr>
+            <th>Target Users</th>
+            <td>Indigenous People / Indigenous Artisans</td>
+        </tr>
+
+        <tr>
+            <th>Current Status</th>
+            <td>Needs Scope Reduction</td>
+        </tr>
+
+        <tr>
+            <th>Difficulty Assessment</th>
+            <td>Very Hard</td>
+        </tr>
+
+    </table>
+
+    <h2>Development Team</h2>
+
+    <ul>
+        <li><strong>Hannah Fhe Butalon</strong> – Project Manager, UI/UX Designer</li>
+        <li><strong>A-J N. Cusay</strong> – System Analyst, Database Administrator</li>
+        <li><strong>Ian Josh Dollete</strong> – Frontend Developer, Backend Developer</li>
+        <li><strong>Viness Tacluyan</strong> – Documentation Specialist</li>
+    </ul>
+
+    <h2>Strengths</h2>
+
+    <h3>1. Strong Cultural and Community Relevance</h3>
+
+    <p>
+        The project supports:
+    </p>
+
+    <ul>
+        <li>indigenous artisans</li>
+        <li>cultural preservation</li>
+        <li>local craftsmanship promotion</li>
+        <li>community livelihood opportunities</li>
+    </ul>
+
+    <p>
+        This gives the proposal strong social value.
+    </p>
+
+    <h3>2. Real Digital Visibility Problem</h3>
+
+    <p>
+        The proposal correctly identifies that many indigenous artisans have limited opportunities to market their products beyond their local communities.
+    </p>
+
+    <blockquote>
+        An indigenous artisan in Capiz cannot sell their handmade crafts to customers outside their local community because there is no dedicated online platform to showcase and promote their products.
+    </blockquote>
+
+    <p>
+        This is a legitimate digital accessibility and marketing problem.
+    </p>
+
+    <h3>3. Appropriate BSIT Components</h3>
+
+    <p>
+        The proposed system includes:
+    </p>
+
+    <ul>
+        <li>user account management</li>
+        <li>artisan profiles</li>
+        <li>e-commerce functionality</li>
+        <li>administrative controls</li>
+    </ul>
+
+    <p>
+        These align with BSIT competencies involving databases, web systems, and information management.
+    </p>
+
+    <h2>Major Concerns</h2>
+
+    <h3>1. Problem Validation is Weak</h3>
+
+    <p>
+        The proposal states:
+    </p>
+
+    <blockquote>
+        "Not sure"
+    </blockquote>
+
+    <p>
+        regarding whether the problem is validated or observed frequently.
+    </p>
+
+    <p>
+        This is a major weakness because a panel may ask:
+    </p>
+
+    <ul>
+        <li>Were artisans interviewed?</li>
+        <li>Do artisans actually want an online platform?</li>
+        <li>How many artisans currently use Facebook or other marketplaces?</li>
+        <li>Are there measurable sales limitations?</li>
+    </ul>
+
+    <p>
+        The project needs actual evidence through:
+    </p>
+
+    <ul>
+        <li>surveys</li>
+        <li>interviews</li>
+        <li>community validation</li>
+        <li>sample artisan feedback</li>
+    </ul>
+
+    <h3>2. Scope is Too Large</h3>
+
+    <p>
+        The proposal currently attempts to include:
+    </p>
+
+    <ul>
+        <li>full e-commerce marketplace</li>
+        <li>artisan management</li>
+        <li>marketing and engagement system</li>
+        <li>administrative platform</li>
+        <li>online transactions</li>
+    </ul>
+
+    <p>
+        A complete e-commerce system alone is already a large capstone project.
+    </p>
+
+    <p>
+        Adding advanced marketing and engagement systems significantly increases complexity.
+    </p>
+
+    <h3>3. Marketplace Competition Problem</h3>
+
+    <p>
+        A panel may ask:
+    </p>
+
+    <blockquote>
+        "Why not simply use Facebook Marketplace, Shopee, or Lazada?"
+    </blockquote>
+
+    <p>
+        The proposal must clearly justify why a dedicated platform is needed.
+    </p>
+
+    <p>
+        The strongest justification should focus on:
+    </p>
+
+    <ul>
+        <li>cultural preservation</li>
+        <li>localized artisan identity</li>
+        <li>heritage documentation</li>
+        <li>community-centered promotion</li>
+    </ul>
+
+    <h3>4. System Identity is Unclear</h3>
+
+    <p>
+        The system currently appears to be both:
+    </p>
+
+    <ul>
+        <li>a marketplace platform</li>
+        <li>a cultural preservation platform</li>
+    </ul>
+
+    <p>
+        The proponents should clearly define the primary purpose of the system.
+    </p>
+
+    <div class="highlight">
+
+        <p><strong>Recommended Direction:</strong></p>
+
+        <blockquote>
+            A digital platform for showcasing and promoting indigenous arts and crafts with simplified product inquiry and artisan profile management.
+        </blockquote>
+
+    </div>
+
+    <h2>Recommended Scope Reduction</h2>
+
+    <h3>Keep</h3>
+
+    <ul>
+        <li>User Accounts</li>
+        <li>Artisan Profiles</li>
+        <li>Product Catalog</li>
+        <li>Product Inquiry System</li>
+        <li>Administrative Dashboard</li>
+        <li>Cultural Information Pages</li>
+    </ul>
+
+    <h3>Remove or Simplify</h3>
+
+    <ul>
+        <li>Full online payment integration</li>
+        <li>Complex marketing features</li>
+        <li>Advanced engagement systems</li>
+        <li>Large-scale e-commerce logistics</li>
+        <li>Complex order fulfillment workflows</li>
+    </ul>
+
+    <h2>Recommended Problem Statements</h2>
+
+    <ol style="margin-left:30px;">
+
+        <li>
+            Indigenous artisans in Capiz have limited digital platforms for promoting and showcasing their arts and crafts.
+        </li>
+
+        <li>
+            Many indigenous products are marketed only within local communities, limiting visibility and potential customers.
+        </li>
+
+        <li>
+            There is no centralized digital platform dedicated to preserving and promoting indigenous arts and crafts in Capiz.
+        </li>
+
+        <li>
+            Buyers have limited access to information about indigenous artisans and their products.
+        </li>
+
+        <li>
+            Indigenous cultural products are underrepresented in digital marketplaces and promotional platforms.
+        </li>
+
+    </ol>
+
+    <h2>Recommended Objectives</h2>
+
+    <h3>General Objective</h3>
+
+    <blockquote>
+        To design and develop a web-based platform for promoting and showcasing indigenous arts and crafts in Capiz.
+    </blockquote>
+
+    <h3>Specific Objectives</h3>
+
+    <ol style="margin-left:30px;">
+
+        <li>
+            To develop a system for managing artisan profiles and product listings.
+        </li>
+
+        <li>
+            To provide a digital catalog of indigenous arts and crafts.
+        </li>
+
+        <li>
+            To implement a product inquiry and communication feature for interested buyers.
+        </li>
+
+        <li>
+            To create an administrative module for managing users and product information.
+        </li>
+
+        <li>
+            To promote awareness and visibility of indigenous cultural products through digital technology.
+        </li>
+
+    </ol>
+
+    <h2>Novelty Assessment</h2>
+
+    <table>
+
+        <tr>
+            <th>Category</th>
+            <th>Rating</th>
+        </tr>
+
+        <tr>
+            <td>Originality</td>
+            <td>8/10</td>
+        </tr>
+
+        <tr>
+            <td>Technical Complexity</td>
+            <td>7/10</td>
+        </tr>
+
+        <tr>
+            <td>Practical Value</td>
+            <td>8/10</td>
+        </tr>
+
+        <tr>
+            <td>Implementation Feasibility</td>
+            <td>5/10</td>
+        </tr>
+
+    </table>
+
+    <p>
+        The novelty comes from:
+    </p>
+
+    <ul>
+        <li>localized indigenous artisan promotion</li>
+        <li>cultural preservation integration</li>
+        <li>community-focused digital platform</li>
+    </ul>
+
+    <p>
+        The novelty does not come from e-commerce itself because marketplace systems already exist.
+    </p>
+
+    <h2>Coordinator Verdict</h2>
+
+    <div class="warning">
+
+        <p class="status">
+            Status: Approved with Major Scope Reduction
+        </p>
+
+        <br>
+
+        <p><strong>Reasons</strong></p>
+
+        <ul>
+            <li>Strong cultural and social relevance.</li>
+            <li>Meaningful community-centered objective.</li>
+            <li>Problem validation is currently weak.</li>
+            <li>Scope is too large for a standard BSIT capstone.</li>
+            <li>The system identity needs clearer definition.</li>
+        </ul>
+
+    </div>
+
+    <div class="note">
+
+        <p><strong>Final Recommendations</strong></p>
+
+        <ul>
+            <li>Validate the problem through artisan interviews and surveys.</li>
+            <li>Reduce the system into a simplified artisan showcase and inquiry platform.</li>
+            <li>Focus on cultural preservation and digital visibility rather than full-scale e-commerce.</li>
+            <li>Avoid complex logistics and payment systems unless already proven feasible.</li>
+        </ul>
+
+        <br>
+
+        <p>
+            If the proponents maintain a manageable scope and focus on artisan visibility,
+            cultural preservation, and product showcasing, the project can become a meaningful
+            and realistic BSIT capstone with strong community impact.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
