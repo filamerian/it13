@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capstone Feedback - Conceptual Framework</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Segoe UI, Arial, sans-serif;
+    background:#121212;
+    color:#e4e4e4;
+    line-height:1.7;
+}
+
+.container{
+    max-width:1000px;
+    margin:40px auto;
+    padding:30px;
+}
+
+.card{
+    background:#1e1e1e;
+    border-left:6px solid #00c853;
+    border-radius:10px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.35);
+}
+
+.card h2{
+    margin-top:0;
+    color:#4fc3f7;
+}
+
+.card h3{
+    color:#81c784;
+    margin-bottom:10px;
+}
+
+.good{
+    border-left-color:#00c853;
+}
+
+.warning{
+    border-left-color:#ffb300;
+}
+
+.example{
+    border-left-color:#29b6f6;
+}
+
+.final{
+    border-left-color:#ab47bc;
+}
+
+pre{
+    background:#2d2d2d;
+    padding:15px;
+    border-radius:8px;
+    overflow:auto;
+    color:#90caf9;
+}
+
+ul{
+    margin-top:10px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+.rating{
+    display:inline-block;
+    background:#00c853;
+    color:white;
+    padding:8px 16px;
+    border-radius:30px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.arrow{
+    text-align:center;
+    font-size:28px;
+    color:#64b5f6;
+    margin:10px 0;
+}
+
+strong{
+    color:#fff176;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card good">
+<h2>Conceptual Framework Review</h2>
+
+<p>
+Your revised conceptual framework is <strong>much better</strong> because it now follows the
+<strong>Input–Process–Output (IPO) Model</strong>, which is commonly used in BSIT capstone projects.
+</p>
+
+<div class="rating">Rating: 9/10 ✅</div>
+
+<p>
+Only a few minor improvements are needed before it becomes clearer and easier to understand.
+</p>
+</div>
+
+<div class="card warning">
+<h3>1. Separate the Users from the Data (Input)</h3>
+
+<p>
+Right now, you mixed the people who use the system with the information they provide.
+Separate them into two groups.
+</p>
+
+<b>Instead of:</b>
+
+<pre>
+Residents
+MDRRMO
+LGU
+PNP
+BFP
+Incident Information
+Location Data
+Emergency Announcements
+</pre>
+
+<b>Use:</b>
+
+<pre>
+Users
+• Residents
+• MDRRMO
+• LGU
+• PNP
+• BFP
+
+Data
+• Incident Reports
+• GPS Location
+• Emergency Announcements
+</pre>
+
+</div>
+
+<div class="card warning">
+<h3>2. Make the Process Consistent</h3>
+
+<p>
+Some items are modules while others are features.
+Use only one style to make the framework cleaner.
+</p>
+
+<b>Suggested Process</b>
+
+<pre>
+• User Management
+• Incident Reporting
+• Location Tracking
+• News and Updates
+• Emergency Tips
+• Notifications and Communication
+• Dashboard Monitoring
+• Report Generation
+• Database Management
+</pre>
+
+</div>
+
+<div class="card good">
+<h3>3. Keep the Outputs</h3>
+
+<p>
+Your outputs are already appropriate. You may keep them as they are.
+</p>
+
+<ul>
+<li>Faster Incident Reporting</li>
+<li>Improved Emergency Coordination</li>
+<li>Accurate Incident Monitoring</li>
+<li>Better Information Dissemination</li>
+<li>Organized Emergency Records</li>
+<li>Enhanced Community Safety and Preparedness</li>
+</ul>
+
+</div>
+
+<div class="card example">
+<h3>4. Improve the Explanation</h3>
+
+<p>Use a simpler explanation like this:</p>
+
+<pre>
+The Input-Process-Output (IPO) framework shows how
+information from users and partner agencies is
+processed by the different modules of the Emergency
+Response Community Platform.
+
+The system stores and manages the data to support
+incident reporting, communication, monitoring,
+and emergency response.
+
+As a result, the platform improves emergency
+coordination, information sharing, and community
+safety in the Municipality of Jamindan.
+</pre>
+
+</div>
+
+<div class="card final">
+
+<h2>Recommended IPO Framework</h2>
+
+<h3>Input</h3>
+
+<ul>
+<li><strong>Users:</strong> Residents, MDRRMO, LGU, PNP, BFP</li>
+<li><strong>Data:</strong> Incident Reports, GPS Location Data, Emergency Announcements</li>
+</ul>
+
+<div class="arrow">⬇</div>
+
+<h3>Process</h3>
+
+<ul>
+<li>User Management</li>
+<li>Incident Reporting</li>
+<li>Location Tracking</li>
+<li>News and Updates</li>
+<li>Emergency Tips</li>
+<li>Notifications and Communication</li>
+<li>Dashboard Monitoring</li>
+<li>Report Generation</li>
+<li>Database Management</li>
+</ul>
+
+<div class="arrow">⬇</div>
+
+<h3>Output</h3>
+
+<ul>
+<li>Faster Incident Reporting</li>
+<li>Improved Emergency Coordination</li>
+<li>Accurate Incident Monitoring</li>
+<li>Better Information Dissemination</li>
+<li>Organized Emergency Records</li>
+<li>Enhanced Community Safety and Preparedness</li>
+</ul>
+
+</div>
+
+<div class="card good">
+
+<h2>Final Comment</h2>
+
+<p>
+Overall, this revision is a big improvement. The framework is now organized and follows the IPO model.
+The remaining changes are only minor. Once you separate the <strong>Users</strong> and <strong>Data</strong> in the Input section and make the Process section consistent, your conceptual framework will be clear, logical, and appropriate for a BSIT capstone project.
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
